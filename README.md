@@ -4,7 +4,7 @@
 
 ### Hello, I'm sairam 👋
 
-![Project Screenshot](assets/img_0001.png)
+![Project Screenshot](assets/img.jpg)
 [Check out Google](https://www.google.com/)
 I am passionate about technology and problem-solving. Here's a glimpse of my work:
 
