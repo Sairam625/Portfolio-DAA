@@ -108,3 +108,10 @@ blockquote {
         padding: 1.5rem;
     }
 }
+.first{
+    text-align:justify;
+text-justify:inter-word;
+}
+.new{
+    color: #555;
+}
