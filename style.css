@@ -115,3 +115,36 @@ text-justify:inter-word;
 .new{
     color: #555;
 }
+.team-container {
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center; 
+    gap: 30px; 
+}
+
+/* Individual team member styling */
+.team-member {
+    text-align: center;
+}
+
+ 
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;  
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+
+.name {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#meet{
+    font: airal;
+    text-align: center;
+    color: #e7f7e7;
+    text-decoration: underline;
+}
