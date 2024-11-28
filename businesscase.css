@@ -35,7 +35,7 @@ h2 {
 }
 
  
-p {
+p,a {
     color: #4caf50;  
     font-size: 1em;
     margin: 0;
