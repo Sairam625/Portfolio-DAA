@@ -109,6 +109,7 @@
   .first{
     text-align:justify;
   text-justify:inter-word;
+  text-align: justify;
   }
   .new{
     color: #555;
@@ -149,12 +150,22 @@
   }
   
   .nav-list a:hover {
-    background-color: #FB5235;
-    border-radius: 4px;
+    transform: scale(1.02);  
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);  
+    transition: transform 0.2s, box-shadow 0.2s;
   }
   
   .content {
     padding: 2rem;
     font-size: 1.2rem;
     line-height: 1.6;
+  }
+  .intro{
+    display: flex;
+    gap: 10%;
+    
+  }
+
+  .i1{
+    width: 500px;
   }

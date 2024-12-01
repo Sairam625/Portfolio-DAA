@@ -9,7 +9,7 @@
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #d4f7d4; /* Light green background */
+    background-color: #f5f5f5; 
     color: #333;
   }
   
@@ -26,6 +26,7 @@
   }
   main{
     background-color: #EEDECE;
+    
   }
   
   nav ul {
@@ -41,7 +42,7 @@
   
   nav ul li a {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
   }
   
@@ -54,7 +55,7 @@
     max-width: 800px;
     margin: 2rem auto;
     padding: 1rem;
-    background: white;
+    background: #EEDECE;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
@@ -122,8 +123,9 @@
   }
   
   .nav-list a:hover {
-    background-color: #FB5235;
-    border-radius: 4px;
+    transform: scale(1.02);  
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);  
+    transition: transform 0.2s, box-shadow 0.2s;
   }
   
   .content {

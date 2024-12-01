@@ -19,9 +19,171 @@
   </header>
 
   <main>
-    <h1 id="home">Business cases</h1>
+    <section>
+      <h2>1. Problems in Nature</h2>
+      <ul>
+          <li><b>Recursion:</b> Used to solve problems by breaking them into smaller subproblems of the same type, such as computing Fibonacci numbers or exploring paths in a maze.</li>
+          <li><b>Iteration:</b> Solves problems using loops, such as traversing a list or calculating a factorial iteratively.</li>
+          <li><b>Backtracking:</b> Explores all possibilities for a solution, backtracks when a choice is invalid, and tries alternatives; used in problems like Sudoku and N-Queens.</li>
+      </ul>
+  </section>
+  
+  <section>
+      <h2>2. Space and Time Efficiency</h2>
+      <ul>
+          <li><b>Time Efficiency:</b> Measures how quickly an algorithm executes, important for large-scale problems.</li>
+          <li><b>Space Efficiency:</b> Measures how much memory an algorithm uses during execution, crucial for resource-limited environments.</li>
+          <li><b>Classes of Problems:</b>
+              <ul>
+                  <li>Constant Time (O(1)): Fastest, e.g., accessing an array index.</li>
+                  <li>Logarithmic Time (O(log n)): E.g., binary search.</li>
+                  <li>Linear Time (O(n)): E.g., traversing an array.</li>
+                  <li>Quadratic Time (O(n²)): E.g., nested loops like bubble sort.</li>
+                  <li>Exponential Time (O(2ⁿ)): E.g., combinatorial problems like the traveling salesman problem.</li>
+              </ul>
+          </li>
+      </ul>
+  </section>
+  
+  <section>
+      <h2>3. Design Principles</h2>
+      <ul>
+          <li><b>Divide and Conquer:</b> Breaks a problem into smaller subproblems and combines results, e.g., merge sort.</li>
+          <li><b>Dynamic Programming:</b> Stores results of overlapping subproblems to avoid redundancy, e.g., Fibonacci sequence.</li>
+          <li><b>Backtracking and Branch-Bound:</b> Explores constraints systematically, e.g., N-Queens.</li>
+      </ul>
+  </section>
+  
+  <section>
+      <h2>4. Hierarchical Data and Tree Data Structures</h2>
+      <ul>
+          <li><b>Tree:</b> Hierarchical structure, used for file systems and data organization.</li>
+          <li><b>BST:</b> Enables efficient search, insert, and delete operations.</li>
+          <li><b>AVL Tree:</b> A self-balancing binary tree ensuring logarithmic height.</li>
+          <li><b>2-3 Tree:</b> Balanced tree used in databases.</li>
+          <li><b>Red-Black Tree:</b> A self-balancing binary tree optimized for search and update operations.</li>
+          <li><b>Heap:</b> Specialized for priority operations, e.g., priority queues.</li>
+          <li><b>Trie:</b> Efficient for storing and searching strings, e.g., autocomplete systems.</li>
+      </ul>
+  </section>
+  
+  <section>
+      <h2>5. Array Query Algorithms</h2>
+      <ul>
+          <li><b>Need:</b> Arrays require efficient querying for real-time applications.</li>
+          <li><b>Applications:</b>
+              <ul>
+                  <li>Prefix Sums for range queries.</li>
+                  <li>Segment Trees for efficient range operations.</li>
+                  <li>Fenwick Trees for cumulative frequency counts.</li>
+              </ul>
+          </li>
+          <li><b>Implications:</b> Optimized algorithms enhance performance in databases and analytics.</li>
+      </ul>
+  </section>
+  
+  <section>
+      <h2>6. Trees vs. Graphs</h2>
+      <ul>
+          <li><b>Tree:</b> A hierarchical structure with no cycles, used in file systems and decision trees.</li>
+          <li><b>Graph:</b> A general structure with nodes and edges, used in networks and route optimization.</li>
+          <li><b>Tree Traversals:</b>
+              <ul>
+                  <li>DFS (Preorder, Inorder, Postorder) for parsing and evaluations.</li>
+                  <li>BFS for hierarchy traversal.</li>
+              </ul>
+          </li>
+          <li><b>Graph Traversals:</b>
+              <ul>
+                  <li>DFS for exploring paths.</li>
+                  <li>BFS for shortest paths in unweighted graphs.</li>
+              </ul>
+          </li>
+      </ul>
+  </section>
+  
+  <section>
+      <h2>7. Sorting and Searching Algorithms</h2>
+      <ul>
+          <li><b>Sorting:</b>
+              <ul>
+                  <li>Bubble Sort: Simplistic, used for small datasets.</li>
+                  <li>Merge Sort: Divide and conquer approach, used in external sorting.</li>
+                  <li>Quick Sort: Efficient for general-purpose sorting.</li>
+                  <li>Radix Sort: Optimized for integers or strings.</li>
+              </ul>
+          </li>
+          <li><b>Searching:</b>
+              <ul>
+                  <li>Linear Search: Simple but inefficient for large datasets.</li>
+                  <li>Binary Search: Fast for sorted data.</li>
+                  <li>Hashing: Constant-time search, used in hash maps.</li>
+              </ul>
+          </li>
+          <li><b>Applications:</b> Sorting and searching are vital for e-commerce, database management, and data analysis.</li>
+      </ul>
+  </section>
+  <section>
+    <h2>8. Importance of Graph Algorithms</h2>
+    <ul>
+        <li><b>Spanning Trees:</b>
+            <ul>
+                <li>Used to create subgraphs that connect all vertices with minimal edges.</li>
+                <li>Examples include Minimum Spanning Trees (MST) like Kruskal's and Prim's algorithms, used in network design, like laying cables or pipelines.</li>
+            </ul>
+        </li>
+        <li><b>Shortest Paths:</b>
+            <ul>
+                <li>Finds the most efficient route between nodes in a graph.</li>
+                <li>Algorithms like Dijkstra's (for weighted graphs) and Bellman-Ford (handles negative weights) are widely used in GPS navigation and routing protocols.</li>
+                <li>A* algorithm incorporates heuristics for optimal real-time pathfinding in AI and gaming.</li>
+            </ul>
+        </li>
+        <li><b>Applications:</b> Graph algorithms are essential in transportation, communication networks, and optimization problems.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>9. Algorithm Design Techniques</h2>
+    <ul>
+        <li><b>Divide and Conquer:</b>
+            <ul>
+                <li>Breaks a problem into smaller, independent subproblems and combines their results.</li>
+                <li>Examples: Merge sort, Quick sort, Binary search.</li>
+            </ul>
+        </li>
+        <li><b>Dynamic Programming:</b>
+            <ul>
+                <li>Solves overlapping subproblems by storing intermediate results to avoid redundancy.</li>
+                <li>Examples: Fibonacci numbers </li>
+            </ul>
+        </li>
+        <li><b>Greedy Algorithms:</b>
+            <ul>
+                <li>Chooses the best local option at each step to find a global solution.</li>
+                <li>Examples:Kruskal's MST.</li>
+            </ul>
+        </li>
+        <li><b>Backtracking:</b>
+            <ul>
+                <li>Explores all possible solutions by building them incrementally and abandoning infeasible paths.</li>
+                <li>Examples: N-Queens problem, Sudoku solver, Subset sum problem.</li>
+            </ul>
+        </li>
+        <li><b>Branch and Bound:</b>
+            <ul>
+                <li>Optimizes backtracking by using bounds to prune unnecessary branches.</li>
+                <li>Examples: Traveling Salesman Problem (TSP), Integer Linear Programming.</li>
+            </ul>
+        </li>
+        <li><b>Applications:</b> These techniques are applied in scheduling, optimization, AI, and database management systems.</li>
+    </ul>
+</section>
+
+  
    
   </main>
+
 
   <footer>
     <p>&copy; 2024 Course Reflection and Project</p>
