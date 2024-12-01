@@ -1,0 +1,160 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px; /* Adding padding to the body to prevent sticking at the top */
+    min-height: 100vh;
+  }
+  
+  /* Main Container */
+  section {
+    align-content: center;
+    background-color: #EEDECE;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-left: 18%;
+    margin-top: 30px; /* Adding margin to ensure there's space from the top */
+  }
+  
+  /* Header */
+  header {
+    background-color: #FB5235;
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  header p {
+    margin: 1rem 0 0;
+  }
+  
+  /* Section Titles */
+  h2 {
+    color: #3D90D2;
+    margin-bottom: 1rem;
+  }
+  
+  /* List Items */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    /* background-color: #e7f7e7; */
+    margin-bottom: 0.5rem;
+    padding: 0.75rem;
+    border-radius: 5px;
+  }
+ 
+ 
+  a {
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Definition List */
+  dl dt {
+    font-weight: bold;
+    color: #333;
+    margin-top: 1rem;
+  }
+  
+  dl dd {
+    margin-left: 1.5rem;
+    color: #666;
+  }
+  
+  /* Blockquote */
+  blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #4CAF50;
+    padding-left: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    section {
+        padding: 1.5rem;
+    }
+  
+    header {
+        padding: 1.5rem;
+    }
+  }
+  .first{
+    text-align:justify;
+  text-justify:inter-word;
+  }
+  .new{
+    color: #555;
+  }
+ 
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #EEDECE;
+    width: 100%;
+    z-index: 1000;
+    padding: 0.5rem 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+  }
+
+ 
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-list li {
+    margin: 0;
+    color: #EEDECE;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: FB5235;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-list a:hover {
+    background-color: #FB5235;
+    border-radius: 4px;
+  }
+  
+  .content {
+    padding: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
