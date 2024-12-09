@@ -1,200 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DAA Portfolio</title>
-  <link rel="stylesheet" href="vaish.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="template.css">
 </head>
 <body>
-  <div class="container">
-    <header class="navbar">
-      <div class="logo">DAA-PORTFOLIO</div>
-      <nav class="menu">
-        <a href="#">Home</a>
-        <a href="/Portfolio-DAA/assets/project-description.pdf" target="_blank">project-description</a>
-        <a href="#reflex">learning-reflection</a>
-        <a href="#">Contact</a>
+    <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="/Portfolio-DAA/pages/Home page/index.html">Home</a></li>
+          <li><a href="/Portfolio-DAA/pages/project-intro/project-intro.html">Project Introduction</a></li>
+          <li><a href="/Portfolio-DAA/pages/learning-refl/learning-reflection.html">Learning Reflections</a></li>
+        </ul>
       </nav>
-    </header>
-    
-    <div class="content">
-      <div class="text-section">  
-        <h1><b>&lt;b&gt;Hello&lt;/b&gt;</b></h1>
-        <ul>
-            <li id="project-intro">
-                <h2>Project Introduction</h2>
-                <p>
-                    The project addresses urban infrastructure optimization. Using concepts from the course, we analyzed
-                    white papers on smart city designs to identify critical business problems, such as efficient
-                    transportation systems, waste management, and energy
-                    distribution.
-            </li>
+<!-- Main Content -->
+    <main>
 
-            <li>
-                <div class="intro">
-                    <div class="i1">
-                        <p class="first"> <b>"ANANDNAGARI"-THE CITY OF JOY</b> <br>     
-
-                            Our developed city is located in India.
-                            Through this project , we explore key areas such as land use,
-                            transportation systems, energy efficient architecture and waste management.
-                            The total allotted area for developing this city is 1500sq.km
-                            Among the total we have divided the land based on public needs:
-                            <table>
-                                <caption>City Development Allocation</caption>
-                                <thead>
-                                    <tr>
-                                        <th>Category</th>
-                                        <th>Percentage</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Residence</td>
-                                        <td>35%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Commercial</td>
-                                        <td>10%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Industries</td>
-                                        <td>10%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Green Space</td>
-                                        <td>5%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Social</td>
-                                        <td>10%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Agriculture</td>
-                                        <td>10%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Transport</td>
-                                        <td>10%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tourism</td>
-                                        <td>10%</td>
-                                    </tr>
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <th colspan="2">Approximate Budget: ₹7,90,000 Cr</th>
-                                    </tr>
-                                </tfoot>
-                            </table>
-                             
-                    </div>
-            </li>
-          </ul>
-        <a href="#" class="cta-button">business cases</a>
-
-      </div>
-      <div class="image-section">
-        <img src="/Portfolio-DAA//assets/intro.jpg" alt="Developer Profile">
-      </div>
-    </div>
-  </div>
-  <div class="leaerning-reflections">
-    <main class="content">
-        <section class="text-section">
-          <h1 id="reflex">Learning-reflections</h1>
-          <h2>Kinds of Problems in Nature</h2>
-          <p>Problems in nature can be categorized based on computational strategies:</p>
-          <ul>
-            <li><strong>Iteration:</strong> Problems solved using repetitive loops, such as traversing arrays.</li>
-            <li><strong>Recursion:</strong> Problems broken into smaller subproblems, such as the Fibonacci sequence.</li>
-            <li><strong>Backtracking:</strong> Problems involving exploration of possibilities, such as the N-Queens problem.</li>
-          </ul>
-  
-          <h2>Space and Time Efficiency</h2>
-          <p><strong>Time Efficiency:</strong> Measures the time an algorithm takes to complete.<br>
-             <strong>Space Efficiency:</strong> Measures the memory an algorithm uses.</p>
-          <p>Efficiency is crucial for optimizing performance, especially for large datasets or real-time systems.</p>
-  
-          <h3>Classes of Problems and Orders of Growth</h3>
-          <p>Orders of growth help categorize algorithms:</p>
-          <ul>
-            <li>Constant: \( O(1) \)</li>
-            <li>Logarithmic: \( O(\log n) \)</li>
-            <li>Linear: \( O(n) \)</li>
-            <li>Quadratic: \( O(n^2) \)</li>
-            <li>Exponential: \( O(2^n) \)</li>
-          </ul>
-  
-          <h2>Hierarchical Data and Tree Structures</h2>
-          <p>Tree data structures are used for efficient search, insert, and hierarchical organization:</p>
-          <ul>
-            <li><strong>Binary Search Tree (BST):</strong> Supports sorted data.</li>
-            <li><strong>AVL Tree:</strong> Self-balancing for optimal performance.</li>
-            <li><strong>Red-Black Tree:</strong> Ensures balanced tree height.</li>
-            <li><strong>Heap:</strong> Used for priority queues.</li>
-            <li><strong>Trie:</strong> Optimized for prefix-based searching.</li>
-          </ul>
-  
-          <h2>Array Query Algorithms</h2>
-          <p>Array query algorithms such as prefix sums and segment trees optimize querying operations, especially for range-based operations.</p>
-  
-          <h2>Tree vs Graph</h2>
-          <ul>
-            <li><strong>Trees:</strong> A special kind of graph with no cycles, used in hierarchy-based applications.</li>
-            <li><strong>Graphs:</strong> General structures used in network analysis, shortest path problems, and spanning trees.</li>
-          </ul>
-          <p>Common Traversals:</p>
-          <ul>
-            <li>Trees: Preorder, Inorder, Postorder.</li>
-            <li>Graphs: DFS, BFS.</li>
-          </ul>
-  
-          <h2>Sorting and Searching Algorithms</h2>
-          <p><strong>Sorting Algorithms:</strong> Bubble, Merge, Quick, and Heap Sorts ensure data ordering.</p>
-          <p><strong>Searching Algorithms:</strong> Linear Search, Binary Search optimize data lookup.</p>
-          <p>Real-world examples include database indexing and file organization.</p>
-  
-          <h2>Graph Algorithms</h2>
-          <p>Graph algorithms like Prim's, Kruskal's, and Dijkstra's are crucial for:</p>
-          <ul>
-            <li><strong>Spanning Trees:</strong> Optimizing network designs.</li>
-            <li><strong>Shortest Paths:</strong> Navigation systems and logistics.</li>
-          </ul>
-  
-          <h2>Algorithm Design Techniques</h2>
-          <ul>
-            <li><strong>Divide and Conquer:</strong> Splitting problems into subproblems (e.g., Merge Sort).</li>
-            <li><strong>Dynamic Programming:</strong> Storing results of subproblems to optimize (e.g., Knapsack problem).</li>
-            <li><strong>Greedy Algorithms:</strong> Making local optimal choices (e.g., Huffman Coding).</li>
-            <li><strong>Backtracking:</strong> Systematically exploring all possibilities (e.g., Sudoku Solver).</li>
-          </ul>
-                <h1 >Overally</h1>
-                <ul><li>
-                  Through this course, we learned to tackle complex problems using various algorithmic techniques, such as
-                  iteration, recursion, and backtracking. Emphasis was placed on analyzing time and space complexity to
-                  determine efficient solutions. <br></li>
-                  <li>
-                  For example, tree data structures like AVL and Red-Black Trees proved invaluable for hierarchical data
-                  management,
-                  while graph algorithms motivates us to model real-world scenarios like transportation networks and
-                  resource allocation.  <br></li>
-                  <li>
-                  we have saw Sorting and searching algorithms i think they are explored for their critical role in
-                  database management and query optimization.
-                  The course highlighted how choosing the right approach, balancing constraints, and recognizing patterns
-                  can lead to
-                  innovative solutions.
-                </p></li>
-                </ul>
+        <section>
+            <h2>1. Problems in Nature</h2>
+            <ul>
+                <li><b>Recursion:</b> Uncontrolled recursion, like in cancer, can lead to exponential growth.</li>
+                <li><b>Iteration:</b> Iterative cycles can be disrupted by climate change, leading to irregular seasons or extreme weather patterns.</li>
+                <li><b>Backtracking:</b> Migratory species may encounter obstacles and fail to backtrack to alternative routes.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>2. Space and Time Efficiency</h2>
+            <p><b>Space Efficiency:</b> Extra space required by an algorithm.</p>
+            <p><b>Time Efficiency:</b> Extra time required by an algorithm.</p>
+            <p><b>Why Important?</b> Space and time efficiency are vital for building systems that are fast, scalable, and sustainable, ensuring optimal performance across real-world applications.</p>
+            
+            <h3>Orders of Growth</h3>
+            <ul>
+                <li>O(1) - Constant</li>
+                <li>O(n) - Linear</li>
+                <li>O(log n) - Logarithmic</li>
+                <li>O(n^2) - Quadratic</li>
+                <li>O(n log n) - Linearithmic</li>
+                <li>O(n^3) - Cubic</li>
+                <li>O(n^k) - Polynomial</li>
+                <li>O(2^n) - Exponential</li>
+                <li>O(n!) - Factorial</li>
+            </ul>
         </section>
 
-      </main>
-  </div>
-  <footer>
-    <p>&copy; 2024 Course Reflection and Project</p>
-  </footer>
-</body> 
+        <section>
+            <h2>3. Takeaway from Different Design Principles</h2>
+            <h3>Sorting Algorithms</h3>
+            <ul>
+                <li><b>Bubble Sort:</b> Simple to understand and implement, best for small datasets.</li>
+                <li><b>Selection Sort:</b> Minimal swaps compared to bubble sort but not adaptive.</li>
+                <li><b>Insertion Sort:</b> Efficient for partially sorted datasets.</li>
+                <li><b>Merge Sort:</b> Stable and efficient for large dataset sorting.</li>
+                <li><b>Quick Sort:</b> In-place but not stable, efficient for large datasets.</li>
+                <li><b>Heap Sort:</b> In-place but not stable.</li>
+                <li><b>Boyer More Algorithm :</b> Effective for long texts and patterns. And Utilizes pre - computation for optimal performance but requires extra space for preprocessing.</li>
+                <li><b>Kruskal’s algorithm :</b> Requires cycle detection , often implemented using union-find data structure. Suitable for sparse graphs .</li>
+                <li><b>Dijkstra’s algorithm :</b>Provides optimal solutions for single-source shortest paths in directed or undirected graphs .</li>
+                <li><b>Floyd’s algorithm :</b> Based on the principle of Kleene’s Theorem. All pair shortest path algorithm .</li>
+                <li><b>Warshall’s algorithm :</b> Based on the principle of kleen’s theorem. Transitive property algorithm. We can try to make the algorithm run faster by treating matrix as bit strings and employ bitwise operations .</li>
+                <li><b>Prim’s Algorithm :</b> Prim’s is based on edge relaxation principle. Minimum spanning tree algorithm. Falls under the Greedy technique.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Hierarchical Data and Tree Data Structures</h2>
+            <ul>
+                <li><b>Tree:</b> Flexible but search or traversal may take O(n) due to lack of ordering or balancing.</li>
+                <li><b>BST:</b> Reduces the complexity of search operations to O(log n) on average by maintaining sorted order.</li>
+                <li><b>AVL Tree:</b> Balances the tree after every insertion or deletion, ensuring O(log n) operations.</li>
+                <li><b>2-3 Tree:</b> Always balanced, handling multiple keys in each node.</li>
+                <li><b>Red-Black Tree:</b> Less strict balancing, reducing the overhead of rotations during updates.</li>
+                <li><b>Heap:</b> Guarantees O(1) for finding max/min and O(log n) for insertions and deletions.</li>
+                <li><b>Trie:</b> Exploits shared prefixes, ideal for large datasets with overlapping entries.</li>
+            </ul>
+        </section>
+        
+        <section>
+    <h2>5. Array Query Algorithms</h2>
+    <ul>
+        <li><b>Array query algorithms:</b> Fenwick Tree, Segment Tree, Lookup Table.</li>
+        <li>These algorithms are essential for efficiently processing, retrieving, and analyzing data stored in arrays, especially with large datasets or frequently repeated queries.</li>
+        <li><b>Fenwick Tree:</b> 
+            <ul>
+                <li><b>Principle:</b> Supports efficient range queries and point updates.</li>
+                <li><b>Application:</b> Cumulative frequency counts in online queries.</li>
+            </ul>
+        </li>
+        <li><b>Segment Tree:</b>
+            <ul>
+                <li><b>Principle:</b> Divides array into segments for range queries and updates.</li>
+                <li><b>Application:</b> Dynamic histograms.</li>
+            </ul>
+        </li>
+        <li><b>Lookup Table:</b>
+            <ul>
+                <li><b>Principle:</b> Precomputes results for all possible inputs.</li>
+                <li><b>Application:</b> Collision detection, AI decision trees.</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+<section>
+            <h2>6. Differentiation Between Trees and Graphs</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Tree</th>
+                        <th>Graph</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Definition</td>
+                        <td>A hierarchical data structure with nodes connected by edges.</td>
+                        <td>A general data structure with nodes (vertices) connected by edges (can be directed/undirected).</td>
+                    </tr>
+                    <tr>
+                        <td>Structure</td>
+                        <td>Connected and acyclic.</td>
+                        <td>May be connected or disconnected, cyclic or acyclic.</td>
+                    </tr>
+                    <tr>
+                        <td>Root</td>
+                        <td>Has a single root node.</td>
+                        <td>No concept of a root (unless it's a tree-based graph).</td>
+                    </tr>
+                    <tr>
+                        <td>Parent-Child Relationship</td>
+                        <td>Nodes follow a strict parent-child hierarchy.</td>
+                        <td>No strict hierarchy; any node can connect to any other node.</td>
+                    </tr>
+                    <tr>
+                        <td>Edges</td>
+                        <td>Exactly n−1 edges for n nodes.</td>
+                        <td>Can have any number of edges (up to n(n−1)/2 for undirected graphs).</td>
+                    </tr>
+                    <tr>
+                        <td>Traversal</td>
+                        <td>DFS and BFS, plus tree-specific traversals (inorder, preorder, postorder).</td>
+                        <td>Typically DFS and BFS, without hierarchy-based traversal.</td>
+                    </tr>
+                    <tr>
+                        <td>Cyclic Nature</td>
+                        <td>Always acyclic.</td>
+                        <td>Can contain cycles (e.g., directed graphs with loops).</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Tree Traversals</h3>
+            <ul>
+                <li><b>Preorder:</b> Visit root → Left subtree → Right subtree.</li>
+                <li><b>Inorder:</b> Visit Left subtree → Root → Right subtree (used in BSTs for sorted order).</li>
+                <li><b>Postorder:</b> Visit Left subtree → Right subtree → Root.</li>
+                <li><b>Level-order:</b> Breadth-first traversal level by level.</li>
+            </ul>
+
+            <h3>Graph Traversals</h3>
+            <ul>
+                <li><b>Depth First Search (DFS)</b></li>
+                <li><b>Breadth First Search (BFS)</b></li>
+            </ul>
+
+            <h3>Applications</h3>
+            <ul>
+                <li><b>Trees:</b> Efficient data storage and retrieval for dynamic datasets.</li>
+                <li><b>Graphs:</b> Modeling user relationships and interactions.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>7. Sorting and Searching Algorithms</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Algorithm</th>
+                        <th>Technique</th>
+                        <th>Time Complexity</th>
+                        <th>Real-World Applications</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bubble Sort</td>
+                        <td>Compare adjacent elements and swap if needed.</td>
+                        <td>O(n^2)</td>
+                        <td>Educational purposes to teach algorithm basics.</td>
+                    </tr>
+                    <tr>
+                        <td>Selection Sort</td>
+                        <td>Find the minimum and place it at the beginning.</td>
+                        <td>O(n^2)</td>
+                        <td>Simple applications where memory is minimal (e.g., small embedded systems).</td>
+                    </tr>
+                    <tr>
+                        <td>Insertion Sort</td>
+                        <td>Build a sorted portion by inserting elements.</td>
+                        <td>O(n^2)</td>
+                        <td>Small datasets like sorting playing cards.</td>
+                    </tr>
+                    <tr>
+                        <td>Merge Sort</td>
+                        <td>Divide-and-conquer: split, sort, and merge.</td>
+                        <td>O(n log n)</td>
+                        <td>Sorting large datasets in external storage, like disk drives.</td>
+                    </tr>
+                    <tr>
+                        <td>Quick Sort</td>
+                        <td>Partitioning based on a pivot element.</td>
+                        <td>O(n log n)</td>
+                        <td>Databases, language libraries (e.g., Python's Timsort).</td>
+                    </tr>
+                    <tr>
+                        <td>Heap Sort</td>
+                        <td>Use a heap data structure to extract max/min.</td>
+                        <td>O(n log n)</td>
+                        <td>Scheduling systems and prioritization.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>8. Importance of Graph Algorithms</h2>
+            <ul>
+                <li><b>Dijkstra’s Algorithm:</b> Finds the shortest path from a single source to all other vertices in a weighted graph with non-negative weights. Applications: Roadmaps, telecommunications.</li>
+                <li><b>Floyd’s Algorithm:</b> Computes shortest paths between all pairs of vertices in a weighted graph. Applications: Urban transit planning.</li>
+                <li><b>Warshall’s Algorithm:</b> Determines transitive closure to verify connectivity before spanning tree construction.</li>
+                <li><b>Kruskal’s Algorithm:</b> Constructs a minimum spanning tree by sorting and adding edges in order of increasing weight. Applications: Power grids, telecommunication lines.</li>
+                <li><b>Prim’s Algorithm:</b> Builds a minimum spanning tree by growing one vertex at a time. Efficient for dense graphs.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>9. Algorithm Design Techniques</h2>
+            <ul>
+                <li><b>Divide and Conquer:</b> Split the problem into smaller subproblems, solve, and merge the solutions. Examples: Merge Sort, Quick Sort, Binary Search.</li>
+                <li><b>Greedy Algorithm:</b> Make locally optimal choices at each step. Examples: Prim’s and Kruskal’s Algorithms.</li>
+                <li><b>Backtracking:</b> Explore all possible solutions incrementally and abandon paths that fail constraints. Examples: Sudoku, N-Queens Problem.</li>
+                <li><b>Recursion:</b> Solve a problem by solving smaller instances of the same problem. Examples: Tower of Hanoi, Fibonacci numbers.</li>
+                <li><b>Brute Force:</b> Try all possible solutions and select the best one.</li>
+            </ul>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Algorithm Notes</p>
+    </footer>
+</body>
 </html>
