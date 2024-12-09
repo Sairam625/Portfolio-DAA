@@ -36,7 +36,12 @@ body {
     font-weight: bold;
     color: #e74c3c; /* Bright Red */
 }
-
+.menu {
+    display: flex; /* Ensures horizontal layout */
+    gap: 15px; /* Adds space between links */
+    align-items: center; /* Aligns items vertically */
+    list-style: none; /* Removes bullet points (if treated as a list) */
+}
 .navbar a {
     color: #ecf0f1; /* Light Gray */
     text-decoration: none;
