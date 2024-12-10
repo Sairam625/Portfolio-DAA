@@ -122,14 +122,77 @@
   
           <h3>Classes of Problems and Orders of Growth</h3>
           <p>Orders of growth help categorize algorithms:</p>
-          <ul>
-            <li>Constant: \( O(1) \)</li>
-            <li>Logarithmic: \( O(\log n) \)</li>
-            <li>Linear: \( O(n) \)</li>
-            <li>Quadratic: \( O(n^2) \)</li>
-            <li>Exponential: \( O(2^n) \)</li>
-          </ul>
-  
+
+          <ol>
+            <li>
+                <strong>Constant Time – O(1):</strong>
+                <p>Resource usage does not depend on input size.</p>
+                <p><em>Example:</em> Accessing an element in an array by index.</p>
+            </li>
+            <li>
+                <strong>Logarithmic Time – O(log n):</strong>
+                <p>Resource usage grows slowly with input size.</p>
+                <p><em>Example:</em> Binary search in a sorted list.</p>
+            </li>
+            <li>
+                <strong>Linear Time – O(n):</strong>
+                <p>Resource usage grows directly with input size.</p>
+                <p><em>Example:</em> Iterating through an array.</p>
+            </li>
+            <li>
+                <strong>Linearithmic Time – O(n log n):</strong>
+                <p>Common in efficient sorting algorithms.</p>
+                <p><em>Example:</em> Merge sort or heap sort.</p>
+            </li>
+            <li>
+                <strong>Quadratic Time – O(n<sup>2</sup>):</strong>
+                <p>Resource usage grows with the square of the input size.</p>
+                <p><em>Example:</em> Nested loops over a 2D matrix.</p>
+            </li>
+            <li>
+                <strong>Cubic Time – O(n<sup>3</sup>):</strong>
+                <p>Resource usage grows with the cube of the input size.</p>
+                <p><em>Example:</em> Algorithms for matrix multiplication (e.g., naïve approach).</p>
+            </li>
+            <li>
+                <strong>Exponential Time – O(2<sup>n</sup>):</strong>
+                <p>Resource usage doubles with every additional input element.</p>
+                <p><em>Example:</em> Solving the traveling salesman problem using brute force.</p>
+            </li>
+            <li>
+                <strong>Factorial Time – O(n!):</strong>
+                <p>Resource usage grows faster than exponential time.</p>
+                <p><em>Example:</em> Generating all permutations of n elements.</p>
+            </li>
+        </ol>
+        <h2>design Principes</h2>  
+        <ul>
+          <li><b>Decomposition:</b> Breaking a problem into smaller, manageable sub-problems to address each independently.</li>
+          <li><b>Pattern Recognition:</b> Identifying recurring structures or similarities in problems to generalize and apply solutions across contexts.</li>
+          <li><b>Abstraction:</b> Simplifying complex systems by focusing on essential features and ignoring irrelevant details.</li>
+          <li><b>Traversal Methods:</b>
+              <ul>
+                  <li><b>Brave Traversal:</b> Backtracking after exploring a path to the end (DFS).</li>
+                  <li><b>Cautious Traversal:</b> Exploring level by level (BFS).</li>
+              </ul>
+          </li>
+          <li><b>Pruning:</b> Eliminating unnecessary paths or options in decision-making to improve efficiency (e.g., N-Queens problem).</li>
+          <li><b>Lazy Propagation:</b> Deferring updates in segment trees to optimize range query and update operations.</li>
+          <li><b>Sliding Window:</b> Efficiently analyzing overlapping subarrays or subsequences by maintaining relevant information as the window moves.</li>
+          <li><b>Level Order Traversal:</b> Visiting tree nodes level by level (related to BFS).</li>
+          <li><b>Hierarchical Data:</b> Representing data in tree-like structures with parent-child relationships for organized and efficient access.</li>
+          <li><b>Edge Relaxation:</b> Updating shortest paths in weighted graphs by refining distances based on neighboring vertices.</li>
+          <li><b>Balancing and Rotations:</b> Maintaining balanced trees (e.g., AVL, Red-Black trees) through rotations for efficient operations.</li>
+          <li><b>Kleene Closure:</b> Computing transitive closures in graphs to find all reachable vertex pairs.</li>
+          <li><b>Pre-Computing:</b> Storing frequently used calculations in advance (e.g., lookup tables) for faster runtime performance.</li>
+          <li><b>Parental Dominance:</b> Ensuring hierarchical rules in data structures like heaps where the parent node dominates its children.</li>
+          <li><b>Prefix and Suffix:</b> Using string prefixes and suffixes for tasks like pattern matching and substring analysis.</li>
+          <li><b>Partitioning:</b> Dividing problems into smaller parts recursively for simplified and scalable solutions.</li>
+          <li><b>Bit Manipulation:</b> Using bitwise operations to optimize memory and computation in tasks like hash tables and compression.</li>
+          <li><b>Memoization:</b> Storing results of previous computations to avoid redundancy in recursive algorithms (common in dynamic programming).</li>
+          <li><b>Invariants:</b> Conditions that remain constant throughout algorithm execution, ensuring correctness.</li>
+          <li><b>Shortest Path Trees:</b> Structures representing shortest paths from a source to all other nodes, used in routing and network optimization.</li>
+      </ul>
           <h2>Hierarchical Data and Tree Structures</h2>
           <p>Tree data structures are used for efficient search, insert, and hierarchical organization:</p>
           <ul>

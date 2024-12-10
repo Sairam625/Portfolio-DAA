@@ -8,64 +8,229 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <section>
-    <header>
-      <h1 id="home">Course Portfolio</h1>
-    </header>
-    <main>
+  <div class="navbar">
+    <a href="#" class="brand">DAA Portfolio</a>
+    <ul class="nav-items">
+      <li><a href="#heading1">Home</a></li>
+      <li><a href="#team">Team Members</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <section id="heading1">
+    <div class="heading">
+    <h1>Design and Analysis of Algorithms</h1>
+  </div>
+    <p>
+      This course offers an in-depth exploration of the core principles behind algorithms and data structures, focusing
+      on their development, optimization, and real-world applications.
+    </p><br>
+
+    <h2>Course Highlights</h2>
     <ul>
-            <li>
-              <h1><strong>Business cases</strong> identified by each team members:</h1>
-              <div class="team-container">
+      <li><strong>Core Principles:</strong> Investigate time and space complexities, master recursive strategies, and
+        understand backtracking methods.</li>
+      <li><strong>Advanced Data Structures:</strong> Gain expertise in hashing techniques, Union-Find operations, AVL
+        Trees, Segment Trees, and Red-Black Trees.</li>
+      <li><strong>Optimized Algorithms:</strong> Learn efficient sorting and searching approaches such as Quick Sort,
+        KMP, and Rabin-Karp algorithms.</li>
+      <li><strong>Graph-Based Solutions:</strong> Study algorithms for shortest paths like Dijkstra’s, spanning trees
+        such as Prim’s, and complex challenges like the Travelling Salesperson Problem.</li>
+      <li><strong>Theoretical Foundations:</strong> Explore NP-completeness and the inherent limitations of
+        computational approaches.</li>
+    </ul>
 
-                <div class="team-member">
-                  <a href="/Portfolio-DAA/pages/sairam/main.html">
-                  <img src="/Portfolio-DAA/assets/Sairam.JPG" alt="Team Member 1" class="profile-pic">
-                  <p class="name">Sairam Hatti</p></a>
-                </div>
-                <div class="team-member">
-                  <a href="/Portfolio-DAA/pages/vaishnavi/Vaishnavi.html">
-                  <img src="/Portfolio-DAA/assets/vaishnavi.jpg" alt="Team Member 2" class="profile-pic">
-                  <p class="name">Vaishnavi Kaluti</p></a>
-                </div>
-                <div class="team-member">
-                  <a href="/Portfolio-DAA/pages/bhavana/Bhavana.html">
-                  <img src="/Portfolio-DAA/assets/bhavana.jpg" alt="Team Member 3" class="profile-pic">
-                  <p class="name">Bhavana Kubsad</p></a>
-                </div>
-                <div class="team-member">
-                  <a href="/Portfolio-DAA/pages/lakshmi/Lakshmi.html">
-                  <img src="/Portfolio-DAA/assets/dummmy.jpg" alt="Team Member 4" class="profile-pic">
-                  <p class="name">Lakshmi Gantoti</p>
-                </a>
-                </div>
-              </div>
-        <li>
-          <h2>Portfolio Topic</h2>
-          To create a city design and solve the real world problems
-          <dl>
-            <dt>Course Name</dt>
-            <dd>Design and analysis of Algorithms</dd>
-
-            <dt>Course Code</dt>
-            <dd>24ECAP202 </dd>
-            <dt>Course Instructor</dt>
-            <dd>Prakash Hegde</dd>
-
-            <dt>University</dt>
-            <dd>KLETech university</dd>
-
-            <dt>Portfolio Topic/Domain</dt>
-            <dd>City design</dd>
-          </dl>
-        </li>
-      </ul>
-
-      <blockquote>“The only way to do great work is to love what you do.” – Steve Jobs</blockquote>
+    <p>
+      By completing this course, students will build a solid base in solving computational problems and be equipped with
+      the tools to design efficient solutions for challenging scenarios.
+    </p>
+    </div>
+    <ul>
   </section>
-  </main>
-</body>
+  <section>
+    <h1>Our Journey Through Algorithms</h1>
 
+    <h2>Math Foundations</h2>
+    <p>
+      We began our exploration of algorithms by establishing a solid foundation in mathematics. These principles are crucial to understanding the fundamentals of algorithm design and analysis.
+    </p>
+    <p>
+      Our focus started with concepts like time and space efficiency, where we learned to calculate and analyze these metrics for various solutions and recurrence relations. Problems like the Tower of Brahma and the N-Queens problem helped us apply these mathematical concepts practically.
+    </p>
+  
+    <h2>Orders of Growth</h2>
+    <p>
+      The journey continued with a deeper dive into the mathematical principles behind the orders of growth. This understanding allowed us to assess and compare the efficiency of different solutions in greater detail, laying the groundwork for evaluating algorithm performance.
+    </p>
+  
+    <h2>Structured Data Management</h2>
+    <p>
+      Next, we ventured into the realm of structured data, focusing on how to organize and manage it effectively. The journey began with binary trees, which evolved into binary search trees when combined with searching algorithms. 
+    </p>
+    <p>
+      From there, we encountered 2-3 trees, which led us to study AVL trees as a solution to reduce imbalances. To enhance performance for operations like insertion and deletion, we explored Red-Black trees. Additional structures like Tries and Skip Lists introduced efficient methods for data manipulation, with Skip Lists excelling in quick insertions and Tries leveraging pointers for compact storage.
+    </p>
+    <p>
+      We also delved into Fenwick/Binary Indexed Trees (BIT), which operate on 1-based indexing, and studied heaps, including their mechanisms and associated algorithms. This section concluded with graph traversal techniques like BFS and DFS, which, despite their complexity, are indispensable for solving advanced algorithmic problems.
+    </p>
+  
+    <h2>Key Takeaways</h2>
+    <p>
+      This foundational knowledge has equipped us with the tools to explore the vast and exciting world of algorithms, setting the stage for tackling more intricate challenges ahead.
+    </p>
+  </body>
+  </section>
+  <section>
+    <h1>Data Structures Overview</h1>
+
+  <h2>Linear Data Structures</h2>
+  <ul>
+    <li><strong>Arrays:</strong> A collection of elements stored in contiguous memory locations.</li>
+    <li><strong>Stacks:</strong> A Last-In-First-Out (LIFO) data structure for managing elements.</li>
+    <li><strong>Queues:</strong> A First-In-First-Out (FIFO) data structure for processing elements.</li>
+  </ul>
+
+  <h2>Trees</h2>
+  <ul>
+    <li><strong>Trees:</strong> A hierarchical structure with nodes connected by edges.</li>
+    <li><strong>Binary Search Trees (BST):</strong> A tree where each node has at most two children, with left < parent < right.</li>
+    <li><strong>AVL Trees:</strong> A self-balancing binary search tree with height difference ≤ 1 between subtrees.</li>
+    <li><strong>Red-Black Trees:</strong> A self-balancing BST with additional rules for node colors to maintain balance.</li>
+    <li><strong>2-3 Trees:</strong> A balanced search tree where each node has 2 or 3 children.</li>
+    <li><strong>Tries:</strong> A tree for storing strings, where each node represents a character.</li>
+  </ul>
+
+  <h2>Graph Structures</h2>
+  <ul>
+    <li><strong>Adjacency Matrix and List Representations:</strong> Ways to represent graphs using matrices or linked lists.</li>
+    <li><strong>Directed and Undirected Graphs:</strong> Graphs with edges having direction (directed) or no direction (undirected).</li>
+  </ul>
+
+  <h2>Specialized Structures</h2>
+  <ul>
+    <li><strong>Heaps:</strong> A tree-based structure where the parent node is always larger (max-heap) or smaller (min-heap) than its children.</li>
+    <li><strong>Fenwick Trees (Binary Indexed Trees):</strong> A data structure for efficiently updating and querying prefix sums.</li>
+    <li><strong>Segment Trees:</strong> A tree used for range queries and updates on an array.</li>
+    <li><strong>Sparse Tables:</strong> A structure for efficient range queries, usually for static arrays.</li>
+    <li><strong>Skip Lists:</strong> A linked list with additional layers for faster search, insert, and delete operations.</li>
+  </ul>
+  </section>
+  <section>
+    <h1>Connecting Course Concepts to Real-World Applications</h1>
+
+    <h2>Inspiration from Real-World Practices</h2>
+    <p>
+      Many algorithms taught in this course are inspired by observations of nature or everyday human practices. For instance, the shortest path algorithm mirrors how electricians design efficient wiring paths, while insertion sort reflects the intuitive way people organize playing cards by placing each card in its appropriate position. This course not only explains the mechanics of these algorithms but also provides insights into the innovative thought processes behind their creation.
+    </p>
+  
+    <h2>Smart City Design</h2>
+    <p>
+      In our project, algorithms like Dijkstra's, Prim's, and Kruskal's are applied to optimize urban road networks and transportation systems. These methods, combined with data structures, help manage smart traffic systems, improve public transport efficiency, and allocate resources across various sectors such as healthcare, education, and agriculture in a smart city environment.
+    </p>
+  
+    <h2>Sorting and Searching</h2>
+    <p>
+      Sorting algorithms are essential for handling large datasets, enabling quick organization and analysis. Applications like search engines and databases rely heavily on efficient sorting and searching techniques to deliver precise results in minimal time, demonstrating their critical role in information processing.
+    </p>
+  
+    <h2>Tree Data Structures</h2>
+    <p>
+      Tree data structures are extensively used in real-world applications, such as maintaining hierarchical data in file systems (e.g., operating systems) and building syntax trees in compilers. These structures ensure efficient storage and retrieval of information.
+    </p>
+  
+    <h2>Hashing</h2>
+    <p>
+      Hashing plays a key role in cybersecurity for secure password storage and is crucial in database systems for fast and efficient data retrieval. Its ability to transform data into fixed-size values makes it indispensable in many technology domains.
+    </p>
+  
+    <h2>Competitive Programming and Problem Solving</h2>
+    <p>
+      Techniques like graph traversal, dynamic programming, and string matching, learned in this course, are frequently used in competitive programming. They also find applications in solving complex real-world problems during software development.
+    </p>
+  
+    <h2>Advanced Applications</h2>
+    <p>
+      Algorithms such as backtracking and greedy methods are applied in advanced scenarios, including resource allocation, scheduling, and combinatorial optimization. These approaches ensure efficient solutions to complex problems.
+    </p>
+  
+    <h2>Real-Time Decision Making</h2>
+    <p>
+      Techniques like data compression and optimization are essential for real-time applications such as logistics, delivery route planning, and enhancing overall system efficiency. These methods allow businesses to make quick and informed decisions.
+    </p>
+  
+    <h2>Bridging Theory and Practice</h2>
+    <p>
+      This course effectively connects theoretical algorithmic concepts with practical applications. It empowers us to address real-world challenges with precision and efficiency, making it a cornerstone for technology-driven industries.
+    </p>
+  </section>
+  <section id="team">
+    <li>
+      <center><h1><strong>THE TEAM </strong> </h1></center>
+      <div class="team-container">
+        <div class="team-member">
+          <a href="/Portfolio-DAA/pages/sairam/main.html" target="_blank">
+            <img src="/Portfolio-DAA/assets/Sairam.JPG" alt="Team Member 1" class="profile-pic">
+            <p class="name">Sairam Hatti</p>
+            <p class="USN">USN:01FE24BCS26</p>
+          </a>
+        </div>
+        <div class="team-member">
+          <a href="/Portfolio-DAA/pages/vaishnavi/Vaishnavi.html">
+            <img src="/Portfolio-DAA/assets/vaishnavi.jpg" alt="Team Member 2" class="profile-pic">
+            <p class="name">Vaishnavi Kaluti</p>
+            <p class="USN">USN:01FE24BCS26</p>
+          </a>
+        </div>
+        <div class="team-member">
+          <a href="/Portfolio-DAA/pages/bhavana/Bhavana.html">
+            <img src="/Portfolio-DAA/assets/bhavana.jpg" alt="Team Member 3" class="profile-pic">
+            <p class="name">Bhavana Kubsad</p>
+            <p class="USN">USN:01FE24BCS26</p>
+          </a>
+        </div>
+        <div class="team-member">
+          <a href="/Portfolio-DAA/pages/lakshmi/Lakshmi.html">
+            <img src="/Portfolio-DAA/assets/dummmy.jpg" alt="Team Member 4" class="profile-pic">
+            <p class="name">Lakshmi Gantoti</p>
+            <p class="USN">USN:01FE24BCS26</p>
+          </a>
+        </div>
+      </div>
+  </section><br>
+
+  <section>
+    <table border="1">
+      <tr>
+        <th>Heading</th>
+        <th>Details</th>
+      </tr>
+      <tr>
+        <td>Portfolio Topic</td>
+        <td>To create a city design and solve real-world problems</td>
+      </tr>
+      <tr>
+        <td>Course Name</td>
+        <td>Design and Analysis of Algorithms</td>
+      </tr>
+      <tr>
+        <td>Course Code</td>
+        <td>24ECAP202</td>
+      </tr>
+      <tr>
+        <td>Course Instructor</td>
+        <td>Prakash Hegde</td>
+      </tr>
+      <tr>
+        <td>University</td>
+        <td>KLETech University</td>
+      </tr>
+      <tr>
+        <td>Portfolio Topic/Domain</td>
+        <td>City Design</td>
+      </tr>
+    </table>
+    <blockquote>“The only way to do great work is to love what you do.” – Steve Jobs</blockquote>
+    </section>
+    </main>
+</body>
 </html>
