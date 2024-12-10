@@ -1,0 +1,156 @@
+/* Reset */
+body, h1, h2, p, a, table {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    color: #2c3e50; /* Midnight Blue */
+    background-color: #ecf0f1; /* Light Gray */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #34495e; /* Dark Gray */
+    padding: 10px 20px;
+    z-index: 1000;
+    border-bottom: 2px solid #e74c3c; /* Bright Red */
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e74c3c; /* Bright Red */
+}
+.menu {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    list-style: none;
+}
+.navbar a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #e74c3c; /* Bright Red */
+}
+
+/* Main Content */
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+
+.text-section {
+    max-width: 50%;
+    margin-bottom: 20px;
+}
+
+.text-section h1 {
+    font-size: 48px;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.text-section h2 {
+    font-size: 32px;
+    margin: 15px 0;
+    color: #e74c3c; /* Bright Red */
+}
+
+.text-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #c0392b; /* Deep Red */
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table caption {
+    font-size: 24px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+table thead {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-section, .image-section {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cta-button {
+        margin-top: 20px;
+    }
+}
