@@ -80,19 +80,24 @@ body {
     margin-bottom: 20px;
 }
 
+ 
 .cta-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 20px;
     background-color: #00ff88;
-    color: #121212;
+    color: black;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    text-align: center;
+    margin-top: 20px;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .cta-button:hover {
-    background-color: #00cc66;
+    background-color: #00cc66; /* Darker green on hover */
+    transform: scale(1.1);  /* Slightly enlarges the button */
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .image-section img {
