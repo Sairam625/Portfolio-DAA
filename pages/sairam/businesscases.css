@@ -90,3 +90,17 @@ body {
     background-color: #1a1a1a;
     color: #00ff88;
   }
+
+  .b{
+  background-color: #121212;
+  /* Dark gray for contrast */
+  padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+  color: #fff;
+  /* Ensure section text is white */
+}
+  

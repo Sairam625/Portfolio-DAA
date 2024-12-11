@@ -105,52 +105,7 @@ ul li {
   margin-bottom: 0.5rem;
   padding: 0.75rem;
   border-radius: 5px;
-}
-/* Navbar 
-.navbar {
-  position: sticky;
-  top: 0;
-  background-color: #121212;
-  /* Darker navbar background 
-  width: 100%;
-  z-index: 1000;
-  padding: 0.5rem 1rem;
-  box-shadow: 0px 4px 6px #121212;
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav-list {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-list a {
-  color: #00ff88;
-  /* Green for navbar links  
-  padding: 0.5rem 1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.nav-list a:hover {
-  transform: scale(1.02);
-  box-shadow: 0 6px 10px #121212;
-} */
-
-/* Blockquote  
-blockquote {
-  font-style: italic;
-  color: #aaa;
-  /* Light gray for contrast   
-  border-left: 4px solid #00ff88;
-  /* Green border  
-  padding-left: 1rem;
-  margin-top: 2rem;
-}
-
-/* Responsive Design */
+} 
 .navbar {
   display: flex;
   justify-content: space-between;
