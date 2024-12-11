@@ -6,7 +6,9 @@
     <title>Learning Reflection</title>
     <link rel="stylesheet" href="vaish.css">
 </head>
+ 
     <body>
+ 
     <header class="navbar">
         <div class="logo">DAA-PORTFOLIO</div>
         <nav class="menu">
@@ -17,6 +19,10 @@
             <a href="#">Contact</a>
         </nav>
     </header>
+ 
+
+    <!-- Main Content -->
+ 
     <nav class="navbar">
         <ul class="nav-list">
         </ul>
@@ -24,26 +30,23 @@
    <header>
         <h1 style="text-align: center; font-size: 36px; color: #34495e;">Learning Reflection</h1>
    </header> 
-<!-- Main Content -->
+ 
     <main>
-    <ul>
         <section>
-            <h2>1. What are the kinds of problems we see in the nature? (iteration, recursion,
-backtracking)?
-</h2>
+            <h2>1. What are the kinds of problems we see in nature? (iteration, recursion, backtracking)?</h2>
             <ul>
                 <li><b>Recursion:</b> Uncontrolled recursion, like in cancer, can lead to exponential growth.</li>
                 <li><b>Iteration:</b> Iterative cycles can be disrupted by climate change, leading to irregular seasons or extreme weather patterns.</li>
                 <li><b>Backtracking:</b> Migratory species may encounter obstacles and fail to backtrack to alternative routes.</li>
             </ul>
         </section>
-        
+
         <section>
             <h2>2. What is space and time efficiency?</h2>
             <p><b>Space Efficiency:</b> Extra space required by an algorithm.</p>
             <p><b>Time Efficiency:</b> Extra time required by an algorithm.</p>
             <p><b>Why are they Important?</b> Space and time efficiency are vital for building systems that are fast, scalable, and sustainable, ensuring optimal performance across real-world applications.</p>
-            
+
             <h3>Orders of Growth</h3>
             <ul>
                 <li>O(1) - Constant</li>
@@ -68,17 +71,17 @@ backtracking)?
                 <li><b>Merge Sort:</b> Stable and efficient for large dataset sorting.</li>
                 <li><b>Quick Sort:</b> In-place but not stable, efficient for large datasets.</li>
                 <li><b>Heap Sort:</b> In-place but not stable.</li>
-                <li><b>Boyer More Algorithm :</b> Effective for long texts and patterns. And Utilizes pre - computation for optimal performance but requires extra space for preprocessing.</li>
-                <li><b>Kruskal’s algorithm :</b> Requires cycle detection , often implemented using union-find data structure. Suitable for sparse graphs .</li>
-                <li><b>Dijkstra’s algorithm :</b>Provides optimal solutions for single-source shortest paths in directed or undirected graphs .</li>
-                <li><b>Floyd’s algorithm :</b> Based on the principle of Kleene’s Theorem. All pair shortest path algorithm .</li>
-                <li><b>Warshall’s algorithm :</b> Based on the principle of kleen’s theorem. Transitive property algorithm. We can try to make the algorithm run faster by treating matrix as bit strings and employ bitwise operations .</li>
-                <li><b>Prim’s Algorithm :</b> Prim’s is based on edge relaxation principle. Minimum spanning tree algorithm. Falls under the Greedy technique.</li>
+                <li><b>Boyer-Moore Algorithm:</b> Effective for long texts and patterns. Utilizes precomputation for optimal performance but requires extra space for preprocessing.</li>
+                <li><b>Kruskal’s Algorithm:</b> Requires cycle detection, often implemented using union-find data structure. Suitable for sparse graphs.</li>
+                <li><b>Dijkstra’s Algorithm:</b> Provides optimal solutions for single-source shortest paths in directed or undirected graphs.</li>
+                <li><b>Floyd’s Algorithm:</b> Based on the principle of Kleene’s Theorem. All-pairs shortest path algorithm.</li>
+                <li><b>Warshall’s Algorithm:</b> Based on the principle of Kleene’s Theorem. Transitive property algorithm. We can try to make the algorithm run faster by treating the matrix as bit strings and employing bitwise operations.</li>
+                <li><b>Prim’s Algorithm:</b> Based on edge relaxation principle. Minimum spanning tree algorithm. Falls under the Greedy technique.</li>
             </ul>
         </section>
 
         <section>
-            <h2>4.The hierarchical data and how different tree data structures solve and optimize over the problem scenarios (tree, bst, avl, 2-3, red-black, heap, trie)? </h2>
+            <h2>4. The hierarchical data and how different tree data structures solve and optimize over the problem scenarios (tree, BST, AVL, 2-3, red-black, heap, trie)?</h2>
             <ul>
                 <li><b>Tree:</b> Flexible but search or traversal may take O(n) due to lack of ordering or balancing.</li>
                 <li><b>BST:</b> Reduces the complexity of search operations to O(log n) on average by maintaining sorted order.</li>
@@ -89,34 +92,34 @@ backtracking)?
                 <li><b>Trie:</b> Exploits shared prefixes, ideal for large datasets with overlapping entries.</li>
             </ul>
         </section>
-        
+
         <section>
-    <h2>5.The need of array query algorithms and their implications. Their applications and principles need to be discussed.? </h2>
-    <ul>
-        <li><b>Array query algorithms:</b> Fenwick Tree, Segment Tree, Lookup Table.</li>
-        <li>These algorithms are essential for efficiently processing, retrieving, and analyzing data stored in arrays, especially with large datasets or frequently repeated queries.</li>
-        <li><b>Fenwick Tree:</b> 
+            <h2>5. The need for array query algorithms and their implications. Their applications and principles need to be discussed.</h2>
             <ul>
-                <li><b>Principle:</b> Supports efficient range queries and point updates.</li>
-                <li><b>Application:</b> Cumulative frequency counts in online queries.</li>
+                <li><b>Array query algorithms:</b> Fenwick Tree, Segment Tree, Lookup Table.</li>
+                <li>These algorithms are essential for efficiently processing, retrieving, and analyzing data stored in arrays, especially with large datasets or frequently repeated queries.</li>
+                <li><b>Fenwick Tree:</b>
+                    <ul>
+                        <li><b>Principle:</b> Supports efficient range queries and point updates.</li>
+                        <li><b>Application:</b> Cumulative frequency counts in online queries.</li>
+                    </ul>
+                </li>
+                <li><b>Segment Tree:</b>
+                    <ul>
+                        <li><b>Principle:</b> Divides array into segments for range queries and updates.</li>
+                        <li><b>Application:</b> Dynamic histograms.</li>
+                    </ul>
+                </li>
+                <li><b>Lookup Table:</b>
+                    <ul>
+                        <li><b>Principle:</b> Precomputes results for all possible inputs.</li>
+                        <li><b>Application:</b> Collision detection, AI decision trees.</li>
+                    </ul>
+                </li>
             </ul>
-        </li>
-        <li><b>Segment Tree:</b>
-            <ul>
-                <li><b>Principle:</b> Divides array into segments for range queries and updates.</li>
-                <li><b>Application:</b> Dynamic histograms.</li>
-            </ul>
-        </li>
-        <li><b>Lookup Table:</b>
-            <ul>
-                <li><b>Principle:</b> Precomputes results for all possible inputs.</li>
-                <li><b>Application:</b> Collision detection, AI decision trees.</li>
-            </ul>
-        </li>
-    
-    </ul>
-</section>
-<section>
+        </section>
+
+        <section>
             <h2>6. Differentiate between tree and graphs and their traversals. The applications of each.</h2>
             <table>
                 <thead>
@@ -160,34 +163,19 @@ backtracking)?
                     <tr>
                         <td>Cyclic Nature</td>
                         <td>Always acyclic.</td>
-                        <td>Can contain cycles (e.g., directed graphs with loops).</td>
+                                                <td>Can be cyclic or acyclic.</td>
+                    </tr>
+                    <tr>
+                        <td>Applications</td>
+                        <td>Hierarchical structures (e.g., file systems, decision trees), parsing expressions.</td>
+                        <td>Network routing, social networks, web page linking, transportation systems.</td>
                     </tr>
                 </tbody>
             </table>
-
-            <h3>Tree Traversals</h3>
-            <ul>
-                <li><b>Preorder:</b> Visit root → Left subtree → Right subtree.</li>
-                <li><b>Inorder:</b> Visit Left subtree → Root → Right subtree (used in BSTs for sorted order).</li>
-                <li><b>Postorder:</b> Visit Left subtree → Right subtree → Root.</li>
-                <li><b>Level-order:</b> Breadth-first traversal level by level.</li>
-            </ul>
-
-            <h3>Graph Traversals</h3>
-            <ul>
-                <li><b>Depth First Search (DFS)</b></li>
-                <li><b>Breadth First Search (BFS)</b></li>
-            </ul>
-
-            <h3>Applications</h3>
-            <ul>
-                <li><b>Trees:</b> Efficient data storage and retrieval for dynamic datasets.</li>
-                <li><b>Graphs:</b> Modeling user relationships and interactions.</li>
-            </ul>
         </section>
 
         <section>
-            <h2>7. Deliberate on sorting and searching algorithms, the technique behind each and they connect to real world.</h2>
+            <h2>7. Deliberate on sorting and searching algorithms, the technique behind each and their connection to the real world.</h2>
             <table>
                 <thead>
                     <tr>
@@ -259,7 +247,6 @@ backtracking)?
                 <li><b>Brute Force:</b> Try all possible solutions and select the best one.</li>
             </ul>
         </section>
-       </ul> 
     </main>
 
     <footer>
@@ -267,3 +254,4 @@ backtracking)?
     </footer>
 </body>
 </html>
+
