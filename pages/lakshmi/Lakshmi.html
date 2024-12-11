@@ -1,172 +1,83 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DAA-Portfolio</title>
     <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="laksh.css">
 </head>
 <body>
-    <nav class="navbar">
-        <ul class="nav-list">
-            <li><a href="/Portfolio-DAA/index.html">Home</a></li>
-          <li><a href="/Portfolio-DAA/pages/project-intro/project-intro.html">Project Introduction</a></li>
-          <li><a href="/Portfolio-DAA/pages/learning-refl/learning-reflection.html">Learning Reflections</a></li>
-        </ul>
-      </nav>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   
-    </style>
-</head>
-<body>
-    <h2>1. Problems in Nature</h2>
-    <h3>Iteration</h3>
-    <ul>
-        <li>Spider web</li>
-        <li>Social media feeds</li>
-        <li>Bee hive</li>
-    </ul>
-    <h3>Recursion</h3>
-    <ul>
-        <li>Petal arrangement in flowers</li>
-        <li>Sea shell arrangements</li>
-        <li>Food chain</li>
-    </ul>
-    <h3>Backtracking</h3>
-    <ul>
-        <li>Beaver dam construction</li>
-        <li>Crossword puzzles</li>
-    </ul>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">DAA-PORTFOLIO</div>
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="/Portfolio-DAA/assets/project-description.pdf" target="_blank">Project Description</a>
+            <a href="/Portfolio-DAA/pages/lakshmi/intro/index.html">Learning Reflections</a>
+            <a href="/Portfolio-DAA/contact.html">Contact</a>
+        </nav>
+    </header>
 
-    <h2>2. Time and Space Efficiency</h2>
-    <p><strong>Time efficiency:</strong> Amount of time an algorithm takes to execute as a function of the input size.</p>
-    <p><strong>Space efficiency:</strong> Amount of memory or storage an algorithm requires during execution.</p>
-    <p><strong>Importance:</strong> Ensures algorithms run quickly and use minimal resources. Time efficiency improves performance and user experience, while space efficiency is crucial in memory-constrained environments.</p>
+    <!-- Main Content -->
+    <div class="content">
+        <div class="text-section">  
+            <h1><b>Hello, Welcome to our Vision!..</b></h1>
+            <h2>I'm Lakshmi - An Enthusiastic analyser and a deemed learner</h2>
+            <p>Being a student  at KLE Technological University,my utmost privilege is to explore and emerge with the learnings by counterparting them with the real world. Embracing the esteemed courtesy to enlighten the learning process by the motto of creating the solutions by tackling hurdles and the projects are doorsteps to the mission. .</p>
+            <ul>
+                <li id="project-intro">
+                    <h2>Plunge into the smart cities</h2>
+                    <p>
+                        This project focuses on transforming and building the smart city by embedding the intelligence and connectivity into their core infrastructure. Every difficiencies and difficulties are tackled and resolved to emphasize the seamless integration of smart solutions in transportation ,energy,to build a future ready urban ecosystem .this is an array of hope for generations to approach at a solution in a smarter way. 
+                    </p>
+                </li>
+                <li>
+                    <div class="intro">
+                        <div class="i1">
+                            <p class="first"><b>"ANANDNAGARI"-THE CITY OF JOY</b><br>
+                               <i>Anandnagari</i>, a visionray smart city where technology meets tranquility to create ultimate urban experience. its not just a city but an ecosystem embodied by intelligent transport networks ,dwelling areas,efficient energy solutions. Anandanagari is a testament to cuttingedge advancementsintegrated with nature.the total area we considered is 1500sq.km.and here is how it's divided based on requirements.
+                            </p>
+                            <table>
+                                <caption>City Development Allocation</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Category</th>
+                                        <th>Percentage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Residence</td><td>35%</td></tr>
+                                    <tr><td>Commercial</td><td>10%</td></tr>
+                                    <tr><td>Industries</td><td>10%</td></tr>
+                                    <tr><td>Green Space</td><td>5%</td></tr>
+                                    <tr><td>Social</td><td>10%</td></tr>
+                                    <tr><td>Agriculture</td><td>10%</td></tr>
+                                    <tr><td>Transport</td><td>10%</td></tr>
+                                    <tr><td>Tourism</td><td>10%</td></tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr><th colspan="2">Approximate Budget: ₹7,90,000 Cr</th></tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                    
+            <a href="/Portfolio-DAA/pages/lakshmi/intro/index.html">Learning Reflections</a>
+                     <h2>Here is the overview of Business case analaysis</h2>
+                    <a href="/Portfolio-DAA/pages/lakshmi/business.html">Business cases </a>
+        </div>
+        <div class="image-section">
+            <img src="/Portfolio-DAA/assets/intro.jpg" alt="Developer Profile">
+        </div>
+    </div>
 
-    <h3>Classes of Problems</h3>
-    <ul>
-        <li>Constant: O(1)</li>
-        <li>Logarithmic: O(log(n))</li>
-        <li>Linear: O(n)</li>
-        <li>Quadratic: O(n²)</li>
-        <li>Cubic: O(n³)</li>
-        <li>Exponential: O(2ⁿ)</li>
-        <li>Factorial: O(n!)</li>
-    </ul>
-
-    <h3>Orders of Growth</h3>
-    <ul>
-        <li><strong>Best case:</strong> Minimum time required under optimal conditions.</li>
-        <li><strong>Average case:</strong> Expected time over all possible inputs.</li>
-        <li><strong>Worst case:</strong> Maximum time required.</li>
-    </ul>
-
-    <h2>3. Sorting Algorithms</h2>
-    <ul>
-        <li><strong>Bubble Sort:</strong> Repeatedly swaps adjacent elements. Inefficient with O(n²) time complexity.</li>
-        <li><strong>Selection Sort:</strong> Selects the smallest (or largest) element and places it in its correct position. O(n²) time complexity.</li>
-        <li><strong>Merge Sort:</strong> Divides, recursively sorts, and merges. O(n log n) time complexity.</li>
-        <li><strong>Quick Sort:</strong> Divides the array around a pivot and recursively sorts. Average time complexity O(n log n).</li>
-        <li><strong>Insertion Sort:</strong> Builds the sorted array one element at a time. Efficient for small or nearly sorted data. O(n²) time complexity.</li>
-        <li><strong>Heap Sort:</strong> Uses a binary heap to repeatedly extract the largest element. O(n log n) time complexity.</li>
-    </ul>
-
-    <h3>Graph Algorithms</h3>
-    <ul>
-        <li><strong>Boyer-Moore Algorithm:</strong> Efficient string-searching algorithm.</li>
-        <li><strong>Kruskal’s Algorithm:</strong> Finds minimum spanning trees using a union-find structure.</li>
-        <li><strong>Dijkstra’s Algorithm:</strong> Finds the shortest paths using a priority queue.</li>
-        <li><strong>Floyd-Warshall Algorithm:</strong> Computes shortest paths between all pairs. O(n³) time complexity.</li>
-        <li><strong>Prim’s Algorithm:</strong> Builds a minimum spanning tree by growing the tree.</li>
-    </ul>
-
-    <h2>4. Hierarchical Data Representation</h2>
-    <ul>
-        <li><strong>Tree:</strong> General structure for hierarchies.</li>
-        <li><strong>Binary Search Tree (BST):</strong> Maintains sorted order. O(log n) average-case operations.</li>
-        <li><strong>AVL Tree:</strong> Guarantees O(log n) operations through balancing.</li>
-        <li><strong>2-3 Tree:</strong> Balanced multiway search tree with predictable O(log n) performance.</li>
-        <li><strong>Red-Black Tree:</strong> Self-balancing BST with efficient O(log n) operations.</li>
-        <li><strong>Heap:</strong> Efficient for priority management with O(1) min/max access.</li>
-        <li><strong>Trie:</strong> Fast prefix-based searches. O(n) complexity.</li>
-    </ul>
-
-    <h2>5. Array Query Algorithms</h2>
-    <p><strong>Need:</strong> Quickly answer questions about array data.</p>
-    <p><strong>Implications:</strong> Handle big datasets efficiently, crucial for gaming, data analysis, and real-time systems.</p>
-    <p><strong>Principles:</strong> Store extra data and split arrays for faster processing.</p>
-    <p><strong>Applications:</strong> Range queries for sum, max, min; fast updates.</p>
-
-    <h2>6. Difference Between Tree and Graph</h2>
-    <ul>
-        <li>Trees are hierarchical with no cycles.</li>
-        <li>Graphs can have cycles and multiple connections.</li>
-        <li>Trees have exactly one path between two nodes; graphs can have multiple paths.</li>
-        <li>A tree with n nodes has n-1 edges; graphs can have any number of edges.</li>
-    </ul>
-
-    <h3>Traversals</h3>
-    <ul>
-        <li><strong>Tree Traversals:</strong> Inorder, Preorder, Postorder</li>
-        <li><strong>Graph Traversals:</strong> Depth-First Search (DFS), Breadth-First Search (BFS)</li>
-    </ul>
-
-    <h3>Applications</h3>
-    <ul>
-        <li><strong>Trees:</strong> BST for efficient searching, Heap for priority queues, Trie for fast prefix searches.</li>
-        <li><strong>Graphs:</strong> Shortest path algorithms for navigation, network flow, cycle detection.</li>
-    </ul>
-
-    <h2>7.Sorting Algorithms</h2>
-    <ul>
-        <li><strong>Bubble Sort:</strong> Repeatedly swaps adjacent elements if they are in the wrong order.<br>
-            <em>Use case:</em> Used in small lists and educational tools.
-        </li>
-        <li><strong>Quick Sort:</strong> Picks a pivot and partitions the data; recursively sorts.<br>
-            <em>Use case:</em> Used in database sorting.
-        </li>
-        <li><strong>Merge Sort:</strong> Divides and merges sorted halves recursively.<br>
-            <em>Use case:</em> Ideal for large data or external sorting (e.g., sorting files).
-        </li>
-        <li><strong>Insertion Sort:</strong> Builds a sorted array by inserting elements in order.<br>
-            <em>Use case:</em> Efficient for small or nearly sorted datasets.
-        </li>
-        <li><strong>Heap Sort:</strong> Converts an array into a heap and extracts the largest elements.<br>
-            <em>Use case:</em> Used in priority queues (e.g., task rescheduling).
-        </li>
-    </ul>
-
-    <h2>Searching Algorithms</h2>
-    <ul>
-        <li><strong>Linear Search:</strong> Checks each element one by one.</li>
-        <li><strong>Binary Search:</strong> Divides the sorted array in half and checks the middle element.</li>
-        <li><strong>Hashing:</strong> Uses a hash function to map data to a specific index.</li>
-    </ul>
-    <p><strong>Importance of Searching:</strong> Searching helps quickly find information in large datasets (e.g., searching for products in an online store).</p>
-
-    <h2>8. Spanning Trees and Shortest Paths</h2>
-    <ul>
-    <h3>Spanning Tree</h3>
-    <p>Connect all vertices with minimum edges and no cycles.</p>
-    <p><strong>Importance:</strong> Used in network design and distributed systems.</p>
-    <p><strong>Algorithms:</strong> Kruskal’s, Prim’s</p>
-
-    <h3>Shortest Paths</h3>
-    <p>Find the minimum weight path between vertices.</p>
-    <p><strong>Importance:</strong> Used in navigation, optimization, AI pathfinding.</p>
-    <p><strong>Algorithm:</strong> Dijkstra’s</p>
-<ul>
-<h2>9.different studied algorithms design techniques</h2>
-  <ul>
-    <li><strong>Brute Force:</strong> Tries all solutions; guarantees correctness but inefficient.</li>
-    <li><strong>Divide and Conquer:</strong> Divides into subproblems, solves recursively, and combines (e.g., Merge Sort, Quick Sort).</li>
-    <li><strong>Dynamic Programming:</strong> Solves overlapping subproblems and stores results (e.g., Fibonacci, Knapsack).</li>
-    <li><strong>Backtracking:</strong> Explores all possibilities and abandons invalid solutions (e.g., N-Queens).</li>
-    <li><strong>Approximation Algorithms:</strong> Finds near-optimal solutions (e.g., Vertex Cover).</li>
-  </ul>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Course Reflection and Project</p>
+    </footer>
 </body>
 </html>

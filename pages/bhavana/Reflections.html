@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures and Algorithms Summary</title>    
+    <link rel="stylesheet" href="bhav.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="/Portfolio-DAA/index.html">Home</a></li>
+          <li><a href="/Portfolio-DAA/pages/project-intro/project-intro.html">Project Introduction</a></li>
+          <li><a href="/Portfolio-DAA/pages/learning-refl/learning-reflection.html">Learning Reflections</a></li>
+        </ul>
+      </nav>
+ 
+  <main>
+      <section>
+    <h1>Data Structures and Algorithms Summary</h1>
+
+    <h2>1. Problems in Nature</h2>
+    <ul>
+        <li><strong>Iteration</strong> (repeating a process): Growth of trees, water cycle, migration of birds.</li>
+        <li><strong>Recursion</strong> (output becomes input for the next step): Mountain ranges, blood vessels.</li>
+        <li><strong>Backtracking</strong> (revisiting previous steps): Bees searching for flowers (pollination).</li>
+    </ul>
+
+    <h2>2. Space and Time Efficiency</h2>
+    <p><strong>Space Efficiency</strong>: Refers to the extra memory an algorithm uses.</p>
+    <p><strong>Time Efficiency</strong>: Refers to the time an algorithm takes to run.</p>
+    <p><strong>Order of Growth</strong>:</p>
+    <ul>
+        <li>O(1) - Constant</li>
+        <li>O(n) - Linear</li>
+        <li>O(n^3) - Cubic</li>
+        <li>O(log n) - Logarithmic</li>
+        <li>O(n^2) - Quadratic</li>
+        <li>O(n log n) - Linearithmic</li>
+        <li>O(n^k) - Polynomial</li>
+        <li>O(2^n) - Exponential</li>
+        <li>O(n!) - Factorial</li>
+    </ul>
+
+    <h2>3. Design Principles (from Chapter 2)</h2>
+    <p>Sorting algorithms aim to reduce the number of comparisons, which is similar to graph algorithms where we aim to minimize operations like pathfinding or traversing.</p>
+
+    <h2>4. Tree Data Structures</h2>
+    <ul>
+        <li><strong>Tree</strong>: Level-order traversal (breadth-first).</li>
+        <li><strong>BST (Binary Search Tree)</strong>: Left child < root < right child.</li>
+        <li><strong>AVL</strong>: Self-balancing with rotations to keep height balanced.</li>
+        <li><strong>2-3 Tree</strong>: A variant of BST where nodes can have two or three children.</li>
+        <li><strong>Red-Black Tree</strong>: A balanced binary tree where the root is always black, and red nodes have specific properties to maintain balance.</li>
+        <li><strong>Heap</strong>: A binary tree that satisfies the heap property (parent nodes are either greater or smaller than their children).</li>
+        <li><strong>Trie</strong>: A tree-like structure used for storing words in a way that allows fast lookup based on prefixes.</li>
+    </ul>
+
+    <h2>5. Array Query Algorithms</h2>
+    <p>These algorithms are used when data is small and static, making them ideal for quick lookup operations in static datasets.</p>
+
+    <h2>6. Difference Between Tree and Graph Traversals</h2>
+    <ul>
+        <li><strong>Tree</strong>: Has a clear hierarchical structure with no cycles. Traversal methods include pre-order, in-order, post-order, and level-order.</li>
+        <li><strong>Graph</strong>: Can have cycles and complex structures. Traversal methods include DFS and BFS.</li>
+        <li><strong>Applications</strong>:
+            <ul>
+                <li><strong>Tree</strong>: Hierarchical data, file systems, decision trees.</li>
+                <li><strong>Graph</strong>: Networks, social connections, pathfinding.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>7. Sorting and Searching Algorithms</h2>
+    <ul>
+        <li><strong>Bubble Sort</strong>: Repeatedly compares and swaps adjacent elements. (Time Complexity: O(n^2))</li>
+        <li><strong>Quick Sort</strong>: Divides the list and sorts partitions recursively. (Time Complexity: O(n log n))</li>
+        <li><strong>Merge Sort</strong>: Divides and merges sorted sublists. (Time Complexity: O(n log n))</li>
+        <li><strong>Heap Sort</strong>: Builds a heap and extracts the root repeatedly. (Time Complexity: O(n log n))</li>
+        <li><strong>Selection Sort</strong>: Finds the smallest element and places it in the correct position. (Time Complexity: O(n^2))</li>
+    </ul>
+
+    <h2>8. Graph Algorithms</h2>
+    <ul>
+        <li><strong>Dijkstra’s Algorithm</strong>: Finds the shortest path with non-negative weights.</li>
+        <li><strong>Bellman-Ford Algorithm</strong>: Handles negative weights in shortest path problems.</li>
+        <li><strong>Warshall’s Algorithm</strong>: Computes all-pairs shortest paths.</li>
+        <li><strong>Kruskal’s Algorithm</strong>: Builds a minimum spanning tree (MST) by adding edges one by one.</li>
+        <li><strong>Prim’s Algorithm</strong>: Builds MST by adding the smallest edge that connects to the tree.</li>
+    </ul>
+
+    <h2>9. Algorithm Design Techniques</h2>
+    <ul>
+        <li><strong>Brute Force</strong>: Try all possible solutions and select the best one.</li>
+        <li><strong>Divide and Conquer</strong>: Break a problem into smaller subproblems, solve them, and combine the results.</li>
+        <li><strong>Greedy Algorithm</strong>: Make locally optimal choices, like in Kruskal’s or Prim’s algorithms.</li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>

@@ -1,165 +1,200 @@
+body {
+  background-color: #121212;
+   color: white;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
+ 
 .navbar {
-    position: sticky;
-    top: 0;
-    background-color: #EEDECE;
-    width: 100%;
-    z-index: 1000;
-    padding: 0.5rem 1rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;   
+  background-color: #121212;  
+  z-index: 1000;   
+}
+.navbar a {
+  color: #00ff88;
+  text-decoration: none;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+.navbar .nav-items {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-items li {
+  margin: 0 10px;
+}
 
  
-  
-  .nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-list li {
-    margin: 0;
-    color: #EEDECE;
-    list-style: none;
-  }
-  
-  .nav-list a {
-    text-decoration: none;
-    color: FB5235;
-    padding: 0.5rem 1rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .nav-list a:hover {
-    transform: scale(1.02);  
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);  
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-  
-  .content {
-    padding: 2rem;
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  
-  body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 20px; /* Adding padding to the body to prevent sticking at the top */
-    min-height: 100vh;
-  }
-  
-  /* Main Container */
-  section {
-    align-content: center;
-    background-color: #EEDECE;
-    padding: 2rem;
-    width: 100%;
-    max-width: 1200px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin-left: 18%;
-    margin-top: 30px; /* Adding margin to ensure there's space from the top */
-  }
-  
-  /* Header */
-  header {
-    background-color: #FB5235;
-    color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    margin-bottom: 1.5rem;
-  }
-  
-  header h1 {
-    font-size: 2rem;
-    margin: 0;
-  }
-  
-  header p {
-    margin: 1rem 0 0;
-  }
-  
-  /* Section Titles */
-  h2 {
-    color: #3D90D2;
-    margin-bottom: 1rem;
-  }
-  
-  /* List Items */
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  ul li {
-    /* background-color: #e7f7e7; */
-    margin-bottom: 0.5rem;
-    padding: 0.75rem;
-    border-radius: 5px;
-  }
+h1, h2 {
+  color: #00ff88;  /* Green color for headings */
+}
+
  
- 
-  a {
-    color:black;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Definition List */
-  dl dt {
-    font-weight: bold;
-    color: #333;
-    margin-top: 1rem;
-  }
-  
-  dl dd {
-    margin-left: 1.5rem;
-    color: #666;
-  }
-  
-  /* Blockquote */
-  blockquote {
-    font-style: italic;
-    color: #555;
-    border-left: 4px solid #4CAF50;
-    padding-left: 1rem;
-    margin-top: 2rem;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 600px) {
-    section {
-        padding: 1.5rem;
-    }
-  
-    header {
-        padding: 1.5rem;
-    }
-  }
-  .first{
-    text-align:justify;
-  text-justify:inter-word;
-  }
-  .new{
-    color: #555;
-  }
- 
-  
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.menu a:hover {
+  background-color: #444;
+  color: #00ff88;
+}
+
+/* Content Section */
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px; /* To avoid content overlap with navbar */
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.text-section {
+  flex: 1;
+  margin-right: 20px;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+}
+
+.text-section h1, .text-section h2 {
+  margin-bottom: 15px;
+}
+
+.text-section p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 20px;
+}
+
+ul li h2 {
+  margin-bottom: 10px;
+}
+
+.intro {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 255, 136, 0.5);
+}
+
+.i1 {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table caption {
+  font-size: 20px;
+  color: #00ff88;
+  margin-bottom: 10px;
+}
+
+table th, table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+table th {
+  background-color: #222;
+}
+
+table td {
+  background-color: #333;
+}
+
+tfoot th {
+  text-align: center;
+  background-color: #444;
+  color: #00ff88;
+  padding: 10px;
+}
+
+/* Button Styles */
+.cta-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #00ff88;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: limegreen;
+  color: white;
+}
+
+/* Image Section */
+.image-section {
+  flex: 1;
+  max-width: 500px;
+  margin-left: 20px;
+}
+
+.image-section img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  margin-top: 40px;
+}
