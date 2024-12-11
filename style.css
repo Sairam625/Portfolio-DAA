@@ -106,13 +106,12 @@ ul li {
   padding: 0.75rem;
   border-radius: 5px;
 }
-
-/* Navbar */
+/* Navbar 
 .navbar {
   position: sticky;
   top: 0;
   background-color: #121212;
-  /* Darker navbar background */
+  /* Darker navbar background 
   width: 100%;
   z-index: 1000;
   padding: 0.5rem 1rem;
@@ -130,7 +129,7 @@ ul li {
 
 .nav-list a {
   color: #00ff88;
-  /* Green for navbar links */
+  /* Green for navbar links  
   padding: 0.5rem 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -138,20 +137,58 @@ ul li {
 .nav-list a:hover {
   transform: scale(1.02);
   box-shadow: 0 6px 10px #121212;
-}
+} */
 
-/* Blockquote */
+/* Blockquote  
 blockquote {
   font-style: italic;
   color: #aaa;
-  /* Light gray for contrast */
+  /* Light gray for contrast   
   border-left: 4px solid #00ff88;
-  /* Green border */
+  /* Green border  
   padding-left: 1rem;
   margin-top: 2rem;
 }
 
 /* Responsive Design */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: #121212;
+  padding: 10px 20px;
+  z-index: 1000;
+  border-bottom: 2px solid #00ff88;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00ff88;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #00ff88;
+}
+
+/* Main Content */
+.content {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin: 50px 0;
+  flex-wrap: wrap;
+  text-align: justify;
+}
 @media (max-width: 600px) {
   section {
     padding: 1.5rem;
