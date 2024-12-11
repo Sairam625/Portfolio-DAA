@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Modes Ticketing System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .mode-section {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Multiple Modes Ticketing System</h1>
+        <div>
+            <label for="sortBy">Sort tickets by:</label>
+            <select id="sortBy">
+                <option value="price">Price</option>
+                <option value="time">Time</option>
+            </select>
+            <button onclick="sortTickets()">Sort</button>
+        </div>
+        <div id="tickets"></div>
+    </div>
+
+    <script>
+        // Sample ticket data for bus, metro, and train
+        const tickets = {
+            bus: [
+                { route: "Bus A", price: 5, time: 15 },
+                { route: "Bus B", price: 3, time: 10 },
+                { route: "Bus C", price: 7, time: 20 }
+            ],
+            metro: [
+                { route: "Metro X", price: 10, time: 5 },
+                { route: "Metro Y", price: 8, time: 6 },
+                { route: "Metro Z", price: 12, time: 4 }
+            ],
+            train: [
+                { route: "Train 1", price: 15, time: 30 },
+                { route: "Train 2", price: 20, time: 25 },
+                { route: "Train 3", price: 18, time: 35 }
+            ]
+        };
+
+        // Merge Sort Algorithm
+        function mergeSort(arr, key) {
+            if (arr.length <= 1) return arr;
+            const mid = Math.floor(arr.length / 2);
+            const left = mergeSort(arr.slice(0, mid), key);
+            const right = mergeSort(arr.slice(mid), key);
+
+            return merge(left, right, key);
+        }
+
+        function merge(left, right, key) {
+            const result = [];
+            let i = 0, j = 0;
+            while (i < left.length && j < right.length) {
+                if (left[i][key] < right[j][key]) {
+                    result.push(left[i]);
+                    i++;
+                } else {
+                    result.push(right[j]);
+                    j++;
+                }
+            }
+            return result.concat(left.slice(i)).concat(right.slice(j));
+        }
+
+        // Display tickets
+        function displayTickets(sortedTickets) {
+            const container = document.getElementById("tickets");
+            container.innerHTML = "";
+
+            for (const mode in sortedTickets) {
+                const section = document.createElement("div");
+                section.classList.add("mode-section");
+
+                const title = document.createElement("h2");
+                title.textContent = `${mode.charAt(0).toUpperCase() + mode.slice(1)} Tickets`;
+                section.appendChild(title);
+
+                const table = document.createElement("table");
+                const thead = document.createElement("thead");
+                thead.innerHTML = `<tr><th>Route</th><th>Price</th><th>Time</th></tr>`;
+                table.appendChild(thead);
+
+                const tbody = document.createElement("tbody");
+                sortedTickets[mode].forEach(ticket => {
+                    const row = document.createElement("tr");
+                    row.innerHTML = `<td>${ticket.route}</td><td>${ticket.price}</td><td>${ticket.time}</td>`;
+                    tbody.appendChild(row);
+                });
+                table.appendChild(tbody);
+
+                section.appendChild(table);
+                container.appendChild(section);
+            }
+        }
+
+        // Sort tickets and update display
+        function sortTickets() {
+            const sortBy = document.getElementById("sortBy").value;
+            const sortedTickets = {};
+
+            for (const mode in tickets) {
+                sortedTickets[mode] = mergeSort(tickets[mode], sortBy);
+            }
+
+            displayTickets(sortedTickets);
+        }
+
+        // Initial display
+        sortTickets();
+    </script>
+</body>
+</html>
 
