@@ -8,19 +8,15 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #121212;
-  /* Black background */
   color: #fff;
-  /* White text */
   margin: 0;
   padding: 20px;
   line-height: 1.6;
   min-height: 100vh;
 }
 
-
 section {
   background-color: #121212;
-  /* Dark gray for contrast */
   padding: 2rem;
   width: 100%;
   max-width: 1200px;
@@ -28,7 +24,6 @@ section {
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
   color: #fff;
-  /* Ensure section text is white */
 }
 
 table {
@@ -39,9 +34,7 @@ table {
 /* Header */
 header {
   background-color: #121212;
-  /* Darker background for header */
   color: #00ff88;
-  /* Green for headings */
   padding: 2rem;
   border-radius: 8px;
   margin-bottom: 1.5rem;
@@ -67,7 +60,6 @@ li {
 h1,
 h2 {
   color: #00ff88;
-  /* Green headings */
   font-size: 50px;
 }
 
@@ -83,7 +75,6 @@ a {
   font-size: 1em;
   margin: 0;
   color: #fff;
-  /* White text for paragraphs and links */
 }
 
 a {
@@ -105,7 +96,8 @@ ul li {
   margin-bottom: 0.5rem;
   padding: 0.75rem;
   border-radius: 5px;
-} 
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -139,18 +131,33 @@ ul li {
 .content {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   margin: 50px 0;
   flex-wrap: wrap;
   text-align: justify;
 }
-@media (max-width: 600px) {
+
+/* Responsive Design */
+@media (max-width: 768px) {
   section {
-    padding: 1.5rem;
+      padding: 1.5rem;
   }
 
   header {
-    padding: 1.5rem;
+      padding: 1.5rem;
+  }
+
+  .content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .team-container {
+      flex-wrap: wrap;
+      align-items: center;
+  }
+
+  .team-member {
+      margin-bottom: 20px;
   }
 }
 
@@ -190,7 +197,6 @@ ul li {
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #121212;
-
 }
 
 .name {
@@ -199,7 +205,6 @@ ul li {
   font-weight: bold;
   color: #121212;
 }
-
 
 .USN {
   text-align: center;
@@ -236,4 +241,3 @@ ul li {
 .navbar .nav-items li {
   margin: 0 10px;
 }
- 
