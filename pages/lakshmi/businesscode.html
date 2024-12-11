@@ -48,7 +48,7 @@
     </div>
 
     <script>
-        // Sample ticket data for bus, metro, and train
+      
         const tickets = {
             bus: [
                 { route: "Bus A", price: 5, time: 15 },
@@ -92,7 +92,7 @@
             return result.concat(left.slice(i)).concat(right.slice(j));
         }
 
-        // Display tickets
+    
         function displayTickets(sortedTickets) {
             const container = document.getElementById("tickets");
             container.innerHTML = "";
@@ -123,7 +123,7 @@
             }
         }
 
-        // Sort tickets and update display
+        
         function sortTickets() {
             const sortBy = document.getElementById("sortBy").value;
             const sortedTickets = {};
@@ -135,7 +135,7 @@
             displayTickets(sortedTickets);
         }
 
-        // Initial display
+        
         sortTickets();
     </script>
 </body>
