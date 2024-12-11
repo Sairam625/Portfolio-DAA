@@ -184,7 +184,7 @@ ul li {
 }
 .team-member:hover {
   background-color: #00dd77; 
-  transform: scale(5.2); 
+  transform: scale(1.1); 
   box-shadow: 0 10px 15px rgba(214, 0, 0, 0.2); 
 }
 
