@@ -8,8 +8,8 @@ body, h1, h2, p, a, table {
 /* Body */
 body {
     font-family: 'Roboto', sans-serif;
-    color: #1a1a2e; /* Dark Navy */
-    background-color: #e8f6f3; /* Soft Teal */
+    color: #2c2c2c; /* Neutral Gray */
+    background-color: #f5f5f5; /* Light Gray */
 }
 
 /* Navbar */
@@ -19,16 +19,16 @@ body {
     align-items: center;
     position: sticky;
     top: 0;
-    background-color: #162447; /* Deep Purple */
+    background-color: #5d4037; /* Deep Brown */
     padding: 10px 20px;
     z-index: 1000;
-    border-bottom: 2px solid #e94560; /* Vibrant Pink */
+    border-bottom: 2px solid #8d6e63; /* Soft Brown */
 }
 
 .navbar .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #e94560; /* Vibrant Pink */
+    color: #d7ccc8; /* Beige */
 }
 
 .menu {
@@ -39,14 +39,14 @@ body {
 }
 
 .navbar a {
-    color: #e8f6f3; /* Soft Teal */
+    color: #d7ccc8; /* Beige */
     text-decoration: none;
     padding: 10px 15px;
     transition: color 0.3s;
 }
 
 .navbar a:hover {
-    color: #e94560; /* Vibrant Pink */
+    color: #8d6e63; /* Soft Brown */
 }
 
 /* Main Content */
@@ -65,14 +65,14 @@ body {
 
 .text-section h1 {
     font-size: 48px;
-    color: #1a1a2e; /* Dark Navy */
+    color: #5d4037; /* Deep Brown */
     margin-bottom: 10px;
 }
 
 .text-section h2 {
     font-size: 32px;
     margin: 15px 0;
-    color: #e94560; /* Vibrant Pink */
+    color: #8d6e63; /* Soft Brown */
 }
 
 .text-section p {
@@ -84,8 +84,8 @@ body {
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #e94560; /* Vibrant Pink */
-    color: #e8f6f3; /* Soft Teal */
+    background-color: #8d6e63; /* Soft Brown */
+    color: #ffffff; /* White */
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
@@ -93,7 +93,7 @@ body {
 }
 
 .cta-button:hover {
-    background-color: #a21d45; /* Deep Pink */
+    background-color: #5d4037; /* Deep Brown */
 }
 
 .image-section img {
@@ -112,22 +112,22 @@ table {
 table th, table td {
     padding: 10px;
     text-align: left;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc; /* Light Gray Border */
 }
 
 table caption {
     font-size: 24px;
     font-weight: bold;
-    color: #162447; /* Deep Purple */
+    color: #5d4037; /* Deep Brown */
 }
 
 table thead {
-    background-color: #e94560; /* Vibrant Pink */
-    color: #fff;
+    background-color: #8d6e63; /* Soft Brown */
+    color: #ffffff; /* White */
 }
 
 table tbody tr:nth-child(even) {
-    background-color: #f3f4f6; /* Light Gray */
+    background-color: #f7ebe1; /* Light Beige */
 }
 
 /* Media Queries for Mobile */
@@ -156,4 +156,3 @@ table tbody tr:nth-child(even) {
         margin-top: 20px;
     }
 }
-
