@@ -51,7 +51,9 @@ body {
 .content {
     display: flex;
     justify-content: space-between;
-    margin: 50px 0;
+    margin: 50px auto;
+    width: calc(100% - 40px); /* Leave 20px margin on each side */
+    max-width: 1200px; 
     flex-wrap: wrap;
     text-align: justify;
 }
@@ -133,6 +135,7 @@ table tbody tr:nth-child(even) {
     .content {
         flex-direction: column;
         text-align: center;
+        width: calc(100%-20px);
     }
 
     .text-section, .image-section {
