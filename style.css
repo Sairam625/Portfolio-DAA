@@ -182,6 +182,11 @@ ul li {
   width: 200px;
   text-align: center;
 }
+.team-member:hover {
+  background-color: #00dd77; 
+  transform: scale(5.2); 
+  box-shadow: 0 10px 15px rgba(214, 0, 0, 0.2); 
+}
 
 .heading {
   position: sticky;
