@@ -1,143 +1,146 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multiple Modes Ticketing System</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+
+using namespace std;
+
+struct Ticket {
+    string route;
+    int price;
+    int time;
+};
+
+// Merge Sort implementation
+void merge(vector<Ticket>& tickets, int left, int mid, int right, string key) {
+    int n1 = mid - left + 1;
+    int n2 = right - mid;
+
+    vector<Ticket> L(n1), R(n2);
+    for (int i = 0; i < n1; ++i)
+        L[i] = tickets[left + i];
+    for (int j = 0; j < n2; ++j)
+        R[j] = tickets[mid + 1 + j];
+
+    int i = 0, j = 0, k = left;
+    while (i < n1 && j < n2) {
+        if ((key == "price" && L[i].price <= R[j].price) || (key == "time" && L[i].time <= R[j].time)) {
+            tickets[k] = L[i];
+            ++i;
+        } else {
+            tickets[k] = R[j];
+            ++j;
         }
-        .container {
-            max-width: 800px;
-            margin: auto;
+        ++k;
+    }
+
+    while (i < n1) {
+        tickets[k] = L[i];
+        ++i;
+        ++k;
+    }
+
+    while (j < n2) {
+        tickets[k] = R[j];
+        ++j;
+        ++k;
+    }
+}
+
+void mergeSort(vector<Ticket>& tickets, int left, int right, string key) {
+    if (left < right) {
+        int mid = left + (right - left) / 2;
+        mergeSort(tickets, left, mid, key);
+        mergeSort(tickets, mid + 1, right, key);
+        merge(tickets, left, mid, right, key);
+    }
+}
+
+// Quick Sort implementation
+int partition(vector<Ticket>& tickets, int low, int high, string key) {
+    Ticket pivot = tickets[high];
+    int i = low - 1;
+
+    for (int j = low; j <= high - 1; ++j) {
+        if ((key == "price" && tickets[j].price < pivot.price) || (key == "time" && tickets[j].time < pivot.time)) {
+            ++i;
+            swap(tickets[i], tickets[j]);
         }
-        .mode-section {
-            margin-bottom: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        th, td {
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Multiple Modes Ticketing System</h1>
-        <div>
-            <label for="sortBy">Sort tickets by:</label>
-            <select id="sortBy">
-                <option value="price">Price</option>
-                <option value="time">Time</option>
-            </select>
-            <button onclick="sortTickets()">Sort</button>
-        </div>
-        <div id="tickets"></div>
-    </div>
+    }
+    swap(tickets[i + 1], tickets[high]);
+    return i + 1;
+}
 
-    <script>
-      
-        const tickets = {
-            bus: [
-                { route: "Bus A", price: 5, time: 15 },
-                { route: "Bus B", price: 3, time: 10 },
-                { route: "Bus C", price: 7, time: 20 }
-            ],
-            metro: [
-                { route: "Metro X", price: 10, time: 5 },
-                { route: "Metro Y", price: 8, time: 6 },
-                { route: "Metro Z", price: 12, time: 4 }
-            ],
-            train: [
-                { route: "Train 1", price: 15, time: 30 },
-                { route: "Train 2", price: 20, time: 25 },
-                { route: "Train 3", price: 18, time: 35 }
-            ]
-        };
+void quickSort(vector<Ticket>& tickets, int low, int high, string key) {
+    if (low < high) {
+        int pi = partition(tickets, low, high, key);
+        quickSort(tickets, low, pi - 1, key);
+        quickSort(tickets, pi + 1, high, key);
+    }
+}
 
-        // Merge Sort Algorithm
-        function mergeSort(arr, key) {
-            if (arr.length <= 1) return arr;
-            const mid = Math.floor(arr.length / 2);
-            const left = mergeSort(arr.slice(0, mid), key);
-            const right = mergeSort(arr.slice(mid), key);
 
-            return merge(left, right, key);
-        }
+void displayTickets(const vector<Ticket>& tickets) {
+    for (const auto& ticket : tickets) {
+        cout << "Route: " << ticket.route << ", Price: " << ticket.price << ", Time: " << ticket.time << " minutes" << endl;
+    }
+}
 
-        function merge(left, right, key) {
-            const result = [];
-            let i = 0, j = 0;
-            while (i < left.length && j < right.length) {
-                if (left[i][key] < right[j][key]) {
-                    result.push(left[i]);
-                    i++;
-                } else {
-                    result.push(right[j]);
-                    j++;
-                }
-            }
-            return result.concat(left.slice(i)).concat(right.slice(j));
-        }
+int main() {
+    vector<Ticket> busTickets = {
+        {"Bus A", 5, 15},
+        {"Bus B", 3, 10},
+        {"Bus C", 7, 20}
+    };
 
-    
-        function displayTickets(sortedTickets) {
-            const container = document.getElementById("tickets");
-            container.innerHTML = "";
+    vector<Ticket> metroTickets = {
+        {"Metro X", 10, 5},
+        {"Metro Y", 8, 6},
+        {"Metro Z", 12, 4}
+    };
 
-            for (const mode in sortedTickets) {
-                const section = document.createElement("div");
-                section.classList.add("mode-section");
+    vector<Ticket> trainTickets = {
+        {"Train 1", 15, 30},
+        {"Train 2", 20, 25},
+        {"Train 3", 18, 35}
+    };
 
-                const title = document.createElement("h2");
-                title.textContent = `${mode.charAt(0).toUpperCase() + mode.slice(1)} Tickets`;
-                section.appendChild(title);
+    cout << "Choose sorting method: \n1. Merge Sort\n2. Quick Sort\nEnter choice: ";
+    int choice;
+    cin >> choice;
 
-                const table = document.createElement("table");
-                const thead = document.createElement("thead");
-                thead.innerHTML = `<tr><th>Route</th><th>Price</th><th>Time</th></tr>`;
-                table.appendChild(thead);
+    cout << "Choose sorting key: \n1. Price\n2. Time\nEnter choice: ";
+    int keyChoice;
+    cin >> keyChoice;
+    string key = (keyChoice == 1) ? "price" : "time";
 
-                const tbody = document.createElement("tbody");
-                sortedTickets[mode].forEach(ticket => {
-                    const row = document.createElement("tr");
-                    row.innerHTML = `<td>${ticket.route}</td><td>${ticket.price}</td><td>${ticket.time}</td>`;
-                    tbody.appendChild(row);
-                });
-                table.appendChild(tbody);
+    if (choice == 1) {
+        cout << "\nSorting Bus Tickets using Merge Sort by " << key << ":\n";
+        mergeSort(busTickets, 0, busTickets.size() - 1, key);
+        displayTickets(busTickets);
 
-                section.appendChild(table);
-                container.appendChild(section);
-            }
-        }
+        cout << "\nSorting Metro Tickets using Merge Sort by " << key << ":\n";
+        mergeSort(metroTickets, 0, metroTickets.size() - 1, key);
+        displayTickets(metroTickets);
 
-        
-        function sortTickets() {
-            const sortBy = document.getElementById("sortBy").value;
-            const sortedTickets = {};
+        cout << "\nSorting Train Tickets using Merge Sort by " << key << ":\n";
+        mergeSort(trainTickets, 0, trainTickets.size() - 1, key);
+        displayTickets(trainTickets);
+    } else if (choice == 2) {
+        cout << "\nSorting Bus Tickets using Quick Sort by " << key << ":\n";
+        quickSort(busTickets, 0, busTickets.size() - 1, key);
+        displayTickets(busTickets);
 
-            for (const mode in tickets) {
-                sortedTickets[mode] = mergeSort(tickets[mode], sortBy);
-            }
+        cout << "\nSorting Metro Tickets using Quick Sort by " << key << ":\n";
+        quickSort(metroTickets, 0, metroTickets.size() - 1, key);
+        displayTickets(metroTickets);
 
-            displayTickets(sortedTickets);
-        }
+        cout << "\nSorting Train Tickets using Quick Sort by " << key << ":\n";
+        quickSort(trainTickets, 0, trainTickets.size() - 1, key);
+        displayTickets(trainTickets);
+    } else {
+        cout << "Invalid choice." << endl;
+    }
 
-        
-        sortTickets();
-    </script>
-</body>
-</html>
-
+    return 0;
+}
