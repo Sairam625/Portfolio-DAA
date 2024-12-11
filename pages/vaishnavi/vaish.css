@@ -55,7 +55,29 @@ body {
     flex-wrap: wrap;
     text-align: justify;
 }
+/* Blocks */
+        .block {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
 
+        .block h2 {
+            font-size: 32px;
+            margin: 15px 0;
+            color: #e74c3c; /* Bright Red */
+        }
+
+        .block p, .block ul {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .block ul {
+            padding-left: 20px;
+        }
 .text-section {
     max-width: 50%;
     margin-bottom: 20px;
