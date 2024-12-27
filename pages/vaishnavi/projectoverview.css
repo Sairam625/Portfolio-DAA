@@ -58,7 +58,44 @@ ul li:hover {
     background-color: #fffbe6;
     font-weight: bold;
 }
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #34495e; /* Dark Gray */
+    padding: 10px 20px;
+    z-index: 1000;
+    border-bottom: 2px solid #e74c3c; /* Bright Red */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle Shadow */
+}
 
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e74c3c; /* Bright Red */
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.navbar a {
+    color: #ecf0f1; /* Light Gray */
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px; /* Smooth edges for hover effect */
+}
+
+.navbar a:hover {
+    background-color: #e74c3c; /* Bright Red */
+    color: #ffffff; /* White text */
+}
 /* Links */
 a {
     color: #e74c3c;
@@ -86,6 +123,15 @@ a:hover {
     ul li {
         font-size: 1em;
         padding: 8px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
     }
 }
 
