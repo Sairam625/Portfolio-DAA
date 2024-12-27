@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortest Path</title>
+    <link rel="stylesheet" href="/Portfolio-DAA/pages/vaishnavi/projectoverview.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">DAA-PORTFOLIO</div>
+        <nav class="menu">
+            <a href="/Portfolio-DAA/index.html">Home</a>
+            <a href="/Portfolio-DAA/assets/project-description.pdf" target="_blank">Smart City Layout & Sustainability</a>
+            <a href="/Portfolio-DAA/pages/vaishnavi/index.html">Learning Reflections</a>
+            <a href="/Portfolio-DAA/pages/vaishnavi/SDG.html">Project Overview</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Shortest Path</h2>
+        <p>We manage an automated logistics scheduling system for a large <span class="highlight">Distribution Centre (DC)</span> handling trucks for multiple warehouses, docks, and storage facilities.</p>
+
+        <h3>Real-Time Scenario</h3>
+        <ul>
+            <li><strong>Distribution Centre (DC):</strong> The main facility where goods are loaded/unloaded.</li>
+            <li><strong>Warehouses (W1, W2, W3):</strong> Storage facilities for goods pick-up or drop-off.</li>
+            <li><strong>Docks (D1, D2, D3):</strong> Locations for unloading containers from trucks.</li>
+            <li><strong>Routes:</strong> Represented by weighted edges indicating time or distance in minutes.</li>
+        </ul>
+
+        <p>The trucks need to go through multiple locations to either load or unload goods. We will use Dijkstra's algorithm to determine the shortest path for the trucks and assign the tasks accordingly.</p>
+
+        <h3>Node Mapping</h3>
+        <ul>
+            <li><strong>0:</strong> DC (Distribution Centre)</li>
+            <li><strong>1:</strong> W1 (Warehouse 1)</li>
+            <li><strong>2:</strong> W2 (Warehouse 2)</li>
+            <li><strong>3:</strong> W3 (Warehouse 3)</li>
+            <li><strong>4:</strong> D1 (Delivery point 1)</li>
+        </ul>
+        
+        <h3>Code Link</h3>
+        <ul>
+            <li><a href="https://github.com/Sairam625/Portfolio-DAA/blob/Vaishnavi/pages/vaishnavi/code/dijikstra.cpp" target="_blank">Dijkstra Algorithm</a></li>
+        </ul>
+    </div>
+</body>
+</html>
