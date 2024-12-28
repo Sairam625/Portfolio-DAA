@@ -4,44 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Automated Logistics Scheduling</title>
-    <link rel="stylesheet" href="vaish.css">
+    <link rel="stylesheet" href="/Portfolio-DAA/pages/vaishnavi/projectoverview.css">
 </head>
 <body>
+    <header class="navbar">
+        <div class="logo">DAA-PORTFOLIO</div>
+        <nav class="menu">
+            <a href="/Portfolio-DAA/index.html">Home</a>
+            <a href="/Portfolio-DAA/assets/project-description.pdf" target="_blank">Smart City Layout & Sustainability</a>
+            <a href="/Portfolio-DAA/pages/vaishnavi/index.html">Learning Reflections</a>
+            <a href="/Portfolio-DAA/pages/vaishnavi/SDG.html">Project Overview</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
     <div class="container">
         <h1>Automated Logistics Scheduling with Shortest Path Optimization</h1>
 
+        <h2>Solution for the Business Case</h2>
+        <p>The solution for the Business Case is Automated Logistics Scheduling with Shortest Path Optimization.</p>
+
         <h2>Tasks to be Performed</h2>
         <ul>
-            <li><strong>Scheduling Slots:</strong> Scheduling truck timings based on available docks.</li>
-            <li><strong>Shortest Path:</strong> Optimizing truck routes based on real-time task assignments and shortest paths.</li>
+            <li><strong>Scheduling Slots:</strong></li>
+            <li><strong>Shortest Path:</strong></li>
         </ul>
 
-        <h2>Problem Overview</h2>
-        <p>We manage an automated logistics scheduling system for a large <span class="highlight">Distribution Centre (DC)</span> handling trucks for multiple warehouses, docks, and storage facilities.</p>
+        <h3>Shortest Path</h3>
+        <p>The truck's route is optimized based on real-time task assignments and shortest paths.</p>
+        <p>The shortest path algorithm optimizes loading/unloading schedules by minimizing transit times, reducing operational costs, and ensuring efficient vehicle movement within SEZs. It prevents delays, avoids congestion, and supports dynamic traffic management, aligning with SDG goals 11.2 (sustainable transport) and 12.3 (reducing waste).</p>
+        <a href="/Portfolio-DAA/pages/vaishnavi/shortest path.html" class="cta-button">Shortest path</a>
 
-        <h3>Real-Time Scenario</h3>
-        <ul>
-            <li><strong>Distribution Centre (DC):</strong> The main facility where goods are loaded/unloaded.</li>
-            <li><strong>Warehouses (W1, W2, W3):</strong> Storage facilities for goods pick-up or drop-off.</li>
-            <li><strong>Docks (D1, D2, D3):</strong> Locations for unloading containers from trucks.</li>
-            <li><strong>Routes:</strong> Represented by weighted edges indicating time or distance in minutes.</li>
-        </ul>
-
-        <p>The trucks need to go through multiple locations to either load or unload goods. We will use Dijkstra's algorithm to determine the shortest path for the trucks and assign the tasks accordingly.</p>
-
-        <h3>Node Mapping</h3>
-        <ul>
-            <li><strong>0:</strong> DC (Distribution Centre)</li>
-            <li><strong>1:</strong> W1 (Warehouse 1)</li>
-            <li><strong>2:</strong> W2 (Warehouse 2)</li>
-            <li><strong>3:</strong> W3 (Warehouse 3)</li>
-            <li><strong>4:</strong> D1 (Delivery point 1)</li>
-        </ul>
-        
-        <h3>Code Link</h3>
-        <ul>
-            <li><a href="https://github.com/Sairam625/Portfolio-DAA/blob/Vaishnavi/pages/vaishnavi/code/dijikstra.cpp" target="_blank">Dijkstra Algorithm</a></li>
-        </ul>
-    </div>
+        <h3>Scheduling Slots</h3>
+        <p>Scheduling slots are used to schedule truck timings based on the available slots (docks).</p>
+        <p>Scheduling slots are important in loading/unloading schedules because they help organize and optimize the timing of truck arrivals and departures. By assigning specific time slots for each truck, it minimizes congestion at docks, reduces waiting times, improves resource utilization (e.g., dock workers and equipment), and ensures that goods are handled efficiently and safely. This leads to smoother operations, reduced delays, and cost savings for businesses involved in logistics.</p>
+        <a href="/Portfolio-DAA/pages/vaishnavi/scheduling_slot.html" class="cta-button">Scheduling Slots</a>
 </body>
 </html>
