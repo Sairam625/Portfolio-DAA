@@ -1,53 +1,87 @@
 #include <iostream>
 using namespace std;
 
-// Function to merge two cultural gatherings into the same group
-void Union(int arr[], int u, int v) 
+// Find the root of a gathering with path compression
+int find(int p[], int rank[], int u) 
 {
-    int temp = arr[u];  
-    for (int i = 0; i < 5; i++)
-      {  // Loop through all gatherings
-        if (arr[i] == temp)
-        {  // If gathering belongs to u's group
-            arr[i] = arr[v];            // Merge it into v's group
+    if (p[u] != u) {
+        p[u] = find(p, rank, p[u]);  // Path compression
+    }
+    return p[u];
+}
+
+// Merge two groups using union by rank
+void union(int p[], int rank[], int u, int v) {
+    int rootU = find(p, rank, u);  // Find the root of u
+    int rootV = find(p, rank, v);  // Find the root of v
+
+    if (rootU != rootV) {
+        // Union by rank: attach the smaller tree to the larger tree
+        if (rank[rootU] > rank[rootV]) {
+            p[rootV] = rootU;
+        } else if (rank[rootU] < rank[rootV]) {
+            p[rootU] = rootV;
+        } else {
+            p[rootV] = rootU;  // If same rank, make one root
+            rank[rootU]++;  // Increment rank
         }
     }
 }
 
-// Function to check if two gatherings belong to the same group
-bool Find(int arr[], int u, int v)
-{
-    return arr[u] == arr[v];  
+// Print the groups and their roots
+void printGroups(int p[], int rank[], int n) {
+    cout << "Groups:\n";
+    for (int i = 0; i < n; i++) {
+        cout << "Gathering " << i << " is in group " << find(p, rank, i) << endl;
+    }
 }
 
-int main()
-{
-    int arr[5];  // Array to store group info for 5 gatherings
-    
-    for (int i = 0; i < 5; i++) 
-    {
-        arr[i] = i;
+// Print the tree structure of the groups
+void printHierarchy(int p[], int n) {
+    cout << "\nTree Structure:\n";
+    for (int i = 0; i < n; i++) {
+        int root = find(p, rank, i);
+        if (i != root) {
+            cout << "Gathering " << i << ": Parent -> Gathering " << root << endl;
+        } else {
+            cout << "Gathering " << i << ": Root\n";
+        }
+    }
+}
+
+int main() {
+    int n = 5;  // Number of gatherings
+    int p[n], rank[n];
+
+    // Initialize each gathering to be its own parent and rank to 0
+    for (int i = 0; i < n; i++) {
+        p[i] = i;
+        rank[i] = 0;
     }
 
     int u, v;
     char choice;
-    
-    do
-      {
+
+    do {
         // Merge two gatherings
         cout << "Enter two gatherings to merge (u v): ";
         cin >> u >> v;
-        Union(arr, u, v);
-        
+        union(p, rank, u, v);
+
+        // Print the groups and their hierarchical structure
+        printGroups(p, rank, n);
+        printHierarchy(p, n);
+
         // Check if two gatherings are in the same group
         cout << "Enter two gatherings to check (u v): ";
         cin >> u >> v;
-        if (Find(arr, u, v)) {
-            cout << "Gatherings " << u << " and " << v << " are in  same group.\n";
+        if (find(p, rank, u) == find(p, rank, v)) {
+            cout << "Gatherings " << u << " and " << v << " are in the same group.\n";
         } else {
             cout << "Gatherings " << u << " and " << v << " are in different groups.\n";
         }
 
+        // Ask if the user wants to continue
         cout << "Do you want to continue? (y/n): ";
         cin >> choice;
 
