@@ -1,0 +1,6 @@
+Resident 1 5000 4 7.5
+Resident 2 8000 3 6.0
+Resident 3 6000 5 8.0
+House 1 4000 3 6.5
+House 2 7500 4 7.0
+House 3 5000 4 8.0

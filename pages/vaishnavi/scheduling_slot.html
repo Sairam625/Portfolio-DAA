@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Logistics Scheduling</title>
+    <link rel="stylesheet" href="/Portfolio-DAA/pages/vaishnavi/projectoverview.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">DAA-PORTFOLIO</div>
+        <nav class="menu">
+            <a href="/Portfolio-DAA/index.html">Home</a>
+            <a href="/Portfolio-DAA/assets/project-description.pdf" target="_blank">Smart City Layout & Sustainability</a>
+            <a href="/Portfolio-DAA/pages/vaishnavi/index.html">Learning Reflections</a>
+            <a href="/Portfolio-DAA/pages/vaishnavi/SDG.html">Business cases</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Slot Scheduling System</h1>
+        <p>To make the scheduling system more efficient, we can apply algorithms specifically designed for job scheduling, resource allocation, or load balancing.</p>
+        <section>
+            <h2>1. Greedy Algorithm for Earliest Available Slot</h2>
+            <p>This algorithm uses a priority queue (min-heap) to store docks based on their available time. It efficiently fetches the dock with the earliest availability in <code>O(log D)</code>, where <code>D</code> is the number of docks.</p>
+            <p><strong>Objective:</strong> Schedule trucks as they arrive using available docks.</p>
+            <p><strong>Input:</strong></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Truck ID</th>
+                        <th>Arrival Time</th>
+                        <th>Load Time (hours)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>09:00</td><td>4</td></tr>
+                    <tr><td>2</td><td>09:30</td><td>1</td></tr>
+                    <tr><td>3</td><td>10:00</td><td>2</td></tr>
+                    <tr><td>4</td><td>10:30</td><td>1</td></tr>
+                    <tr><td>5</td><td>11:00</td><td>3</td></tr>
+                </tbody>
+            </table>
+            <p><strong>Output:</strong></p>
+            <pre>
+Truck 1 scheduled from 09:00 to 13:00 at Dock 0
+Truck 2 scheduled from 09:30 to 10:30 at Dock 1
+Truck 3 scheduled from 10:00 to 12:00 at Dock 2
+Truck 4 scheduled from 13:00 to 14:00 at Dock 0
+Truck 5 scheduled from 11:30 to 14:30 at Dock 1
+            </pre>
+            <p>Code: <a href="https://github.com/Sairam625/Portfolio-DAA/blob/Vaishnavi/pages/vaishnavi/code/greedy_algo.cpp">Greedy Algorithm Code</a></p>
+        </section>
+
+        <section>
+            <h2>2. Interval Partitioning</h2>
+            <p>This algorithm assigns trucks to docks to avoid overloading multiple trucks at the same dock simultaneously. It minimizes overlap while using the fewest docks possible.</p>
+            <p><strong>Objective:</strong> Minimize overlap and use as few docks as possible.</p>
+            <p><strong>Output:</strong></p>
+            <pre>
+Truck 1 scheduled from 09:00 to 13:00 at Dock 0
+Truck 2 scheduled from 09:30 to 10:30 at Dock 1
+Truck 3 scheduled from 10:00 to 12:00 at Dock 2
+Truck 4 scheduled from 10:30 to 11:30 at Dock 1
+Truck 5 scheduled from 13:00 to 16:00 at Dock 0
+            </pre>
+            <p>Code: <a href="https://github.com/Sairam625/Portfolio-DAA/blob/Vaishnavi/pages/vaishnavi/code/interval_partitioning_algo.cpp">Interval Partitioning Code</a></p>
+        </section>
+
+        <section>
+            <h2>3. Load Balancing</h2>
+            <p>This algorithm distributes workload evenly across docks, ensuring efficient utilization of resources.</p>
+            <p><strong>Objective:</strong> Distribute workload evenly across docks.</p>
+            <p><strong>Output:</strong></p>
+            <pre>
+Truck 1 scheduled from 09:00 to 13:00 at Dock 0
+Truck 2 scheduled from 09:30 to 10:30 at Dock 1
+Truck 3 scheduled from 10:00 to 12:00 at Dock 2
+Truck 4 scheduled from 10:30 to 11:30 at Dock 1
+Truck 5 scheduled from 11:30 to 14:30 at Dock 1
+            </pre>
+            <p>Code: <a href="https://github.com/Sairam625/Portfolio-DAA/blob/Vaishnavi/pages/vaishnavi/code/Load_balancing.cpp">Load Balancing Code</a></p>
+        </section>
+
+        <section>
+            <h2>Final Combined Algorithm</h2>
+            <p>This algorithm integrates key aspects of Greedy Scheduling, Interval Partitioning, and Load Balancing to optimize dock usage effectively.</p>
+            <p><strong>Input:</strong></p>
+            <pre>
+Enter number of docks: 2
+Enter number of trucks: 5
+Truck 1 details:
+Truck ID: 1
+Arrival time (hour minute): 9 0
+Loading time (in hours): 3
+Truck 2 details:
+Truck ID: 2
+Arrival time (hour minute): 9 15
+Loading time (in hours): 1
+Truck 3 details:
+Truck ID: 3
+Arrival time (hour minute): 10 0
+Loading time (in hours): 2
+Truck 4 details:
+Truck ID: 4
+Arrival time (hour minute): 11 0
+Loading time (in hours): 2
+Truck 5 details:
+Truck ID: 5
+Arrival time (hour minute): 11 15
+Loading time (in hours): 1
+            </pre>
+            <p><strong>Output:</strong></p>
+            <pre>
+Truck 1 scheduled from 09:00 to 12:00 at Dock 0
+Truck 2 scheduled from 09:15 to 10:15 at Dock 1
+Truck 3 scheduled from 10:15 to 12:15 at Dock 1
+Truck 4 scheduled from 12:00 to 14:00 at Dock 0
+Truck 5 scheduled from 12:15 to 13:15 at Dock 1
+            </pre>
+            <p>Code: <a href="https://github.com/Sairam625/Portfolio-DAA/blob/Vaishnavi/pages/vaishnavi/code/final.cpp">Final Combined Code</a></p>
+        </section>
+        <section>
+            <h2>Efficiency Analysis</h2>
+            <p>The following outlines the time and space efficiency of the key algorithms used in the scheduling system:</p>
+
+            <h3>1. Truck Scheduling (Priority Queue)</h3>
+            <ul>
+                <li><strong>Time Efficiency:</strong>
+                    <ul>
+                        <li>Insertion: O(logn).</li>
+                        <li>Deletion (top): O(logn).</li>
+                        <li>For n trucks: O(nlogn).</li>
+                    </ul>
+                </li>
+                <li><strong>Space Efficiency:</strong> O(n) (to store the trucks).</li>
+            </ul>
+
+            <h3>2. Dock Selection (<code>min_element</code>)</h3>
+            <ul>
+                <li><strong>Time Efficiency:</strong>
+                    <ul>
+                        <li>Finding the least-loaded dock: O(m).</li>
+                        <li>For n trucks and m docks: O(n &middot; m).</li>
+                    </ul>
+                </li>
+                <li><strong>Space Efficiency:</strong> O(m) (to store dock data in a vector).</li>
+            </ul>
+
+            <h3>3. Scheduling Algorithm (Main Loop)</h3>
+            <ul>
+                <li><strong>Time Efficiency:</strong>
+                    <ul>
+                        <li>Priority queue operations for trucks: O(nlogn).</li>
+                        <li>Dock selection for each truck: O(n &middot; m).</li>
+                        <li>Total: O(n &middot; (m + logn)).</li>
+                    </ul>
+                </li>
+                <li><strong>Space Efficiency:</strong> O(n + m) (trucks in the priority queue + docks in a vector).</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

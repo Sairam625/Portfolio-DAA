@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Parking System</title>
+    <link rel="stylesheet" href="/Portfolio-DAA/pages/vaishnavi/projectoverview.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">DAA-PORTFOLIO</div>
+        <nav class="menu">
+            <a href="/Portfolio-DAA/index.html">Home</a>
+            <a href="/Portfolio-DAA/assets/project-description.pdf" target="_blank">Smart City Layout & Sustainability</a>
+            <a href="/Portfolio-DAA/pages/vaishnavi/index.html">Learning Reflections</a>
+            <a href="/Portfolio-DAA/pages/vaishnavi/SDG.html">Business cases</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Smart Parking System</h1>
+            <p>The Smart Parking System aims to efficiently manage parking spaces in crowded urban areas, addressing challenges and promoting sustainable practices in alignment with SDG targets.</p>
+        </section>
+
+        <section class="challenges">
+            <h2>Challenges Faced</h2>
+            <ul>
+                <li>Allocating available parking spaces dynamically.</li>
+                <li>Reducing time spent searching for parking.</li>
+                <li>Implementing differential pricing based on demand.</li>
+            </ul>
+        </section>
+
+        <section class="sdg-targets">
+            <h2>SDG Targets Addressed</h2>
+            <ul>
+                <li><strong>SDG 11.2:</strong> By 2030, provide access to safe, affordable, accessible and sustainable transport systems for all, improving road safety, notably by expanding public transport, with special attention to the needs of those in vulnerable situations, women, children, persons with disabilities and older persons</li>
+                <li><strong>Reason:</strong></li>By reducing parking search times, it promotes safe and affordable transportation.</li>
+            </ul>
+        </section>
+
+        <section class="algorithms">
+            <h2>Algorithms Used</h2>
+            <ol>
+                <li><strong>Initialization:</strong> The parking lot is initialized with a specified number of spaces.</li>
+                <li><strong>Binary Search:</strong> The system uses a sorted list of available spaces for quick allocation.</li>
+                <li><strong>Heap:</strong> A min-heap tracks the smallest available parking space dynamically.</li>
+                <li><strong>Sliding Window:</strong> Monitors occupancy trends over a fixed time period.</li>
+                <li><strong>Differential Pricing:</strong> Parking fees are calculated based on the duration of stay, encouraging quick turnover during high demand.</li>
+            </ol>
+
+            <h3>Space and Time Efficiency</h3>
+            <ul>
+                <li><strong>Priority Queue (Min-Heap) for Available Spaces:</strong>
+                    <ul>
+                        <li>Time Efficiency: 
+                            <ul>
+                                <li>Insertion (push): O(log n)</li>
+                                <li>Extraction (pop): O(log n)</li>
+                            </ul>
+                        </li>
+                        <li>Space Efficiency: O(n)</li>
+                    </ul>
+                </li>
+                <li><strong>Unordered Map for Occupied Spaces:</strong>
+                    <ul>
+                        <li>Time Efficiency:
+                            <ul>
+                                <li>Insertion: O(1) (average case)</li>
+                                <li>Lookup: O(1) (average case)</li>
+                                <li>Deletion: O(1) (average case)</li>
+                            </ul>
+                        </li>
+                        <li>Space Efficiency: O(m)</li>
+                    </ul>
+                </li>
+                <li><strong>File Processing (processFile):</strong>
+                    <ul>
+                        <li>Time Efficiency:
+                            <ul>
+                                <li>File Reading: O(L) per line, where L is line length.</li>
+                                <li>Command Parsing: O(L) per line.</li>
+                            </ul>
+                        </li>
+                        <li>Space Efficiency: Negligible for temporary variables.</li>
+                    </ul>
+                </li>
+                <li><strong>System Time Calculation:</strong>
+                    <ul>
+                        <li>Time Efficiency: O(1)</li>
+                        <li>Space Efficiency: Negligible.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Overall Efficiency</h3>
+            <ul>
+                <li>Time Complexity: O(m log n) for m operations and n parking spaces.</li>
+                <li>Space Complexity: O(n + m) for available and occupied spaces.</li>
+            </ul>
+        </section>
+
+        <section class="resources">
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="https://github.com/Sairam625/Portfolio-DAA/blob/Vaishnavi/pages/vaishnavi/code/parking.cpp" target="_blank">Source Code</a></li>
+                <li><a href="https://github.com/Sairam625/Portfolio-DAA/blob/Vaishnavi/pages/vaishnavi/code/parking_operations.txt" target="_blank">Data File</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DAA-PORTFOLIO. All rights reserved.</p>
+    </footer>
+</body>
+</html>

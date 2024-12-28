@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System for Warehouse</title>
+    <link rel="stylesheet" href="/Portfolio-DAA/pages/vaishnavi/projectoverview.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">DAA-PORTFOLIO</div>
+        <nav class="menu">
+            <a href="/Portfolio-DAA/index.html">Home</a>
+            <a href="/Portfolio-DAA/assets/project-description.pdf" target="_blank">Smart City Layout & Sustainability</a>
+            <a href="/Portfolio-DAA/pages/vaishnavi/index.html">Learning Reflections</a>
+            <a href="/Portfolio-DAA/pages/vaishnavi/SDG.html">Business Cases</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section id="inventory-management">
+        <h1>Inventory Management System for a Warehouse</h1>
+        <p>The Inventory Management System is designed to align with SDG 12: Responsible Consumption and Production by ensuring minimal waste, efficient use of resources, and automated replenishment of stock. The system uses several algorithms to optimize the operations of the warehouse.</p>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li><strong>Minimizing Waste:</strong> Products are used before their expiry dates using <em>Insertion Sort</em>.</li>
+            <li><strong>Efficient Use of Resources:</strong> Warehouse layout optimization using <em>Kruskal's Algorithm</em> ensures efficient use of space and faster retrieval times.</li>
+            <li><strong>Efficient Replenishment:</strong> <em>Decrease and Conquer</em> strategy dynamically manages stock levels.</li>
+        </ul>
+
+        <h2>Challenges</h2>
+        <ul>
+            <li>Reducing waste through expiry date management and ensuring perishable goods are used in time.</li>
+            <li>Optimizing warehouse space and workflows using <em>Kruskal's Algorithm</em> for efficient product retrieval.</li>
+            <li>Automating inventory replenishment to maintain optimal stock levels.</li>
+            <li>Tracking real-time data for accurate stock management, minimizing the risk of stockouts or overstocking.</li>
+        </ul>
+
+        <h2>Algorithms Used</h2>
+        <ol>
+            <li><strong>Decrease and Conquer (Inventory Replenishment Strategy):</strong> Tracks stock levels and automatically replenishes inventory as it gets low.</li>
+            <li><strong>Partitioning (Categorization of Inventory):</strong> Categorizes inventory into different product types for better management and tracking.</li>
+            <li><strong>Red-Black Tree (Efficient Search and Update):</strong> Stores and searches product details efficiently, allowing for quick updates when products are added or removed.</li>
+            <li><strong>Insertion Sort (Sorting Products by Expiry Dates):</strong> Sorts products by expiry dates to ensure perishable items are used first, reducing waste.</li>
+            <li><strong>Kruskal’s Algorithm (Optimizing Warehouse Layout):</strong> Optimizes warehouse layout to find the most efficient paths between product categories, improving warehouse operations.</li>
+        </ol>
+
+        <h2>Efficiency of Each Algorithm</h2>
+        <h3>1. Decrease and Conquer (Inventory Replenishment)</h3>
+        <p><strong>Time Complexity:</strong> O(n), where n is the number of products.</p>
+        <p><strong>Space Complexity:</strong> O(1) for the function itself, since it doesn't require extra space other than the product data.</p>
+
+        <h3>2. Insertion Sort (Sorting Products by Expiry Date)</h3>
+        <p><strong>Time Complexity:</strong> O(n²), where n is the number of products.</p>
+        <p><strong>Space Complexity:</strong> O(1), as it is an in-place sorting algorithm.</p>
+
+        <h3>3. Categorization (Partitioning Inventory by Type)</h3>
+        <p><strong>Time Complexity:</strong> O(n), where n is the number of products.</p>
+        <p><strong>Space Complexity:</strong> O(n) due to the space required for the map to hold all the categorized products.</p>
+
+        <h3>4. Kruskal's Algorithm (Optimizing Warehouse Layout)</h3>
+        <p><strong>Time Complexity:</strong> O(E log E + V), where E is the number of edges and V is the number of vertices (nodes).</p>
+        <p><strong>Space Complexity:</strong> O(V + E), where V is the number of nodes and E is the number of edges. This space is required for storing the edges and the parent map for the union-find structure.</p>
+    </section>
+
+    <section class="resources">
+        <h2>Resources</h2>
+        <ul>
+            <li><a href="https://github.com/Sairam625/Portfolio-DAA/blob/Vaishnavi/pages/vaishnavi/code/inventory.cpp" target="_blank">Code</a></li>
+            <li><a href="https://github.com/Sairam625/Portfolio-DAA/blob/Vaishnavi/pages/vaishnavi/code/input_data.txt" target="_blank">File</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Vaishnavi - DAA Portfolio</p>
+    </footer>
+</body>
+</html>
