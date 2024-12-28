@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="/Portfolio-DAA/pages/vaishnavi/projectoverview.css">
     <style>
         body {
-            margin: 0 20px; /* Adds margin on both sides */
+            margin: 0 5%; /* Medium margin for better visibility on laptops */
             font-family: Arial, sans-serif;
-            line-height: 1.6;
+            line-height: 1.4; /* Compact line height */
         }
         .project-content {
-            margin: 0 auto; /* Center-aligns content */
-            max-width: 800px; /* Restricts width for better readability */
+            margin: 0 auto;
+            max-width: 1200px; /* Increased width for laptop screens */
         }
         h1, h2, h3 {
-            margin-bottom: 10px;
+            margin-bottom: 6px; /* Tighter spacing between headers and text */
         }
         p, ol, li {
-            font-size: 1rem; /* Ensures readable text size */
-            margin-bottom: 10px;
+            font-size: 1rem;
+            margin-bottom: 6px; /* Reduced spacing between elements */
         }
     </style>
 </head>
@@ -68,6 +68,7 @@
             </li>
             <li><strong>Partitioning Algorithm:</strong>
                 <ul>
+                    <li><strong>Use Case:</strong> Partition residents or houses based on criteria (e.g., income, family size).</li>
                     <li><strong>Time Complexity:</strong> O(R⋅logR + H⋅logH), if sorting is involved. Otherwise, O(R + H) for linear partitioning.</li>
                     <li><strong>Space Complexity:</strong> O(R + H), to store the partitions or for auxiliary space during the process.</li>
                 </ul>
