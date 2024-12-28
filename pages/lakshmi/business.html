@@ -127,6 +127,147 @@
     </ul>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Modes Ticketing System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        h3 {
+            color: #555;
+        }
+        .input-output {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Multiple Modes Ticketing System</h1>
+
+<p>This document demonstrates the input and output for a ticketing system for public transportation, designed to handle multiple transport modes (bus, metro, and train). The system allows sorting of tickets based on user preferences using Merge Sort and Quick Sort algorithms.</p>
+
+<hr>
+
+<h2>1. Data Loading from CSV Files</h2>
+<div class="input-output">
+    <h3>Input:</h3>
+    <pre>
+    The program loads ticket data from the following CSV files:
+    - bus_tickets.csv
+    - metro_tickets.csv
+    - train_tickets.csv
+    </pre>
+
+    <h3>Output:</h3>
+    <pre>
+    After loading the files, the program will have the ticket data in memory, ready for sorting or adding new tickets.
+    Data is stored in the following vectors:
+    - busTickets
+    - metroTickets
+    - trainTickets
+    </pre>
+</div>
+
+<hr>
+
+<h2>2. Manual Ticket Addition</h2>
+<div class="input-output">
+    <h3>Input:</h3>
+    <pre>
+    Question: "Do you want to add tickets manually? (yes/no)"
+    User enters: yes
+    
+    For each transport mode (Bus, Metro, Train), the user is prompted for the following details:
+    - Route Name (string)
+    - Price (integer)
+    - Time (integer)
+    
+    Example:
+    Enter route name: Route D
+    Enter price: 55
+    Enter time in minutes: 40
+    </pre>
+
+    <h3>Output:</h3>
+    <pre>
+    After the user enters the data, the program stores the new tickets in the respective vectors.
+    
+    Example output:
+    Add tickets for Bus:
+    Enter route name: Route D
+    Enter price: 55
+    Enter time in minutes: 40
+    
+    Add tickets for Metro:
+    Enter route name: Route F
+    Enter price: 65
+    Enter time in minutes: 50
+    
+    Add tickets for Train:
+    Enter route name: Route H
+    Enter price: 100
+    Enter time in minutes: 70
+    </pre>
+</div>
+
+<hr>
+
+<h2>3. Sorting of Tickets</h2>
+<div class="input-output">
+    <h3>Input:</h3>
+    <pre>
+    Question: "Choose sorting method: \n1. Merge Sort\n2. Quick Sort\nEnter choice:"
+    User enters: 1 (for Merge Sort)
+    
+    Question: "Choose sorting key: \n1. Price\n2. Time\nEnter choice:"
+    User enters: 1 (for Price)
+    </pre>
+
+    <h3>Output:</h3>
+    <pre>
+    The system sorts the tickets based on the selected sorting method (Merge Sort) and key (Price). 
+    
+    Example sorted output for each transport mode (after sorting by price using Merge Sort):
+    
+    Sorted Tickets for Bus:
+    Route: Route C, Price: 30, Time: 15 minutes
+    Route: Route A, Price: 50, Time: 30 minutes
+    Route: Route D, Price: 55, Time: 40 minutes
+    Route: Route B, Price: 60, Time: 45 minutes
+    
+    Sorted Tickets for Metro:
+    Route: Route D, Price: 40, Time: 20 minutes
+    Route: Route E, Price: 70, Time: 35 minutes
+    Route: Route F, Price: 65, Time: 50 minutes
+    
+    Sorted Tickets for Train:
+    Route: Route G, Price: 80, Time: 50 minutes
+    Route: Route F, Price: 90, Time: 60 minutes
+    Route: Route H, Price: 100, Time: 70 minutes
+    </pre>
+</div>
+
+<hr>
+
+</body>
+</html>
 
 
 
