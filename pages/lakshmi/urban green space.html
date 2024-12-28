@@ -4,33 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urban Green Space Management</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f8fa;
+            color: #2c3e50;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #27ae60;
+        }
+        ul {
+            margin-top: 0;
+        }
+        p {
+            line-height: 1.6;
+        }
+        pre {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        .cta-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .cta-button:hover {
+            background-color: #1f618d;
+        }
+        .efficiency, .sdg11 {
+            background-color: #eafaf1;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <h1>Urban Green Space Management for Sustainable Cities</h1>
 
+    <div class="sdg11">
+        <h2>About SDG 11</h2>
+        <p>
+            Urban Green Space Management directly supports <strong>SDG 11 (Sustainable Cities and Communities)</strong>, 
+            which aims to make cities inclusive, safe, resilient, and sustainable. By prioritizing green spaces, we enhance biodiversity, reduce pollution, 
+            and provide recreational zones for urban populations. Effective green space management ensures accessibility, boosts community well-being, 
+            and mitigates the urban heat island effect.
+        </p>
+    </div>
+
     <h2>Business Case Overview</h2>
     <p>
-        The goal of urban green space management is to ensure that cities provide sufficient parks, recreational spaces, and green zones to enhance the quality of life for residents, maintain biodiversity, and promote environmental sustainability.
-    </p>
-    <p>
-        Efficient management of these spaces requires sophisticated algorithms to optimize their layout, accessibility, and sustainability.
+        Urban green spaces, such as parks and recreational zones, are essential for enhancing the quality of life, improving ecological balance, and 
+        maintaining biodiversity in cities. Managing these spaces effectively with algorithms helps optimize their layout, usage, and maintenance.
     </p>
 
     <h2>Algorithms for Green Space Management</h2>
     <ul>
-        <li><strong>Binary Search Tree (BST):</strong> 
-            <p>Used for efficient management and searching of green space locations. It ensures quick insertion, deletion, and access to green space data.</p>
-        </li>
-        <li><strong>Kruskal's Algorithm:</strong> 
-            <p>Used to create a minimum spanning tree that connects green spaces in the most efficient way. It helps optimize the distribution and connectivity of parks and recreational areas.</p>
-        </li>
-        <li><strong>Segment Tree:</strong> 
-            <p>Used to efficiently query and update the total area of green spaces. It helps in managing and tracking the total area coverage in different geographical zones.</p>
-        </li>
-        <li><strong>Heap:</strong> 
-            <p>Used to prioritize green spaces based on factors like usage frequency or ecological value. It ensures the highest priority green spaces are maintained and expanded first.</p>
-        </li>
+        <li><strong>Binary Search Tree (BST):</strong> Efficient for managing and searching green space locations.</li>
+        <li><strong>Kruskal's Algorithm:</strong> Optimizes the connectivity of green spaces with minimal resource usage.</li>
+        <li><strong>Segment Tree:</strong> Handles queries and updates on green space areas efficiently.</li>
+        <li><strong>Heap:</strong> Prioritizes green spaces by usage frequency or ecological importance.</li>
     </ul>
+
+    <h2>Time and Space Efficiency</h2>
+    <div class="efficiency">
+        <ul>
+            <li><strong>Binary Search Tree (BST):</strong>
+                <p><strong>Time Complexity:</strong> \( O(\log n) \) average, \( O(n) \) worst-case for insertion, deletion, and search.</p>
+                <p><strong>Space Complexity:</strong> \( O(n) \), where \( n \) is the number of nodes.</p>
+            </li>
+            <li><strong>Kruskal's Algorithm:</strong>
+                <p><strong>Time Complexity:</strong> \( O(E \log E + V) \), where \( E \) is the number of edges and \( V \) is the number of vertices.</p>
+                <p><strong>Space Complexity:</strong> \( O(E + V) \) for storing graph data and results.</p>
+            </li>
+            <li><strong>Segment Tree:</strong>
+                <p><strong>Time Complexity:</strong> \( O(\log n) \) for updates and queries.</p>
+                <p><strong>Space Complexity:</strong> \( O(4n) \) for tree storage, where \( n \) is the number of elements.</p>
+            </li>
+            <li><strong>Heap:</strong>
+                <p><strong>Time Complexity:</strong> \( O(\log n) \) for insertion and deletion.</p>
+                <p><strong>Space Complexity:</strong> \( O(n) \), where \( n \) is the number of elements.</p>
+            </li>
+        </ul>
+    </div>
 
     <h2>Input for the Code</h2>
     <p>The following green spaces and their usage or ecological value are provided:</p>
@@ -65,7 +130,7 @@
     Green Space ID: 4, Usage: 50
     </pre>
 
-    <h2>Here is the code</h2>
+    <h2>Here is the Code</h2>
     <a href="https://github.com/Sairam625/Portfolio-DAA/blob/main/pages/lakshmi/green%20spacecode.cpp" class="cta-button">Code</a><br>
     
     <h2>CSV Data File</h2>
