@@ -19,9 +19,8 @@
     </header>
 
     <main>
-        <h1>Efficient Scheduling System</h1>
+        <h1>Slot Scheduling System</h1>
         <p>To make the scheduling system more efficient, we can apply algorithms specifically designed for job scheduling, resource allocation, or load balancing.</p>
-
         <section>
             <h2>1. Greedy Algorithm for Earliest Available Slot</h2>
             <p>This algorithm uses a priority queue (min-heap) to store docks based on their available time. It efficiently fetches the dock with the earliest availability in <code>O(log D)</code>, where <code>D</code> is the number of docks.</p>
@@ -121,6 +120,45 @@ Truck 4 scheduled from 12:00 to 14:00 at Dock 0
 Truck 5 scheduled from 12:15 to 13:15 at Dock 1
             </pre>
             <p>Code: <a href="https://github.com/Sairam625/Portfolio-DAA/blob/Vaishnavi/pages/vaishnavi/code/final.cpp">Final Combined Code</a></p>
+        </section>
+        <section>
+            <h2>Efficiency Analysis</h2>
+            <p>The following outlines the time and space efficiency of the key algorithms used in the scheduling system:</p>
+
+            <h3>1. Truck Scheduling (Priority Queue)</h3>
+            <ul>
+                <li><strong>Time Efficiency:</strong>
+                    <ul>
+                        <li>Insertion: O(logn).</li>
+                        <li>Deletion (top): O(logn).</li>
+                        <li>For n trucks: O(nlogn).</li>
+                    </ul>
+                </li>
+                <li><strong>Space Efficiency:</strong> O(n) (to store the trucks).</li>
+            </ul>
+
+            <h3>2. Dock Selection (<code>min_element</code>)</h3>
+            <ul>
+                <li><strong>Time Efficiency:</strong>
+                    <ul>
+                        <li>Finding the least-loaded dock: O(m).</li>
+                        <li>For n trucks and m docks: O(n &middot; m).</li>
+                    </ul>
+                </li>
+                <li><strong>Space Efficiency:</strong> O(m) (to store dock data in a vector).</li>
+            </ul>
+
+            <h3>3. Scheduling Algorithm (Main Loop)</h3>
+            <ul>
+                <li><strong>Time Efficiency:</strong>
+                    <ul>
+                        <li>Priority queue operations for trucks: O(nlogn).</li>
+                        <li>Dock selection for each truck: O(n &middot; m).</li>
+                        <li>Total: O(n &middot; (m + logn)).</li>
+                    </ul>
+                </li>
+                <li><strong>Space Efficiency:</strong> O(n + m) (trucks in the priority queue + docks in a vector).</li>
+            </ul>
         </section>
     </main>
 </body>
