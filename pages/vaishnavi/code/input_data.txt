@@ -1,0 +1,4 @@
+P001 Apple Fruits 100 2024-12-30
+P002 Banana Fruits 50 2024-12-20
+P003 Milk Dairy 30 2025-01-10
+P004 Cheese Dairy 20 2025-02-05
