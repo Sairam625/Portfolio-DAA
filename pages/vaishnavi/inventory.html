@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventory Management System for Warehouse</title>
     <link rel="stylesheet" href="/Portfolio-DAA/pages/vaishnavi/projectoverview.css">
+    <style>
+        body {
+            margin: 0 5%; /* Medium margin for better visibility on laptops */
+            font-family: Arial, sans-serif;
+            line-height: 1.4; /* Compact line height */
+        }
+        .project-content {
+            margin: 0 auto;
+            max-width: 1200px; /* Increased width for laptop screens */
+        }
+        h1, h2, h3 {
+            margin-bottom: 6px; /* Tighter spacing between headers and text */
+        }
+        p, ul, ol, li {
+            font-size: 1rem;
+            margin-bottom: 6px; /* Reduced spacing between elements */
+        }
+    </style>
 </head>
 <body>
     <header class="navbar">
@@ -18,16 +36,9 @@
         </nav>
     </header>
 
-    <section id="inventory-management">
+    <section id="inventory-management" class="project-content">
         <h1>Inventory Management System for a Warehouse</h1>
         <p>The Inventory Management System is designed to align with SDG 12: Responsible Consumption and Production by ensuring minimal waste, efficient use of resources, and automated replenishment of stock. The system uses several algorithms to optimize the operations of the warehouse.</p>
-
-        <h2>Key Features</h2>
-        <ul>
-            <li><strong>Minimizing Waste:</strong> Products are used before their expiry dates using <em>Insertion Sort</em>.</li>
-            <li><strong>Efficient Use of Resources:</strong> Warehouse layout optimization using <em>Kruskal's Algorithm</em> ensures efficient use of space and faster retrieval times.</li>
-            <li><strong>Efficient Replenishment:</strong> <em>Decrease and Conquer</em> strategy dynamically manages stock levels.</li>
-        </ul>
 
         <h2>Challenges</h2>
         <ul>
@@ -55,11 +66,15 @@
         <p><strong>Time Complexity:</strong> O(n²), where n is the number of products.</p>
         <p><strong>Space Complexity:</strong> O(1), as it is an in-place sorting algorithm.</p>
 
-        <h3>3. Categorization (Partitioning Inventory by Type)</h3>
-        <p><strong>Time Complexity:</strong> O(n), where n is the number of products.</p>
-        <p><strong>Space Complexity:</strong> O(n) due to the space required for the map to hold all the categorized products.</p>
+        <h3>3. Red-Black Tree</h2>
+        <p><strong>Time Complexity:</strong> O(log n) for insertion and deletion.</p>
+        <p><strong>Space Complexity:</strong> O(n) for storing the nodes.</p>
 
-        <h3>4. Kruskal's Algorithm (Optimizing Warehouse Layout)</h3>
+        <h3>4. Insertion Sort</h2>
+        <p><strong>Time Complexity:</strong> Worst case: O(n²), Best case: O(n).</p>
+        <p><strong>Space Complexity:</strong> O(1) (in-place sorting).</p>
+
+        <h3>5. Kruskal's Algorithm (Optimizing Warehouse Layout)</h3>
         <p><strong>Time Complexity:</strong> O(E log E + V), where E is the number of edges and V is the number of vertices (nodes).</p>
         <p><strong>Space Complexity:</strong> O(V + E), where V is the number of nodes and E is the number of edges. This space is required for storing the edges and the parent map for the union-find structure.</p>
     </section>

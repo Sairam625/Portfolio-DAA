@@ -1,0 +1,41 @@
+Vehicle Registration Number,Emission Level,Status
+ABC123,100,Not Restricted
+XYZ456,150,Restricted
+LMN789,200,Restricted
+PQR567,120,Not Restricted
+JKL890,180,Restricted
+TUV234,90,Not Restricted
+EFG678,220,Restricted
+RST345,80,Not Restricted
+IJK901,160,Restricted
+MNO567,110,Not Restricted
+ZXY234,250,Restricted
+DEF876,130,Not Restricted
+GHI543,190,Restricted
+OPQ123,75,Not Restricted
+VWX789,210,Restricted
+YZA456,140,Not Restricted
+BCD678,170,Restricted
+NOP123,130,Not Restricted
+RST234,200,Restricted
+EFG987,160,Restricted
+QRS567,140,Not Restricted
+LMN123,190,Restricted
+VRT567,90,Not Restricted
+XYZ678,220,Restricted
+ABC234,160,Not Restricted
+KLM567,150,Restricted
+DEF890,130,Not Restricted
+GHI234,100,Not Restricted
+LMN890,180,Restricted
+XYZ123,220,Restricted
+IJK678,140,Not Restricted
+OPQ789,200,Restricted
+VWX123,180,Restricted
+YZA678,250,Restricted
+BCD789,110,Not Restricted
+DEF567,120,Not Restricted
+TUV678,180,Restricted
+JKL123,160,Not Restricted
+MNO890,190,Restricted
+RST456,100,Not Restricted

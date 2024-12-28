@@ -18,7 +18,7 @@
         </nav>
     </header>
 
-    <main>
+    <main style="margin: 0 auto; max-width: 960px; padding: 20px;">
         <section class="intro">
             <h1>Smart Parking System</h1>
             <p>The Smart Parking System aims to efficiently manage parking spaces in crowded urban areas, addressing challenges and promoting sustainable practices in alignment with SDG targets.</p>
@@ -36,15 +36,14 @@
         <section class="sdg-targets">
             <h2>SDG Targets Addressed</h2>
             <ul>
-                <li><strong>SDG 11.2:</strong> By 2030, provide access to safe, affordable, accessible and sustainable transport systems for all, improving road safety, notably by expanding public transport, with special attention to the needs of those in vulnerable situations, women, children, persons with disabilities and older persons</li>
-                <li><strong>Reason:</strong></li>By reducing parking search times, it promotes safe and affordable transportation.</li>
+                <li><strong>SDG 11.2:</strong> By 2030, provide access to safe, affordable, accessible and sustainable transport systems for all, improving road safety, notably by expanding public transport, with special attention to the needs of those in vulnerable situations, women, children, persons with disabilities and older persons.</li>
+                <li><strong>Reason:</strong> By reducing parking search times, it promotes safe and affordable transportation.</li>
             </ul>
         </section>
 
         <section class="algorithms">
             <h2>Algorithms Used</h2>
             <ol>
-                <li><strong>Initialization:</strong> The parking lot is initialized with a specified number of spaces.</li>
                 <li><strong>Binary Search:</strong> The system uses a sorted list of available spaces for quick allocation.</li>
                 <li><strong>Heap:</strong> A min-heap tracks the smallest available parking space dynamically.</li>
                 <li><strong>Sliding Window:</strong> Monitors occupancy trends over a fixed time period.</li>
@@ -53,46 +52,21 @@
 
             <h3>Space and Time Efficiency</h3>
             <ul>
-                <li><strong>Priority Queue (Min-Heap) for Available Spaces:</strong>
-                    <ul>
-                        <li>Time Efficiency: 
-                            <ul>
-                                <li>Insertion (push): O(log n)</li>
-                                <li>Extraction (pop): O(log n)</li>
-                            </ul>
-                        </li>
-                        <li>Space Efficiency: O(n)</li>
-                    </ul>
-                </li>
-                <li><strong>Unordered Map for Occupied Spaces:</strong>
-                    <ul>
-                        <li>Time Efficiency:
-                            <ul>
-                                <li>Insertion: O(1) (average case)</li>
-                                <li>Lookup: O(1) (average case)</li>
-                                <li>Deletion: O(1) (average case)</li>
-                            </ul>
-                        </li>
-                        <li>Space Efficiency: O(m)</li>
-                    </ul>
-                </li>
-                <li><strong>File Processing (processFile):</strong>
-                    <ul>
-                        <li>Time Efficiency:
-                            <ul>
-                                <li>File Reading: O(L) per line, where L is line length.</li>
-                                <li>Command Parsing: O(L) per line.</li>
-                            </ul>
-                        </li>
-                        <li>Space Efficiency: Negligible for temporary variables.</li>
-                    </ul>
-                </li>
-                <li><strong>System Time Calculation:</strong>
-                    <ul>
-                        <li>Time Efficiency: O(1)</li>
-                        <li>Space Efficiency: Negligible.</li>
-                    </ul>
-                </li>
+              <strong>  1. Binary Search (Using `set` for Sorted Parking Spaces)</strong>
+    <p><strong>Time Complexity:</strong> O(log n) for insertion and removal of elements.</p>
+    <p><strong>Space Complexity:</strong> O(n) for storing the parking spaces.</p>
+
+    <strong>2. Sliding Window (Tracking Parking History)</strong>
+    <p><strong>Time Complexity:</strong> O(n) for checking and removing cars that have been parked for too long.</p>
+    <p><strong>Space Complexity:</strong> O(n) for storing parking history.</p>
+
+    <strong>3. Heap (Min-Heap for Space Allocation)<strong>
+    <p><strong>Time Complexity:</strong> O(log n) for inserting and removing spaces.</p>
+    <p><strong>Space Complexity:</strong> O(n) for maintaining the heap structure.</p>
+
+    <strong>4. Differential Pricing (Calculating Parking Fees)<strong>
+    <p><strong>Time Complexity:</strong> O(1) for calculating the fee for each car.</p>
+    <p><strong>Space Complexity:</strong> O(1) for storing and calculating fees.</p>
             </ul>
 
             <h3>Overall Efficiency</h3>
@@ -111,7 +85,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer style="text-align: center; margin-top: 20px; padding: 10px; background-color: #f4f4f4;">
         <p>&copy; 2024 DAA-PORTFOLIO. All rights reserved.</p>
     </footer>
 </body>
