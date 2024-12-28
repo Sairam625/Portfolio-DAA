@@ -45,15 +45,33 @@
             <li><strong>Insertion Sort (Sorting Products by Expiry Dates):</strong> Sorts products by expiry dates to ensure perishable items are used first, reducing waste.</li>
             <li><strong>Kruskal’s Algorithm (Optimizing Warehouse Layout):</strong> Optimizes warehouse layout to find the most efficient paths between product categories, improving warehouse operations.</li>
         </ol>
+
+        <h2>Efficiency of Each Algorithm</h2>
+        <h3>1. Decrease and Conquer (Inventory Replenishment)</h3>
+        <p><strong>Time Complexity:</strong> O(n), where n is the number of products.</p>
+        <p><strong>Space Complexity:</strong> O(1) for the function itself, since it doesn't require extra space other than the product data.</p>
+
+        <h3>2. Insertion Sort (Sorting Products by Expiry Date)</h3>
+        <p><strong>Time Complexity:</strong> O(n²), where n is the number of products.</p>
+        <p><strong>Space Complexity:</strong> O(1), as it is an in-place sorting algorithm.</p>
+
+        <h3>3. Categorization (Partitioning Inventory by Type)</h3>
+        <p><strong>Time Complexity:</strong> O(n), where n is the number of products.</p>
+        <p><strong>Space Complexity:</strong> O(n) due to the space required for the map to hold all the categorized products.</p>
+
+        <h3>4. Kruskal's Algorithm (Optimizing Warehouse Layout)</h3>
+        <p><strong>Time Complexity:</strong> O(E log E + V), where E is the number of edges and V is the number of vertices (nodes).</p>
+        <p><strong>Space Complexity:</strong> O(V + E), where V is the number of nodes and E is the number of edges. This space is required for storing the edges and the parent map for the union-find structure.</p>
     </section>
-<section class="resources">
-            <h2>Resources</h2>
-            <ul>
-                <li><a href="https://github.com/Sairam625/Portfolio-DAA/blob/Vaishnavi/pages/vaishnavi/code/inventory.cpp" target="_blank">Code</a></li>
-                <li><a href="https://github.com/Sairam625/Portfolio-DAA/blob/Vaishnavi/pages/vaishnavi/code/input_data.txt" target="_blank">File</a></li>
-            </ul>
-        </section>
-    </main>
+
+    <section class="resources">
+        <h2>Resources</h2>
+        <ul>
+            <li><a href="https://github.com/Sairam625/Portfolio-DAA/blob/Vaishnavi/pages/vaishnavi/code/inventory.cpp" target="_blank">Code</a></li>
+            <li><a href="https://github.com/Sairam625/Portfolio-DAA/blob/Vaishnavi/pages/vaishnavi/code/input_data.txt" target="_blank">File</a></li>
+        </ul>
+    </section>
+
     <footer>
         <p>&copy; 2024 Vaishnavi - DAA Portfolio</p>
     </footer>
