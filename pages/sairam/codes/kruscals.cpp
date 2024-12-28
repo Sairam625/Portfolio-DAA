@@ -62,27 +62,6 @@ int main() {
         {0, 3},
         {1, 2}
     };
-    bfsEvacuation(graphBFS, 0);
-
-    // Example graph for Dijkstra
-    vector<vector<pair<int, int>>> graphDijkstra = {
-        {{1, 4}, {2, 1}},
-        {{2, 2}, {3, 5}},
-        {{3, 1}},
-        {}
-    };
-    dijkstraResource(graphDijkstra, 0);
-
-    // Example graph for Floyd-Warshall
-    vector<vector<int>> graphFloydWarshall = {
-        {0, 3, INT_MAX, 7},
-        {8, 0, 2, INT_MAX},
-        {5, INT_MAX, 0, 1},
-        {2, INT_MAX, INT_MAX, 0}
-    };
-    floydWarshallFlood(graphFloydWarshall);
-
-    // Example edges for Kruskal
     vector<Edge> edges = {
         {0, 1, 10}, {0, 2, 6}, {0, 3, 5}, {1, 3, 15}, {2, 3, 4}
     };
