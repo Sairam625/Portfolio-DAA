@@ -4,53 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vehicle Restriction for Pollution Reduction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        p, ul {
+            font-size: 16px;
+            line-height: 1.6;
+            padding: 5px;
+        }
+        pre {
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        a.cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px 0;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a.cta-button:hover {
+            background-color: #45a049;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .content {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .algorithm-efficiency {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Business Case: Restricting Vehicles to Avoid Pollution</h1>
-    <p><strong>SDG 11 (Sustainable Cities and Communities)</strong> focuses on making cities and human settlements inclusive, safe, resilient, and sustainable. Reducing vehicle emissions and optimizing traffic are key contributors to cleaner air and reduced pollution, which aligns with this goal.</p>
+    <header>
+        <h1>Business Case: Restricting Vehicles to Avoid Pollution</h1>
+    </header>
     
-    <h2>Business Case Solution Using Algorithms</h2>
-    <ul>
-        <li><strong>Queue and Stack (Traffic Control Systems):</strong>
-            <p>Queue: Use a queue data structure to model vehicles waiting at traffic signals. By managing the flow of traffic efficiently, you can minimize congestion and pollution.</p>
-            <p>Stack: Implementing a stack for traffic signals or restrictions can help manage alternate-day vehicle access, i.e., even-numbered vehicles on one day, odd-numbered on another.</p>
-        </li>
-        <li><strong>Dijkstra’s Algorithm (Shortest Path for Restricted Vehicles):</strong>
-            <p>Use Dijkstra's algorithm to find the shortest path for restricted vehicles (or alternatively, paths with less pollution) while taking into account vehicle restrictions and road capacities.</p>
-        </li>
-        <li><strong>Heap (Prioritizing Vehicles):</strong>
-            <p>Use Heap to prioritize vehicles that have higher emissions or to determine which vehicles should be restricted based on their pollution levels.</p>
-        </li>
-        <li><strong>Binary Search Tree (Vehicle Tracking):</strong>
-            <p>Implement a Binary Search Tree (BST) to efficiently track and manage vehicle registration numbers based on pollution levels. BST can provide a quick lookup of restricted vehicles.</p>
-        </li>
-        <li><strong>AVL Tree (Dynamic Adjustments):</strong>
-            <p>Use an AVL Tree for maintaining a balanced and dynamic record of vehicles in real-time, especially when traffic laws or restrictions change periodically.</p>
-        </li>
-    </ul>
+    <div class="content">
+        <p><strong>SDG 11 (Sustainable Cities and Communities)</strong> focuses on making cities and human settlements inclusive, safe, resilient, and sustainable. Reducing vehicle emissions and optimizing traffic are key contributors to cleaner air and reduced pollution, which aligns with this goal.</p>
+        
+        <h2>Business Case Solution Using Algorithms</h2>
+        <ul>
+            <li><strong>Queue and Stack (Traffic Control Systems):</strong>
+                <p>Queue: Use a queue data structure to model vehicles waiting at traffic signals. By managing the flow of traffic efficiently, you can minimize congestion and pollution.</p>
+                <p>Stack: Implementing a stack for traffic signals or restrictions can help manage alternate-day vehicle access, i.e., even-numbered vehicles on one day, odd-numbered on another.</p>
+            </li>
+            <li><strong>Dijkstra’s Algorithm (Shortest Path for Restricted Vehicles):</strong>
+                <p>Use Dijkstra's algorithm to find the shortest path for restricted vehicles (or alternatively, paths with less pollution) while taking into account vehicle restrictions and road capacities.</p>
+            </li>
+            <li><strong>Heap (Prioritizing Vehicles):</strong>
+                <p>Use Heap to prioritize vehicles that have higher emissions or to determine which vehicles should be restricted based on their pollution levels.</p>
+            </li>
+            <li><strong>Binary Search Tree (Vehicle Tracking):</strong>
+                <p>Implement a Binary Search Tree (BST) to efficiently track and manage vehicle registration numbers based on pollution levels. BST can provide a quick lookup of restricted vehicles.</p>
+            </li>
+            <li><strong>AVL Tree (Dynamic Adjustments):</strong>
+                <p>Use an AVL Tree for maintaining a balanced and dynamic record of vehicles in real-time, especially when traffic laws or restrictions change periodically.</p>
+            </li>
+        </ul>
 
-    <h2>Solution Overview</h2>
-    <p>By applying the above algorithms, cities can effectively manage traffic, reduce vehicle emissions, and align with SDG 11. The approach includes using efficient data structures for managing vehicle data and traffic flow.</p>
+        <h2>Solution Overview</h2>
+        <p>By applying the above algorithms, cities can effectively manage traffic, reduce vehicle emissions, and align with SDG 11. The approach includes using efficient data structures for managing vehicle data and traffic flow. The key goal of this business case is to ensure cleaner air, reduced congestion, and improved traffic management, all of which directly contribute to building sustainable cities and communities as per SDG 11.</p>
+        
+        <div class="algorithm-efficiency">
+            <h3>Efficiency of Algorithms Used</h3>
+            <ul>
+                <li><strong>Queue and Stack:</strong> Queue and stack operations are efficient with a time complexity of <strong>O(1)</> for insertion and removal. They are ideal for modeling traffic and handling dynamic vehicle restrictions.</li>
+                <li><strong>Dijkstra’s Algorithm:</strong> Efficient in finding the shortest path with a time complexity of <strong>O(V^2)</> (for adjacency matrix representation), but can be optimized to <strong>O(E + V log V)</> using priority queues.</li>
+                <li><strong>Heap:</strong> Heaps have a time complexity of <strong>O(log n)</> for insertions and deletions, making them effective for real-time prioritization of vehicles based on emission levels.</li>
+                <li><strong>Binary Search Tree (BST):</strong> Provides an average time complexity of <strong>O(log n)</> for insertion, deletion, and searching, which is highly efficient for managing vehicle registration data.</li>
+                <li><strong>AVL Tree:</strong> An AVL Tree maintains a balanced structure, ensuring that all operations (insert, delete, search) occur in <strong>O(log n)</> time, even under dynamic traffic conditions.</li>
+            </ul>
+        </div>
 
-    <h3>Input for the Code</h3>
-    <p>The following vehicles with different emission levels are added to the traffic management system:</p>
-    <pre>
-    Vehicle ABC123, Emission Level: 100
-    Vehicle XYZ456, Emission Level: 150
-    Vehicle LMN789, Emission Level: 200
-    </pre>
+        <h3>Input for the Code</h3>
+        <p>The following vehicles with different emission levels are added to the traffic management system:</p>
+        <pre>
+        Vehicle ABC123, Emission Level: 100
+        Vehicle XYZ456, Emission Level: 150
+        Vehicle LMN789, Emission Level: 200
+        </pre>
 
-    <h3>Output for the Code</h3>
-    <p>Based on the emission levels, the following vehicles are restricted:</p>
-    <pre>
-    Restricted Vehicle: XYZ456, Emission Level: 150
-    Restricted Vehicle: LMN789, Emission Level: 200
-    </pre>
+        <h3>Output for the Code</h3>
+        <p>Based on the emission levels, the following vehicles are restricted:</p>
+        <pre>
+        Restricted Vehicle: XYZ456, Emission Level: 150
+        Restricted Vehicle: LMN789, Emission Level: 200
+        </pre>
 
-    <h2>The code</h2>
-    <a href="https://github.com/Sairam625/Portfolio-DAA/blob/main/pages/lakshmi/traffic pollncode.cpp" class="cta-button">Code</a><br>
+        <h2>The Code</h2>
+        <a href="https://github.com/Sairam625/Portfolio-DAA/blob/main/pages/lakshmi/traffic pollncode.cpp" class="cta-button">Code</a><br>
 
-    <h2>CSV data File</h2>
-    <a href="https://github.com/Sairam625/Portfolio-DAA/blob/main/pages/lakshmi/vehicles_large.csv" class="cta-button">Data file</a><br>
+        <h2>CSV Data File</h2>
+        <a href="https://github.com/Sairam625/Portfolio-DAA/blob/main/pages/lakshmi/vehicles_large.csv" class="cta-button">Data file</a><br>
+    </div>
 </body>
 </html>
