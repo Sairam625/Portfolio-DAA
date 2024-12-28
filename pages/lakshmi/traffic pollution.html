@@ -6,109 +6,136 @@
     <title>Vehicle Restriction for Pollution Reduction</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
             margin: 0;
             padding: 20px;
-            background-color: #f4f4f9;
-        }
-        h1, h2, h3 {
+            background-color: #f9f9f9;
             color: #2c3e50;
         }
-        ul, p {
+        h1 {
+            text-align: center;
+            color: #2980b9;
+            margin-bottom: 20px;
+        }
+        h2 {
             color: #34495e;
+            margin-top: 30px;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 5px;
+        }
+        p, ul {
+            color: #2f3640;
+        }
+        ul {
+            margin-left: 20px;
+            list-style-type: square;
         }
         .cta-button {
             display: inline-block;
-            margin-top: 10px;
-            padding: 10px 15px;
-            background-color: #3498db;
-            color: #fff;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #27ae60;
+            color: white;
             text-decoration: none;
             border-radius: 5px;
         }
         .cta-button:hover {
-            background-color: #2980b9;
+            background-color: #229954;
         }
         pre {
-            background: #ecf0f1;
-            padding: 10px;
-            border-radius: 5px;
+            background: #f4f6f7;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 5px solid #2980b9;
             overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .highlight-box {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-left: 5px solid #2980b9;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .section-title {
+            background-color: #2980b9;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
         }
     </style>
 </head>
 <body>
-    <h1>Restriction of Vehicles to Maintain Pollution</h1>
-    <h2>Business Case: Restricting Vehicles to Avoid Pollution</h2>
-    <p><strong>SDG 11 (Sustainable Cities and Communities)</strong> focuses on making cities and human settlements inclusive, safe, resilient, and sustainable. Reducing vehicle emissions and optimizing traffic are key contributors to cleaner air and reduced pollution, which aligns with this goal.</p>
+    <h1>Vehicle Restriction for Pollution Reduction</h1>
+
+    <h2 class="section-title">Business Case</h2>
+    <p><strong>SDG 11 (Sustainable Cities and Communities)</strong> emphasizes creating cities that are inclusive, safe, resilient, and sustainable. Managing vehicle emissions is vital for reducing air pollution, improving health, and fostering a cleaner urban environment.</p>
     
-    <h2>Business Case Solution Using Algorithms</h2>
+    <h2 class="section-title">Proposed Solutions Using Algorithms</h2>
     <ul>
-        <li><strong>Queue and Stack (Traffic Control Systems):</strong>
-            <p>Queue: Use a queue data structure to model vehicles waiting at traffic signals. By managing the flow of traffic efficiently, you can minimize congestion and pollution.</p>
-            <p>Stack: Implementing a stack for traffic signals or restrictions can help manage alternate-day vehicle access, i.e., even-numbered vehicles on one day, odd-numbered on another.</p>
+        <li><strong>Queue and Stack:</strong>
+            <p>Queue: Model vehicles at traffic signals for efficient flow management, minimizing delays and emissions.</p>
+            <p>Stack: Alternate-day vehicle access management using a stack (e.g., even/odd-numbered vehicles).</p>
         </li>
-        <li><strong>Dijkstra’s Algorithm (Shortest Path for Restricted Vehicles):</strong>
-            <p>Use Dijkstra's algorithm to find the shortest path for restricted vehicles (or alternatively, paths with less pollution) while taking into account vehicle restrictions and road capacities.</p>
+        <li><strong>Dijkstra’s Algorithm:</strong>
+            <p>Finds the shortest path for vehicles while factoring in restrictions and pollution zones.</p>
         </li>
-        <li><strong>Heap (Prioritizing Vehicles):</strong>
-            <p>Use Heap to prioritize vehicles that have higher emissions or to determine which vehicles should be restricted based on their pollution levels.</p>
+        <li><strong>Heap:</strong>
+            <p>Prioritizes vehicles based on emission levels for optimized restriction strategies.</p>
         </li>
-        <li><strong>Binary Search Tree (Vehicle Tracking):</strong>
-            <p>Implement a Binary Search Tree (BST) to efficiently track and manage vehicle registration numbers based on pollution levels. BST can provide a quick lookup of restricted vehicles.</p>
+        <li><strong>Binary Search Tree (BST):</strong>
+            <p>Tracks vehicle registrations efficiently based on emission levels for quick lookup.</p>
         </li>
-        <li><strong>AVL Tree (Dynamic Adjustments):</strong>
-            <p>Use an AVL Tree for maintaining a balanced and dynamic record of vehicles in real-time, especially when traffic laws or restrictions change periodically.</p>
+        <li><strong>AVL Tree:</strong>
+            <p>Maintains a dynamic, balanced record of vehicles, adjusting to real-time changes in restrictions.</p>
         </li>
     </ul>
 
-    <h2>Solution Overview</h2>
-    <p>By applying the above algorithms, cities can effectively manage traffic, reduce vehicle emissions, and align with SDG 11. The approach includes using efficient data structures for managing vehicle data and traffic flow.</p>
-
-    <h2>Efficiency of Algorithms Used</h2>
+    <h2 class="section-title">Efficiency of Algorithms</h2>
     <ul>
         <li><strong>Queue and Stack:</strong>  
-            <p><strong>Time Efficiency:</strong> \( O(1) \) for insertion and removal operations, suitable for dynamic traffic management.</p>
-            <p><strong>Space Efficiency:</strong> \( O(n) \), where \( n \) is the number of vehicles waiting or restricted.</p>
+            <p><strong>Time Complexity:</strong> \( O(1) \) for enqueue, dequeue, push, and pop.</p>
+            <p><strong>Space Complexity:</strong> \( O(n) \) for managing \( n \) vehicles.</p>
         </li>
         <li><strong>Dijkstra’s Algorithm:</strong>  
-            <p><strong>Time Efficiency:</strong> Optimized to \( O(E + V \log V) \) using a priority queue.</p>
-            <p><strong>Space Efficiency:</strong> \( O(V + E) \), where \( V \) is vertices and \( E \) is edges.</p>
+            <p><strong>Time Complexity:</strong> \( O(E + V \log V) \), where \( V \) is vertices, and \( E \) is edges.</p>
+            <p><strong>Space Complexity:</strong> \( O(V + E) \).</p>
         </li>
         <li><strong>Heap:</strong>  
-            <p><strong>Time Efficiency:</strong> \( O(\log n) \) for insertion and deletion.</p>
-            <p><strong>Space Efficiency:</strong> \( O(n) \), where \( n \) is the number of elements in the heap.</p>
+            <p><strong>Time Complexity:</strong> \( O(\log n) \) for insertions and deletions.</p>
+            <p><strong>Space Complexity:</strong> \( O(n) \) for storing \( n \) elements.</p>
         </li>
         <li><strong>Binary Search Tree (BST):</strong>  
-            <p><strong>Time Efficiency:</strong> \( O(\log n) \) average; \( O(n) \) worst case.</p>
-            <p><strong>Space Efficiency:</strong> \( O(n) \) for storing nodes.</p>
+            <p><strong>Time Complexity:</strong> \( O(\log n) \) average; \( O(n) \) worst case.</p>
+            <p><strong>Space Complexity:</strong> \( O(n) \).</p>
         </li>
         <li><strong>AVL Tree:</strong>  
-            <p><strong>Time Efficiency:</strong> Guarantees \( O(\log n) \) for insertion, deletion, and search.</p>
-            <p><strong>Space Efficiency:</strong> \( O(n) \) with a small constant overhead for balance factors.</p>
+            <p><strong>Time Complexity:</strong> \( O(\log n) \) for search, insertion, and deletion.</p>
+            <p><strong>Space Complexity:</strong> \( O(n) \).</p>
         </li>
     </ul>
 
-    <h3>Input for the Code</h3>
-    <p>The following vehicles with different emission levels are added to the traffic management system:</p>
+    <h2 class="section-title">Input Example</h2>
+    <p>Vehicle data with different emission levels:</p>
     <pre>
     Vehicle ABC123, Emission Level: 100
     Vehicle XYZ456, Emission Level: 150
     Vehicle LMN789, Emission Level: 200
     </pre>
 
-    <h3>Output for the Code</h3>
-    <p>Based on the emission levels, the following vehicles are restricted:</p>
+    <h2 class="section-title">Output Example</h2>
+    <p>Restricted vehicles based on emissions:</p>
     <pre>
     Restricted Vehicle: XYZ456, Emission Level: 150
     Restricted Vehicle: LMN789, Emission Level: 200
     </pre>
 
-    <h2>The code</h2>
-    <a href="https://github.com/Sairam625/Portfolio-DAA/blob/main/pages/lakshmi/traffic pollncode.cpp" class="cta-button">Code</a><br>
+    <h2 class="section-title">Code</h2>
+    <a href="https://github.com/Sairam625/Portfolio-DAA/blob/main/pages/lakshmi/traffic%20pollncode.cpp" class="cta-button">View Code</a><br>
 
-    <h2>CSV data File</h2>
-    <a href="https://github.com/Sairam625/Portfolio-DAA/blob/main/pages/lakshmi/vehicles_large.csv" class="cta-button">Data file</a><br>
+    <h2 class="section-title">CSV Data File</h2>
+    <a href="https://github.com/Sairam625/Portfolio-DAA/blob/main/pages/lakshmi/vehicles_large.csv" class="cta-button">Download CSV File</a><br>
 </body>
 </html>
