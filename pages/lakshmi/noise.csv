@@ -1,0 +1,23 @@
+Noise Data, Pattern, Noise Level, Mitigation Strategy
+trafficconstructiontraffictraffic, construction, high, Implement noise barriers and restrict construction during peak hours.
+citycityconstructioncitytraffic, construction, medium, Use soundproofing for nearby residential buildings.
+birdchirpingcitytrafficbirds, chirping, low, No action needed, monitor levels.
+streetnoiseconstructionnoise, construction, high, Implement noise barriers and restrict construction during peak hours.
+constructionbuildingcitynoise, construction, high, Restrict construction during night hours.
+citytrafficcityconstruction, construction, high, Implement traffic management to reduce noise during peak hours.
+highwaynoiseconstructiontraffic, construction, high, Install noise barriers along highways and restrict heavy vehicle movement.
+constructiontrafficcitynoisenoise, noise, medium, Use quieter construction methods and reduce heavy machinery usage.
+subwaynoisesubwaytraffic, subway, high, Limit night-time subway operations to reduce noise disturbances.
+officesubwayconstructionnoise, office, medium, Reduce office noise during working hours and limit construction on weekends.
+trafficbirdchirpingbirds, chirping, low, No action needed, monitor levels.
+citytrafficofficesubway, office, low, Implement noise-canceling systems in offices.
+neighborhoodnoisesubwaytraffic, subway, medium, Improve noise insulation for nearby apartments and restrict subway during certain hours.
+suburbanhighwaycitytraffic, highway, medium, Use soundproof barriers and reduce highway speed limits.
+heavytrafficstreetconstruction, construction, high, Implement noise barriers and restrict construction during peak hours.
+birdschirpingtrafficconstruction, chirping, low, No action needed, monitor levels.
+noiseconstructionstreettraffic, construction, high, Restrict construction on holidays and weekends.
+nightnoisehighwayconstruction, highway, high, Implement night-time traffic restrictions and reduce construction noise.
+citynoisesubwaytrafficconstruction, subway, high, Restrict high-noise subway operations during peak hours.
+constructiontrafficcitycenter, construction, high, Use quieter machinery and shift construction times to off-peak hours.
+streetnoiseconstructioncity, construction, high, Install noise barriers along construction zones.
+trafficcitycenterconstruction, construction, medium, Implement noise regulations and soundproof surrounding areas.
