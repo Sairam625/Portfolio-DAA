@@ -4,57 +4,59 @@
 
 using namespace std;
 
-// Function to partition the waste array (used by QuickSort)
-int Partition(vector<pair<string, string>>& waste, int low, int high) {
-    string pivot = waste[low].second;  // Pivot is the waste type
+
+int Part(vector<pair<string, string>>& w, int low, int high) 
+{
+    string p = w[low].second;  )
     int i = low, j = high;
 
-    while (i < j) {
-        while (waste[i].second <= pivot && i <= high) i++; 
-        while (waste[j].second > pivot) j--; 
-        if (i < j) swap(waste[i], waste[j]); 
+    while (i < j) 
+    {
+        while (w[i].second <= p && i <= high) i++;                                                                               // Move i to right
+        while (w[j].second > p) j--;                                                                                         // Move j to left
+        if (i < j) swap(w[i], w[j]);                                                                                         // Swap 
     }
-    swap(waste[low], waste[j]); // Place pivot in correct position
+    swap(w[low], w[j]); 
     return j;
 }
 
 // QuickSort to segregate waste items by type
-void QuickSort(vector<pair<string, string>>& waste, int low, int high) {
+void Quick(vector<pair<string, string>>& w, int low, int high) {
     if (low < high) {
-        int pivotIndex = Partition(waste, low, high); // Partitioning step
-        QuickSort(waste, low, pivotIndex - 1); // Sort left part
-        QuickSort(waste, pivotIndex + 1, high); // Sort right part
+        int pI = Part(w, low, high); 
+        Quick(w, low, pI - 1); 
+        Quick(w, pI + 1, high); 
     }
 }
 
-// Function to merge two sorted subarrays (used by MergeSort)
-void Merge(vector<pair<string, string>>& waste, int left, int mid, int right) {
+// Function to merge two sorted subarrays 
+void Merge(vector<pair<string, string>>& w, int left, int mid, int right) {
     vector<pair<string, string>> temp;
     int i = left, j = mid + 1;
 
     while (i <= mid && j <= right) {
-        if (waste[i].second <= waste[j].second)
-            temp.push_back(waste[i++]); // Add smaller item
+        if (w[i].second <= w[j].second)
+            temp.push_back(w[i++]);              // smaller item
         else
-            temp.push_back(waste[j++]); // Add smaller item
+            temp.push_back(w[j++]); //  smaller item
     }
 
-    while (i <= mid) temp.push_back(waste[i++]); // Copy remaining items from left
-    while (j <= right) temp.push_back(waste[j++]); // Copy remaining items from right
+    while (i <= mid) temp.push_back(w[i++]);                                         // Copy remaining items from left
+    while (j <= right) temp.push_back(w[j++]);                                          // Copy remaining items from right
 
-    // Copy the sorted array back to the original waste array
-    for (int k = left; k <= right; k++) waste[k] = temp[k - left];
+    // Copy the sorted array  to the original waste array
+    for (int k = left; k <= right; k++) w[k] = temp[k - left];
 }
 
 // MergeSort to store the waste items in a sorted order
-void MergeSort(vector<pair<string, string>>& waste, int left, int right) {
+void MergeSort(vector<pair<string, string>>& w, int left, int right) {
     if (left < right) {
         int mid = left + (right - left) / 2; 
 
-        MergeSort(waste, left, mid); // Sort the left part
-        MergeSort(waste, mid + 1, right); // Sort the right part
+        MergeSort(w, left, mid);                              // Sort left part
+        MergeSort(w, mid + 1, right);                          // Sort  right part
 
-        Merge(waste, left, mid, right); // Merge the sorted parts
+        Merge(w, left, mid, right);                            // Merge the sorted parts
     }
 }
 
@@ -63,43 +65,43 @@ int main() {
     cout << "Enter the number of waste items: ";
     cin >> n;
 
-    vector<pair<string, string>> waste;
+    vector<pair<string, string>> w;
 
+    // Input waste items and their types
     cout << "Enter waste items and their types (Dry, Wet, E-Waste, Glass, Metal):\n";
-    cin.ignore(); 
+    cin.ignore();t
     for (int i = 0; i < n; i++) {
-        string description, type;
+        string desc, type;
         cout << "Waste " << i + 1 << " description: ";
-        getline(cin, description);  
+        getline(cin, desc);  
         cout << "Waste " << i + 1 << " type (Dry, Wet, E-Waste, Glass, Metal): ";
-        getline(cin, type); 
-        waste.push_back({description, type});
+        getline(cin, type);  
+        w.push_back({desc, type});
     }
 
     // Display before sorting
     cout << "\nBefore sorting:\n";
-    for (const auto& item : waste) {
+    for (const auto& item : w) {
         cout << item.first << " - " << item.second << endl;
     }
 
     // QuickSort to segregate waste by type
-    QuickSort(waste, 0, n - 1);
+    Quick(w, 0, n - 1);
 
     // Display after QuickSort segregation
     cout << "\nAfter QuickSort segregation (sorted by type):\n";
-    for (const auto& item : waste) {
+    for (const auto& item : w) {
         cout << item.first << " - " << item.second << endl;
     }
 
-    // Now, use MergeSort to store and organize the waste
-    MergeSort(waste, 0, n - 1);
+    //  MergeSort to store and organize the waste
+    MergeSort(w, 0, n - 1);
 
     // Display after MergeSort
     cout << "\nAfter MergeSort (sorted by type):\n";
-    for (const auto& item : waste) {
+    for (const auto& item : w) {
         cout << item.first << " - " << item.second << endl;
     }
 
     return 0;
 }
-
