@@ -1,1 +1,57 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Restriction for Pollution Reduction</title>
+</head>
+<body>
+    <h1>Business Case: Restricting Vehicles to Avoid Pollution</h1>
+    <p><strong>SDG 11 (Sustainable Cities and Communities)</strong> focuses on making cities and human settlements inclusive, safe, resilient, and sustainable. Reducing vehicle emissions and optimizing traffic are key contributors to cleaner air and reduced pollution, which aligns with this goal.</p>
+    
+    <h2>Business Case Solution Using Algorithms</h2>
+    <ul>
+        <li><strong>Queue and Stack (Traffic Control Systems):</strong>
+            <p>Queue: Use a queue data structure to model vehicles waiting at traffic signals. By managing the flow of traffic efficiently, you can minimize congestion and pollution.</p>
+            <p>Stack: Implementing a stack for traffic signals or restrictions can help manage alternate-day vehicle access, i.e., even-numbered vehicles on one day, odd-numbered on another.</p>
+        </li>
+        <li><strong>Dijkstra’s Algorithm (Shortest Path for Restricted Vehicles):</strong>
+            <p>Use Dijkstra's algorithm to find the shortest path for restricted vehicles (or alternatively, paths with less pollution) while taking into account vehicle restrictions and road capacities.</p>
+        </li>
+        <li><strong>Heap (Prioritizing Vehicles):</strong>
+            <p>Use Heap to prioritize vehicles that have higher emissions or to determine which vehicles should be restricted based on their pollution levels.</p>
+        </li>
+        <li><strong>Binary Search Tree (Vehicle Tracking):</strong>
+            <p>Implement a Binary Search Tree (BST) to efficiently track and manage vehicle registration numbers based on pollution levels. BST can provide a quick lookup of restricted vehicles.</p>
+        </li>
+        <li><strong>AVL Tree (Dynamic Adjustments):</strong>
+            <p>Use an AVL Tree for maintaining a balanced and dynamic record of vehicles in real-time, especially when traffic laws or restrictions change periodically.</p>
+        </li>
+    </ul>
+
+    <h2>Solution Overview</h2>
+    <p>By applying the above algorithms, cities can effectively manage traffic, reduce vehicle emissions, and align with SDG 11. The approach includes using efficient data structures for managing vehicle data and traffic flow.</p>
+
+    <h3>Input for the Code</h3>
+    <p>Vehicles with different emission levels are added to the traffic management system:</p>
+    <ul>
+        <li>Vehicle ABC123, Emission Level: 100</li>
+        <li>Vehicle XYZ456, Emission Level: 150</li>
+        <li>Vehicle LMN789, Emission Level: 200</li>
+    </ul>
+
+    <h3>Output for the Code</h3>
+    <p>Vehicles that are restricted based on the emission level:</p>
+    <ul>
+        <li>Restricted Vehicle: XYZ456, Emission Level: 150</li>
+        <li>Restricted Vehicle: LMN789, Emission Level: 200</li>
+    </ul>
+
+    <h2>CSV File for the Input and Output</h2>
+    <p>You can download the CSV file below:</p>
+    <a href="data:text/csv;charset=utf-8,%22Vehicle%20Registration%20Number%22,%22Emission%20Level%22,%22Status%22%0AABC123,100,Not%20Restricted%0AXYZ456,150,Restricted%0ALMN789,200,Restricted%0A" download="vehicles.csv">
+        Download CSV
+    </a>
+</body>
+</html>
