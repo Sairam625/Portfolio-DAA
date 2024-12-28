@@ -1,22 +1,22 @@
 #include <iostream>
 using namespace std;
 
-// Find the root of a gathering with path compression
+
 int find(int p[], int rank[], int u) 
 {
     if (p[u] != u) {
-        p[u] = find(p, rank, p[u]);  // Path compression
+        p[u] = find(p, rank, p[u]);  
     }
     return p[u];
 }
 
-// Merge two groups using union by rank
+
 void union(int p[], int rank[], int u, int v) {
-    int rootU = find(p, rank, u);  // Find the root of u
-    int rootV = find(p, rank, v);  // Find the root of v
+    int rootU = find(p, rank, u);  
+    int rootV = find(p, rank, v);  
 
     if (rootU != rootV) {
-        // Union by rank: attach the smaller tree to the larger tree
+      
         if (rank[rootU] > rank[rootV]) {
             p[rootV] = rootU;
         } else if (rank[rootU] < rank[rootV]) {
@@ -76,9 +76,9 @@ int main() {
         cout << "Enter two gatherings to check (u v): ";
         cin >> u >> v;
         if (find(p, rank, u) == find(p, rank, v)) {
-            cout << "Gatherings " << u << " and " << v << " are in the same group.\n";
+            cout << "Gatherings " << u << "and" << v << "are in the same group.\n";
         } else {
-            cout << "Gatherings " << u << " and " << v << " are in different groups.\n";
+            cout << "Gatherings" << u << " and " << v << "are in different groups.\n";
         }
 
         // Ask if the user wants to continue
