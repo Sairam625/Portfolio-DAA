@@ -4,42 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urban Noise Pollution Monitoring and Mitigation</title>
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            background-color: #fcfcfc;
+            color: #34495e;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #e74c3c;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-top: 30px;
+        }
+        p, li {
+            line-height: 1.6;
+        }
+        ul {
+            padding-left: 20px;
+            list-style-type: square;
+        }
+        pre {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+        }
+        .cta-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .cta-button:hover {
+            background-color: #2980b9;
+        }
+        .highlight-box {
+            background-color: #f9f9f9;
+            border-left: 5px solid #e74c3c;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .efficiency {
+            background-color: #eaf7f1;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Business Case: Urban Noise Pollution Monitoring and Mitigation</h1>
-    <p><strong>SDG 11 (Sustainable Cities and Communities)</strong> focuses on making cities and human settlements inclusive, safe, resilient, and sustainable. Managing noise pollution is critical to improving quality of life and environmental sustainability. Using algorithms to monitor and mitigate urban noise pollution helps reduce negative impacts on health and well-being.</p>
-    
+    <h1>Urban Noise Pollution Monitoring and Mitigation</h1>
+
+    <div class="highlight-box">
+        <h2>About SDG 11</h2>
+        <p>
+            <strong>Sustainable Development Goal 11 (SDG 11)</strong> focuses on creating cities and communities that are inclusive, safe, 
+            resilient, and sustainable. Noise pollution negatively affects urban health and quality of life. By leveraging algorithms for monitoring and mitigation, 
+            this business case contributes to the betterment of urban environments, aligning with SDG 11 to promote well-being and ecological balance.
+        </p>
+    </div>
+
     <h2>Solution Overview Using Algorithms</h2>
+    <p>The following algorithms are applied to monitor and mitigate urban noise pollution effectively:</p>
     <ul>
-        <li><strong>Brute Force String Search:</strong> This algorithm searches for specific noise patterns (e.g., construction or traffic) in recorded sound data.</li>
-        <li><strong>Rabin Karp Algorithm:</strong> Used for efficient pattern matching to identify specific noise sources in the recorded data logs.</li>
-        <li><strong>Skip List:</strong> Efficiently manages and stores noise data in city zones, enabling fast search, insertion, and deletion operations.</li>
-        <li><strong>Lookup Table:</strong> A table that references predefined noise mitigation strategies based on noise levels (high, medium, low).</li>
+        <li><strong>Brute Force String Search:</strong> Detects specific noise patterns in recorded sound data.</li>
+        <li><strong>Rabin Karp Algorithm:</strong> Efficiently identifies patterns in noise data logs for specific sources.</li>
+        <li><strong>Skip List:</strong> Organizes and manages noise data across city zones for quick access and updates.</li>
+        <li><strong>Lookup Table:</strong> Maps noise levels to predefined mitigation strategies for actionable insights.</li>
     </ul>
 
     <h2>Input for the Code</h2>
-    <p>The noise data consists of recorded sound patterns, and we use the following data to simulate the noise detection and mitigation process:</p>
-    <ul>
-        <li>Noise Data: "trafficconstructiontraffictraffic"</li>
-        <li>Noise Pattern: "construction"</li>
-        <li>Noise Levels (in decibels): 100, 75, 80, 90</li>
-    </ul>
+    <p>The system takes the following noise data as input:</p>
+    <pre>
+    Noise Data: "trafficconstructiontraffictraffic"
+    Noise Pattern: "construction"
+    Noise Levels (in decibels): 100, 75, 80, 90
+    </pre>
 
     <h2>Output for the Code</h2>
-    <p>The system processes the input data and outputs the following results:</p>
-    <ul>
-        <li><strong>Brute Force Search:</strong> Pattern "construction" found in the noise data.</li>
-        <li><strong>Rabin-Karp Algorithm:</strong> Pattern "construction" found in the noise data.</li>
-        <li><strong>Skip List:</strong> Noise levels managed in the skip list: 75, 80, 90, 100.</li>
-        <li><strong>Lookup Table:</strong> Mitigation Strategy for High Noise Level: "Implement noise barriers and restrict construction during peak hours."</li>
-    </ul>
+    <p>The algorithms process the input and produce the following results:</p>
+    <pre>
+    Brute Force Search:
+    Pattern "construction" found in the noise data.
 
-    <h2>CSV File for the Input and Output</h2>
-    <p>You can download the CSV file below:</p>
-    <a href="data:text/csv;charset=utf-8,%22Noise%20Data%22,%22Pattern%22,%22Noise%20Level%22,%22Mitigation%20Strategy%22%0Atrafficconstructiontraffictraffic,%20construction,%20high,%20Implement%20noise%20barriers%20and%20restrict%20construction%20during%20peak%20hours.%0A100,%2075,%2080,%2090,%20Noise%20Levels%20in%20Skip%20List,%20N/A,%20N/A%0A" download="noise_pollution_data.csv">
-        Download CSV
-    </a>
+    Rabin-Karp Algorithm:
+    Pattern "construction" found in the noise data.
 
+    Skip List:
+    Noise levels managed in the skip list: 75, 80, 90, 100.
+
+    Lookup Table:
+    Mitigation Strategy for High Noise Level: "Implement noise barriers and restrict construction during peak hours."
+    </pre>
+
+    <h2>Time and Space Efficiency</h2>
+    <div class="efficiency">
+        <ul>
+            <li><strong>Brute Force String Search:</strong>
+                <p><strong>Time Complexity:</strong> \( O(m \cdot n) \), where \( m \) is the pattern length and \( n \) is the text length.</p>
+                <p><strong>Space Complexity:</strong> \( O(1) \), as it requires no additional data structures.</p>
+            </li>
+            <li><strong>Rabin Karp Algorithm:</strong>
+                <p><strong>Time Complexity:</strong> \( O(n + m) \) average, \( O(n \cdot m) \) worst-case with hash collisions.</p>
+                <p><strong>Space Complexity:</strong> \( O(1) \), as it uses rolling hash calculations.</p>
+            </li>
+            <li><strong>Skip List:</strong>
+                <p><strong>Time Complexity:</strong> \( O(\log n) \) for insertion, deletion, and search.</p>
+                <p><strong>Space Complexity:</strong> \( O(n) \), where \( n \) is the number of nodes.</p>
+            </li>
+            <li><strong>Lookup Table:</strong>
+                <p><strong>Time Complexity:</strong> \( O(1) \) for lookups.</p>
+                <p><strong>Space Complexity:</strong> \( O(k) \), where \( k \) is the number of noise levels mapped to strategies.</p>
+            </li>
+        </ul>
+    </div>
+
+    <h2>Code</h2>
+    <a href="https://github.com/Sairam625/Portfolio-DAA/blob/main/pages/lakshmi/noisecode.cpp" class="cta-button">View Code</a><br>
+    
+    <h2>CSV Data File</h2>
+    <a href="https://github.com/Sairam625/Portfolio-DAA/blob/main/pages/lakshmi/noise.csv" class="cta-button">Download CSV File</a><br>
 </body>
 </html>
-
