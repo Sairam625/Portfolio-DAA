@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Course Reflection and Project</title>
   <link rel="stylesheet" href="businesscases.css">
 </head>
+
 <body>
+ 
   <header class="navbar">
     <div class="logo">DAA-PORTFOLIO</div>
     <nav class="menu">
@@ -16,84 +19,428 @@
       <a href="/Portfolio-DAA/contact.html">Contact</a>
     </nav>
   </header>
+  <h1 style="text-align: center; padding-top: 20PX; text-decoration:underline;"> BUSINESS CASES</h1>
   <div class="container">
-    <section class="b">   
-       <header>
-      <h1>Business Case for Anandnagari Bus System(mapping to SDG 11.2 targert)</h1>
-    </header>
+    <section class="b">
+      <section id="public-transport-optimization">
+        <h2>1.Public Transport Optimization  </h2>
+        
+        <h3>Problem:</h3>
+        <p>Anandnagari's public transport system faces inefficiencies in its routing, leading to:</p>
+        <ul>
+          <li>Underutilization of buses.</li>
+          <li>Increased commute times for residents.</li>
+          <li>Higher operational costs due to redundant or inefficient routes.</li>
+          <li>Elevated carbon emissions due to unnecessary fuel consumption.</li>
+        </ul>
+      
+        <h3>Solution:</h3>
+        <p>The <strong>Floyd-Warshall Algorithm</strong> can be used to calculate the shortest paths between all pairs of bus stops. This information helps to design optimized routes that:</p>
+        <ul>
+          <li>Reduce travel times for passengers.</li>
+          <li>Enhance the efficiency of public transport services.</li>
+          <li>Minimize the operational costs and environmental footprint.</li>
+        </ul>
+      
+        <section class="sdg-alignment">
+          <h2>Alignment with SDG Goal 11: Sustainable Cities and Communities</h2>
+          <p>
+              <strong>Target 11.2:</strong> By 2030, provide access to safe, affordable, accessible, and sustainable transport systems for all, improving road safety, notably by expanding public transport.
+          </p>
+          <p>
+              <strong>Indicator 11.2.1:</strong> Proportion of population that has convenient access to public transport, by sex, age, and persons with disabilities.
+          </p>
+          <h3>How It Aligns</h3>
+          <ul>
+              <li><strong>Affordable Transport:</strong> Optimized routes ensure reduced fuel consumption and operational costs, allowing for lower fare structures, making public transport more affordable.</li>
+              <li><strong>Accessibility:</strong> Ensures all neighborhoods, including underserved ones, are efficiently connected, enhancing inclusivity.</li>
+              <li><strong>Environmental Sustainability:</strong> Reduction in redundant routes leads to decreased carbon emissions, contributing to cleaner air quality.</li>
+              <li><strong>Resilient Infrastructure:</strong> By creating efficient and adaptable route systems, the city ensures resilience in the face of urbanization and population growth.</li>
+              <li><strong>Improved Mobility:</strong> Faster and more reliable public transport encourages usage, reducing dependence on private vehicles and mitigating traffic congestion.</li>
+          </ul>
+      </section>
+      
+      </section>
+      
+          <h2>Relating this business case to algortims</h2>
+          <ul>
+            <li>
+              we can use the the <a
+                href="https://github.com/Sairam625/Portfolio-DAA/blob/main/pages/sairam/codes/dijkstras/dijkstras.cpp">
+                Dijkstra's Algorithm </a> as This algorithm is commonly used for finding the shortest path in a graph.
+              We can use it to determine the shortest route between bus stops and optimize travel times.
+            </li>
+            <li>we can also use the <a href="https://github.com/Sairam625/Portfolio-DAA/blob/main/pages/sairam/codes/flyodswarshals.cpp">flyod-warshals</a> Algorithm to calculate the shortest paths between all pairs of bus stops and design efficient routes.</li>
+          <li>
+            We can use the <a href="" >Quick sort</a>the buses according to their areas of travel
+          </li>
+          </ul>
+          
+            <h1>Optimal Data Storage Technique: Hash Map with Adjacency List</h1>
+              <ul>
+              <li>
+              Scalability: Handles a large number of buses and routes efficiently.</li>
+              <li>
+                
+              Fast Access: Quick lookup and insertion for bus stop and route information.
+            </li>
+              
+          <li>Flexibility: Easy to manage dynamic changes, such as adding/removing bus stops or modifying routes.</li>
+          </ul>
+          <h1>efficiency analysis of dijkstra's</h1>
+          <ul>
+            <ul>
+              <li>
+                  <strong>Binary Min-Heap:</strong> 
+                  <ul>
+                      <li><strong>Time Complexity:</strong> O((V + E) log V)</li>
+                      <li><strong>When to Use:</strong> Sparse graphs (common case).</li>
+                  </ul>
+              </li>
+              <li>
+                  <strong>Array as Priority Queue:</strong>
+                  <ul>
+                      <li><strong>Time Complexity:</strong> O(V<sup>2</sup>)</li>
+                      <li><strong>When to Use:</strong> Dense graphs or small graphs.</li>
+                  </ul>
+              </li>
+              <li>
+                  <strong>Fibonacci Heap:</strong>
+                  <ul>
+                      <li><strong>Time Complexity:</strong> O(V log V + E)</li>
+                      <li><strong>When to Use:</strong> Theoretically optimal, but rarely used.</li>
+                  </ul>
+              </li>
+          </ul>
+          </ul>
+          <h1>efficiency analysis of Floyd-Warshall</h1>
+          <section>
+            <ul>
+                <li>
+                    <strong>Time Complexity:</strong>
+                    <ul>
+                        <li><strong>Overall:</strong> O(V<sup>3</sup>)</li>
+                        <li>Due to three nested loops iterating over all vertices.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Space Complexity:</strong>
+                    <ul>
+                        <li><strong>Overall:</strong> O(V<sup>2</sup>)</li>
+                        <li>Uses a distance matrix to store shortest path information.</li>
+                    </ul>
+                </li>
+            </ul>
+            <section>
+              <header>
+                  <h1>City Bus Management</h1>
+              </header>
+              <section>
+                  <h2>1. Route Planning and Optimization</h2>
+                  <ul>
+                      <li><strong>Demand Analysis:</strong> Analyze population density, major commuting zones (residential areas, offices, schools), and passenger demand patterns.</li>
+                      <li><strong>Route Design:</strong> Create routes that cover key areas with minimal overlap and reduce travel time.</li>
+                      <li><strong>Timetable Scheduling:</strong> Assign schedules based on peak and off-peak hours, ensuring adequate frequency during high-demand periods.</li>
+                  </ul>
+              </section>
+              <section>
+                  <h2>2. Fleet Management</h2>
+                  <ul>
+                      <li><strong>Fleet Allocation:</strong> Distribute buses to routes based on demand. High-traffic routes get more buses, while low-traffic routes get fewer.</li>
+                      <li><strong>Maintenance and Inspection:</strong> Regularly inspect buses for mechanical and safety issues. Scheduled maintenance prevents breakdowns.</li>
+                      <li><strong>Depot Management:</strong> Centralized locations for parking, cleaning, and maintaining buses when not in use.</li>
+                  </ul>
+              </section>
+              <section>
+                  <h2>3. Ticketing and Fare Collection</h2>
+                  <ul>
+                      <li><strong>Fare Systems:</strong> Implement cash, digital payment, or contactless cards for fare collection.</li>
+                      <li><strong>Passes and Discounts:</strong> Offer daily, monthly, or annual passes, and discounts for students, senior citizens, and differently-abled individuals.</li>
+                      <li><strong>Smart Ticketing:</strong> Use apps or automated ticketing systems for faster transactions and reduced fraud.</li>
+                  </ul>
+              </section>
+              <section>
+                  <h2>4. Technology Integration</h2>
+                  <ul>
+                      <li><strong>GPS Tracking:</strong> Monitor buses in real-time to ensure punctuality and manage traffic-related delays.</li>
+                      <li><strong>Passenger Information Systems:</strong> Provide live updates on arrival times, delays, or route changes via mobile apps, websites, or display boards at bus stops.</li>
+                      <li><strong>Data Analytics:</strong> Use ridership data to adjust routes, schedules, and frequencies for better service.</li>
+                  </ul>
+              </section>
+              <section>
+                  <h2>5. Traffic and Safety Management</h2>
+                  <ul>
+                      <li><strong>Dedicated Bus Lanes:</strong> Reserve lanes for buses to avoid congestion and maintain schedules.</li>
+                      <li><strong>Safety Measures:</strong> Equip buses with CCTV cameras, panic buttons, and first-aid kits.</li>
+                      <li><strong>Driver Training:</strong> Train drivers in safe driving practices, fuel efficiency, and passenger assistance.</li>
+                  </ul>
+              </section>
+              <section>
+                  <h2>6. Operational Efficiency</h2>
+                  <ul>
+                      <li><strong>Fuel Management:</strong> Optimize fuel use through efficient driving and route planning. Transition to CNG or electric buses for sustainability.</li>
+                      <li><strong>Shift Management:</strong> Schedule drivers and conductors in shifts to avoid fatigue and ensure consistent service.</li>
+                      <li><strong>Incident Management:</strong> Establish protocols for breakdowns, accidents, or emergencies.</li>
+                  </ul>
+              </section>
+              <section>
+                  <h2>7. Public Engagement and Feedback</h2>
+                  <ul>
+                      <li><strong>Communication:</strong> Use social media, apps, and public notices to keep commuters informed about changes.</li>
+                      <li><strong>Feedback Mechanisms:</strong> Collect feedback via surveys, apps, or hotlines to address issues and improve services.</li>
+                      <li><strong>Public Awareness Campaigns:</strong> Educate citizens on routes, schedules, and ticketing systems.</li>
+                  </ul>
+              </section>
+              <section>
+                  <h2>8. Financial Management</h2>
+                  <ul>
+                      <li><strong>Budgeting:</strong> Allocate funds for fuel, salaries, maintenance, and infrastructure development.</li>
+                      <li><strong>Revenue Generation:</strong> Generate income through fares, advertisements on buses, and renting out bus depots.</li>
+                      <li><strong>Subsidies and Grants:</strong> Seek government subsidies for affordable fares and sustainable practices.</li>
+                  </ul>
+              </section>
+              <section>
+                  <h2>9. Sustainability Initiatives</h2>
+                  <ul>
+                      <li><strong>Green Fleet:</strong> Invest in electric or hybrid buses to reduce emissions.</li>
+                      <li><strong>Energy Efficiency:</strong> Use LED lighting, regenerative braking systems, and solar panels at bus stops or depots.</li>
+                      <li><strong>Waste Management:</strong> Manage waste generated at depots and ensure eco-friendly cleaning practices.</li>
+                  </ul>
+              </section>
+              <section>
+                  <h2>10. Regulatory Compliance</h2>
+                  <ul>
+                      <li><strong>Permits and Licensing:</strong> Ensure buses and drivers comply with government regulations.</li>
+                      <li><strong>Standards:</strong> Meet safety, environmental, and operational standards set by local or national authorities.</li>
+                      <li><strong>Audit and Reporting:</strong> Regularly audit operations and report performance metrics.</li>
+                  </ul>
+              </section>
+          </section>
+        </section>
+        
+        </section>
+      </section>
 
-    <section class="section">
-      <h2>1. Business Objectives</h2>
-      <ul>
-        <li>To provide affordable and efficient public transport to all residents.</li>
-        <li>To ensure that mobility is safe, accessible, and sustainable.</li>
-        <li>To reduce the environmental impact of private transportation by offering a cleaner alternative.</li>
-        <li>To provide a reliable and efficient system that supports economic activity and social inclusion.</li>
-        <li>To improve connectivity and make transportation accessible to vulnerable groups (such as children, elderly, and disabled persons).</li>
-      </ul>
     </section>
-
-    <section class="section">
-      <h2>2. Target Audience</h2>
-      <p>The target audience for the bus transport system includes:</p>
-      <ul>
-        <li>Daily commuters, including students, employees, and workers.</li>
-        <li>Vulnerable groups, including women, children, elderly people, and individuals with disabilities.</li>
-        <li>Tourists and visitors to the city.</li>
-        <li>Environmentally-conscious residents looking for eco-friendly alternatives to private vehicles.</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2>3. Key Benefits</h2>
-
-      <h3>A. Economic Benefits</h3>
-      <h3>B. Social Benefits</h3>
-      <h3>C. Environmental Benefits</h3>
-    </section>
-
-    <section class="section">
-      <h2>4. System Design and Implementation</h2>
-
-      <h3>A. Fleet Design</h3>
-      <h3>B. Routes and Schedules</h3>
-      <h3>C. Accessibility</h3>
-    </section>
-
-    <section class="section">
-      <h2>5. SDG Goal Alignment</h2>
-      <p>This public transport system is directly aligned with SDG Goal 11.2, which focuses on providing access to safe, affordable, accessible, and sustainable transport systems for all. Here's how it contributes to the goal:</p>
-      <ul>
-        <li><b>Safe and Accessible Transport:</b> By prioritizing accessibility for the elderly, women, children, and people with disabilities, the bus system ensures that all individuals can safely and easily access transportation. Additionally, the system will include safety measures such as well-lit bus stops, trained staff, and surveillance for security.</li>
-        <li><b>Sustainability:</b> The bus system reduces the environmental impact of individual car use, contributes to energy efficiency, and reduces road congestion, which improves the city’s overall sustainability.</li>
-        <li><b>Affordability:</b> The bus system will be designed to ensure that fare prices remain low and affordable for all residents, regardless of income. This will be done by ensuring efficient route planning and scheduling to minimize operating costs and maximize capacity.</li>
-        <li><b>Focus on Vulnerable Groups:</b> Special attention will be given to the mobility needs of vulnerable populations, ensuring that people with disabilities, older persons, and women can use the system with ease and safety.</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2>6. Risk Management and Challenges</h2>
-      <ul>
-        <li><b>Traffic Congestion:</b> There is a possibility that road congestion might still affect the buses. However, the development of bus-only lanes can mitigate this issue.</li>
-        <li><b>Public Perception:</b> Some residents may initially resist the new system, especially those accustomed to private vehicles. Awareness campaigns and incentives for using public transport can help improve adoption.</li>
-        <li><b>Funding and Maintenance:</b> Initial investment in buses and infrastructure will be significant. To mitigate this, the city will explore public-private partnerships, government funding, and long-term operational models to ensure sustainability.</li>
-      </ul>
+    <section  class="b">
       <section>
-        <h2>Relating this business case to algortims</h2>
+      <h2>2.Traffic Optimization in Anandnagari</h2>
+      <p>Anandnagari experiences frequent traffic congestion, especially during peak hours, due to:</p>
+      <ul>
+        <li>Inefficient traffic flow management.</li>
+        <li>Suboptimal routing for vehicles.</li>
+        <li>Increased travel times and commuter frustration.</li>
+        <li>Elevated fuel consumption and carbon emissions.</li>
+      </ul>
+      
+      <h3>Solution:</h3>
+      <p>The <strong>Dijkstra's Algorithm</strong> can be applied to determine the shortest and most efficient paths for vehicles across the city's road network. This optimization helps to:</p>
+      <ul>
+        <li>Minimize travel times for commuters.</li>
+        <li>Reduce fuel consumption and emissions.</li>
+        <li>Distribute traffic evenly across alternate routes to prevent bottlenecks.</li>
+      </ul>
+    
+      <section class="sdg-alignment">
+        <h2>Alignment with SDG Goal 11: Sustainable Cities and Communities</h2>
+        <p>
+            <strong>Target 11.6:</strong> By 2030, reduce the adverse environmental impact of cities, including through better air quality and efficient traffic systems.
+        </p>
+        <p>
+            <strong>Indicator 11.6.2:</strong> Annual mean levels of fine particulate matter (PM2.5) in cities (population weighted).
+        </p>
+        <h3>How It Aligns</h3>
+        <ul>
+            <li><strong>Reduced Congestion:</strong> Efficient traffic flow reduces time spent idling in traffic, lowering emissions and improving air quality.</li>
+            <li><strong>Accessible Transportation:</strong> Optimized paths make it easier for residents to commute, enhancing mobility across the city.</li>
+            <li><strong>Sustainable Infrastructure:</strong> Improved traffic management systems contribute to a sustainable and resilient urban environment.</li>
+            <li><strong>Environmental Benefits:</strong> Less congestion means reduced fuel use and fewer greenhouse gas emissions, aligning with climate action goals (SDG Goal 13).</li>
+            <li><strong>Inclusive Development:</strong> Ensures traffic optimization benefits all residents, including underserved areas.</li>
+        </ul>
+    </section>
+    
+    </section>
+    
+      <section> 
+      <h2>Relating this business case to algortims</h2>
+      <ul>
+        <li>
+          we can use the the <a
+            href="https://github.com/Sairam625/Portfolio-DAA/blob/main/pages/sairam/codes/dijkstras/dijkstras.cpp">
+            Dijkstra's Algorithm </a> as This algorithm is commonly used for finding the shortest path in a graph.
+          We can use it to determine the shortest route for private vechiles.as they need a shortest way to travel 
+        </li>
+      </ul>
+      <h1>efficiency analysis of dijkstra's</h1>
+      <ul>
         <ul>
           <li>
-            we can use the the <a href="https://github.com/Sairam625/Portfolio-DAA/blob/main/pages/sairam/codes/dijkstras/dijkstras.cpp">  Dijkstra's Algorithm </a> as This algorithm is commonly used for finding the shortest path in a graph. We can use it to determine the shortest route between bus stops and optimize travel times.
+              <strong>Binary Min-Heap:</strong> 
+              <ul>
+                  <li><strong>Time Complexity:</strong> O((V + E) log V)</li>
+                  <li><strong>When to Use:</strong> Sparse graphs (common case).</li>
+              </ul>
           </li>
-        </ul>
-      </section>
+          <li>
+              <strong>Array as Priority Queue:</strong>
+              <ul>
+                  <li><strong>Time Complexity:</strong> O(V<sup>2</sup>)</li>
+                  <li><strong>When to Use:</strong> Dense graphs or small graphs.</li>
+              </ul>
+          </li>
+          <li>
+              <strong>Fibonacci Heap:</strong>
+              <ul>
+                  <li><strong>Time Complexity:</strong> O(V log V + E)</li>
+                  <li><strong>When to Use:</strong> Theoretically optimal, but rarely used.</li>
+              </ul>
+          </li>
+      </ul>
+      </ul>
     </section>
-  </section>
+    </section>
+      <section  class="b">
+        <section id="evacuation-optimization">
+          <h2>3.Emergency Evacuation Route Optimization </h2>
+          
+          <h3>Problem:</h3>
+          <p>During emergencies like floods or fires, Anandnagary faces challenges such as:</p>
+          <ul>
+            <li>Inefficient evacuation routes leading to delays.</li>
+            <li>Confusion among residents due to a lack of clear paths.</li>
+            <li>Increased risk of injuries and loss of life.</li>
+            <li>Difficulty in coordinating evacuation efforts.</li>
+          </ul>
+        
+          <h3>Solution:</h3>
+          <ul>
+            <li>Swift evacuation during emergencies.</li>
+            <li>Safe and well-coordinated movement of people.</li>
+            <li>Minimal confusion and panic among residents.</li>
+          </ul>
+        
+          <section class="sdg-alignment">
+            <h2>Alignment with SDG Goal 11: Sustainable Cities and Communities</h2>
+            <p>
+                <strong>Target 11.5:</strong> By 2030, significantly reduce the number of deaths and the number of people affected by disasters, including through disaster risk reduction strategies.
+            </p>
+            <p>
+                <strong>Indicator 11.5.1:</strong> Number of deaths, missing persons, and persons affected by disaster per 100,000 people.
+            </p>
+            <h3>How It Aligns</h3>
+            <ul>
+                <li><strong>Safe and Swift Evacuation:</strong> Identifies the shortest and safest paths to minimize casualties and ensure timely evacuation.</li>
+                <li><strong>Disaster Resilience:</strong> Enhances the city’s preparedness and response during emergencies.</li>
+                <li><strong>Inclusive Safety:</strong> Ensures evacuation plans cover all areas, including underserved neighborhoods.</li>
+                <li><strong>Infrastructure Planning:</strong> Helps design effective emergency routes and improves city resilience.</li>
+                <li><strong>Risk Reduction:</strong> Contributes to reducing disaster-related injuries and fatalities, aligning with climate action goals (SDG Goal 13).</li>
+            </ul>
+        </section>
+        
+        </section>
+        <h2>Relating this business case to algortims</h2>
+        <ul>
+          <p><strong>The<a href="https://github.com/Sairam625/Portfolio-DAA/blob/main/pages/sairam/codes/BFS.cpp"> Bread First Search (BFS) </a></strong> algorithm can be applied to identify the quickest evacuation routes from any location in the city. </p>
+        </ul>
+        <section>
+          <h2>Breadth-First Search (BFS) Efficiency Analysis</h2>
+          <ul>
+              <li>
+                  <strong>Time Complexity:</strong>
+                  <ul>
+                      <li><strong>Overall:</strong> O(V + E)</li>
+                      <li>Where V is the number of vertices and E is the number of edges.</li>
+                      <li>Each vertex is visited once, and each edge is explored once in the adjacency list representation.</li>
+                  </ul>
+              </li>
+              <li>
+                  <strong>Space Complexity:</strong>
+                  <ul>
+                      <li><strong>Overall:</strong> O(V + E)</li>
+                      <li>Space required for adjacency list, visited array, and queue.</li>
+                  </ul>
+              </li>
+          </ul>
+      </section>
+      
+    </section>
+    </section>
+    <section class="b">
+      <h1>4.Smart Water Management System</h1>
+    <h2>Objective</h2>
+          <p>Ensure sustainable water usage and prevent wastage.</p>
 
+          <h2>Key Features</h2>
+          <ul>
+              <li><strong>Smart Meters:</strong> Monitor water usage and detect leaks in real-time.</li>
+              <li><strong>Rainwater Harvesting Systems:</strong> Collect and store rainwater for non-potable uses.</li>
+              <li><strong>Recycling Plants:</strong> Treat and reuse wastewater for irrigation and industrial processes.</li>
+          </ul>
+    
+          <h2>Benefits</h2>
+          <ul>
+              <li>Conservation of precious water resources.</li>
+              <li>Cost savings for households and industries.</li>
+              <li>Improved resilience to water scarcity.</li>
+          </ul>
 
+          <section class="sdg-alignment">
+            <h2>Alignment with SDG Goal 11: Sustainable Cities and Communities</h2>
+            <p>
+                This business case aligns with SDG Goal 11 by contributing to sustainable urban development through efficient water management. Specifically, it addresses the following targets under Goal 11:
+            </p>
+            <ul>
+                <li><strong>Target 11.6:</strong> Reduce the environmental impact of cities by improving water resource management.</li>
+                <p><strong>Indicator 11.6.1:</strong> Proportion of urban solid waste regularly collected and with adequate final discharge.</p>
+                
+                <li><strong>Target 11.b:</strong> Promote sustainable practices and resilience to climate-related water challenges.</li>
+                <p><strong>Indicator 11.b.1:</strong> Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015–2030.</p>
+                
+                <li><strong>Target 11.c:</strong> Support sustainable and resilient urban infrastructure development.</li>
+                <p><strong>Indicator 11.c.1:</strong> Proportion of financial support to the development of sustainable and resilient infrastructure in developing countries.</p>
+            </ul>
+        </section>
+        
+        <h2>Relating this business case to algortims</h2>
+        <ul>
+          <p><strong>The<a href="https://github.com/Sairam625/Portfolio-DAA/blob/main/pages/sairam/codes/kruscals.cpp">  Kruskals </a></strong>   algorithm can be used in this business case to design an optimal water distribution network by minimizing the cost of connecting all reservoirs, treatment plants, and user locations. Its edge-based approach ensures the network is built efficiently without redundancy, making it ideal for infrastructure planning. </p>
+        </ul>
+        <h1> efficiency analysis</h1>
+          <ul>
+            <li>
+              Time Complexity: 
+𝑂
+(
+𝐸
+log
+⁡
+𝐸
+)
+O(ElogE), where 
+𝐸
+E is the number of edges in the graph.</li>
+
+<li>Space Complexity: 
+𝑂
+(
+𝐸
++
+𝑉
+)
+O(E+V), where 
+𝑉
+V is the number of vertices.
+            </li>
+          </ul>
+    </section>
+    
+    </section>
+    
     <footer>
-      <p>&copy; 2024 Anandnagari Bus Transport System</p>
+      <p>&copy; 2024 Anandnagari </p>
     </footer>
   </div>
-  
+
 </body>
+
 </html>

@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urban Housing Allocation</title>
     <link rel="stylesheet" href="/Portfolio-DAA/pages/vaishnavi/projectoverview.css">
+    <style>
+        body {
+            margin: 0 5%; /* Medium margin for better visibility on laptops */
+            font-family: Arial, sans-serif;
+            line-height: 1.4; /* Compact line height */
+        }
+        .project-content {
+            margin: 0 auto;
+            max-width: 1200px; /* Increased width for laptop screens */
+        }
+        h1, h2, h3 {
+            margin-bottom: 6px; /* Tighter spacing between headers and text */
+        }
+        p, ol, li {
+            font-size: 1rem;
+            margin-bottom: 6px; /* Reduced spacing between elements */
+        }
+    </style>
 </head>
 <body>
     <header class="navbar">
@@ -36,9 +54,25 @@
 
         <h2>Algorithms</h2>
         <ol>
-            <li><strong>Dynamic Programming:</strong> Optimizes the allocation strategy to ensure the best use of available housing resources while minimizing costs.</li>
-            <li><strong>Partitioning:</strong> Segments the city into affordable housing zones, making it easier to match residents with housing that fits their needs.</li>
-            <li><strong>Backtracking:</strong> Explores multiple allocation possibilities to find the best solution by recursively considering all possible assignments and selecting the optimal one.</li>
+            <li><strong>Dynamic Programming:</strong>
+                <ul>
+                    <li><strong>Time Complexity:</strong> O(R⋅H), where R is the number of residents and H is the number of houses.</li>
+                    <li><strong>Space Complexity:</strong> O(R⋅H), for the table to store subproblem results.</li>
+                </ul>
+            </li>
+            <li><strong>Backtracking:</strong>
+                <ul>
+                    <li><strong>Time Complexity:</strong> O(H<sup>R</sup>), where R is the number of residents and H is the number of houses.</li>
+                    <li><strong>Space Complexity:</strong> O(R), for the recursion stack and storing intermediate results during exploration.</li>
+                </ul>
+            </li>
+            <li><strong>Partitioning Algorithm:</strong>
+                <ul>
+                    <li><strong>Use Case:</strong> Partition residents or houses based on criteria (e.g., income, family size).</li>
+                    <li><strong>Time Complexity:</strong> O(R⋅logR + H⋅logH), if sorting is involved. Otherwise, O(R + H) for linear partitioning.</li>
+                    <li><strong>Space Complexity:</strong> O(R + H), to store the partitions or for auxiliary space during the process.</li>
+                </ul>
+            </li>
         </ol>
 
         <h2>Code and Data Files</h2>
