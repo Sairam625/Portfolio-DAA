@@ -1,91 +1,109 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
+// BFS to find shortest path from source
+void bfs(int graph[10][10], int n, int src) {
+    vector<int> dist(n, INT_MAX);  
+    queue<int> q;
+    
+    dist[src] = 0;
+    q.push(src);
+    
+    while (!q.empty()) {
+        int spot = q.front();
+        q.pop();
+        
+        for (int i = 0; i < n; i++) {
+            if (graph[spot][i] != 0 && dist[i] == INT_MAX) {
+                dist[i] = dist[spot] + 1;  // Update distance
+                q.push(i);
+            }
+        }
+    }
 
-int find(int p[], int rank[], int u) 
+    cout << "BFS distances from spot " << src << ": ";
+    for (int i = 0; i < n; i++) {
+        if (dist[i] == INT_MAX) {
+            cout << "INF ";
+        } else {
+            cout << dist[i] << " ";
+        }
+    }
+    cout << endl;
+}
+
+// Floyd-Warshall to find shortest paths between all spots
+void floydWarshall(int graph[10][10], int n) 
 {
-    if (p[u] != u) {
-        p[u] = find(p, rank, p[u]);  
-    }
-    return p[u];
-}
-
-
-void union(int p[], int rank[], int u, int v) {
-    int rootU = find(p, rank, u);  
-    int rootV = find(p, rank, v);  
-
-    if (rootU != rootV) {
-      
-        if (rank[rootU] > rank[rootV]) {
-            p[rootV] = rootU;
-        } else if (rank[rootU] < rank[rootV]) {
-            p[rootU] = rootV;
-        } else {
-            p[rootV] = rootU;  // If same rank, make one root
-            rank[rootU]++;  // Increment rank
+    int dist[10][10];
+ // Initialize distance matrix from graph
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if (graph[i][j] == 0 && i != j) {
+                dist[i][j] = INT_MAX;  // No path exists
+            }
+            else {
+                dist[i][j] = graph[i][j];  // Direct path exists
+            }
         }
     }
-}
 
-// Print the groups and their roots
-void printGroups(int p[], int rank[], int n) {
-    cout << "Groups:\n";
-    for (int i = 0; i < n; i++) {
-        cout << "Gathering " << i << " is in group " << find(p, rank, i) << endl;
-    }
-}
-
-// Print the tree structure of the groups
-void printHierarchy(int p[], int n) {
-    cout << "\nTree Structure:\n";
-    for (int i = 0; i < n; i++) {
-        int root = find(p, rank, i);
-        if (i != root) {
-            cout << "Gathering " << i << ": Parent -> Gathering " << root << endl;
-        } else {
-            cout << "Gathering " << i << ": Root\n";
+    // Update shortest paths using intermediate spots
+    for (int k = 0; k < n; k++) 
+    {
+        for (int i = 0; i < n; i++) 
+    {
+            for (int j = 0; j < n; j++) 
+            {
+                if (dist[i][k] != INT_MAX && dist[k][j] != INT_MAX) 
+                {
+                    if (dist[i][j] > dist[i][k] + dist[k][j])
+                    {
+                        dist[i][j] = dist[i][k] + dist[k][j];  // Shortest path found here
+                    }
+                }
+            }
         }
+    }
+
+   
+    cout << "Shortest paths between all places: \n";
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if (dist[i][j] == INT_MAX) {
+                cout << "INF ";
+            } else {
+                cout << dist[i][j] << " ";
+            }
+        }
+        cout << endl;
     }
 }
 
 int main() {
-    int n = 5;  // Number of gatherings
-    int p[n], rank[n];
+    int n;
+    cout << "Enter number of gathering places: ";
+    cin >> n;
 
-    // Initialize each gathering to be its own parent and rank to 0
+  int graph[10][10];
+    cout << "Enter the adjacency matrix:\n";
     for (int i = 0; i < n; i++) {
-        p[i] = i;
-        rank[i] = 0;
+        for (int j = 0; j < n; j++) {
+            cin >> graph[i][j];
+            if (graph[i][j] == 0 && i != j) // No path
+            {
+                graph[i][j] = INT_MAX;  
+            }
+        }
     }
 
-    int u, v;
-    char choice;
 
-    do {
-        // Merge two gatherings
-        cout << "Enter two gatherings to merge (u v): ";
-        cin >> u >> v;
-        union(p, rank, u, v);
+    int src;
+    cout << "Enter source gathering spot for BFS: ";
+    cin >> src;
+    bfs(graph, n, src);
 
-        // Print the groups and their hierarchical structure
-        printGroups(p, rank, n);
-        printHierarchy(p, n);
+    floydWarshall(graph, n);
 
-        // Check if two gatherings are in the same group
-        cout << "Enter two gatherings to check (u v): ";
-        cin >> u >> v;
-        if (find(p, rank, u) == find(p, rank, v)) {
-            cout << "Gatherings " << u << "and" << v << "are in the same group.\n";
-        } else {
-            cout << "Gatherings" << u << " and " << v << "are in different groups.\n";
-        }
-
-        // Ask if the user wants to continue
-        cout << "Do you want to continue? (y/n): ";
-        cin >> choice;
-
-    } while (choice == 'y');
-
-    return 0;
+    return 0;
 }
