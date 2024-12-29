@@ -15,7 +15,7 @@
             color: #2c3e50;
         }
         .business-case {
-            background: #fff;
+            background: #ffffff;
             border: 1px solid #ddd;
             padding: 20px;
             margin-bottom: 20px;
@@ -25,16 +25,27 @@
         .business-case h2 {
             margin-top: 0;
         }
-        .selected {
-            border: 2px solid #16a085;
-            background-color: #e8f6f3;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
         }
     </style>
 </head>
 <body>
     <h1>Business Cases</h1>
 
-    <div class="business-case selected">
+    <div class="business-case">
         <h2>1. Proper Disposal of Wastes (Segregation)</h2>
         <h3>Target 11.6</h3>
         <p>Reduce the adverse environmental impact of cities, with a focus on air quality and municipal and other waste management.</p>
@@ -44,6 +55,19 @@
 
         <h3>Description</h3>
         <p>Proper segregation and disposal of wastes directly increase the percentage of waste processed safely and help maintain the surroundings in healthier conditions. It also promotes the importance of achieving sustainability for human well-being.</p>
+        
+        <table>
+            <tr>
+                <th>Solution</th>
+                <th>Algorithm</th>
+                <th>Code Link</th>
+            </tr>
+            <tr>
+                <td>Quick Sort</td>
+                <td>Sorting the waste segregated by type</td>
+                <td><a href="https://github.com/Sairam625/Portfolio-DAA/blob/main/pages/bhavana/codes.cpp">Quick Sort and Merge Sort</a></td>
+            </tr>
+        </table>
     </div>
 
     <div class="business-case">
@@ -56,6 +80,19 @@
 
         <h3>Description</h3>
         <p>Citizens should first learn about the rules. Strict law enforcement in society reduces the number of crimes, improves public safety, and makes urban spaces more inclusive and secure.</p>
+
+        <table>
+            <tr>
+                <th>Solution</th>
+                <th>Algorithm</th>
+                <th>Code Link</th>
+            </tr>
+            <tr>
+                <td>Dijkstra Algorithm</td>
+                <td>Finding the safest path for citizens in public spaces</td>
+                <td><a href="https://github.com/Sairam625/Portfolio-DAA/blob/main/pages/bhavana/business-cases3.cpp">Dijkstra Algorithm</a></td>
+            </tr>
+        </table>
     </div>
 
     <div class="business-case">
@@ -68,9 +105,23 @@
 
         <h3>Description</h3>
         <p>Organizing cultural gatherings or events highlights the interest in celebrating and protecting cultural heritage. This fosters well-being and connects people, emphasizing the importance of cultural preservation.</p>
+
+        <table>
+            <tr>
+                <th>Solution</th>
+                <th>Algorithm</th>
+                <th>Code Link</th>
+            </tr>
+            <tr>
+                <td>BFS and Floyd-Warshall</td>
+                <td>Finding optimal paths for organizing cultural events</td>
+                <td><a href="https://github.com/Sairam625/Portfolio-DAA/blob/main/pages/bhavana/business-cases2.cpp">BFS and Floyd-Warshall</a></td>
+            </tr>
+        </table>
     </div>
 
-    <p><strong>Selected Business Case: Proper Disposal of Wastes (Segregation).Quick sort can be implemented <a href="https://github.com/Sairam625/Portfolio-DAA/blob/main/pages/bhavana/codes.cpp">  Quick Sort </a>
-</strong></p>
+    <p><strong>First Business Case: Proper Disposal of Wastes (Segregation) - Quick Sort and Merge Sort</strong></p>
+    <p><strong>Second Business Case: Safety of Citizens - Dijkstra Algorithm</strong></p>
+    <p><strong>Third Business Case: Lack of Cultural Gatherings - BFS and Floyd-Warshall</strong></p>
 </body>
 </html>
