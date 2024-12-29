@@ -1,0 +1,42 @@
+Route 133: M.G Road Metro Station ⬌ Police Line Manesar
+Route 217A: Sector 55/56 Metro Station ⬌ Gurugram Railway Station
+Route 912: Huda City Centre Metro Station (B) ⬌ Business Zone Sector 50
+Route 234A: Gurugram Bus Stand ⬌ Dhana Village
+Route 217: Hero Honda Chowk ⬌ Dundahera
+Route 114: Huda City Centre Metro Station (B) ⬌ Business Zone Sector 50
+Route 111B: Huda City Centre Metro Station (B) ⬌ Maruti Kunj
+Route 116E: Huda City Centre Metro Station (B) ⬌ Gurugram Railway Station
+Route 116F: Gurugram Railway Station ⬌ C.R.P.F. Camp Kadarpur Gate No.2
+Route 118: Huda City Centre Metro Station (B) ⬌ Sohna Bus Stand
+Route 120: Huda City Centre Metro Station (B) ⬌ Sohna Bus Stand
+Route 122: Mahaveer Chowk (Gaushala Ground) ⬌ Kendriya Vihar
+Route 132A: Hero Honda Chowk ⬌ Dundahera
+Route 111ASTL: Sector 10 Depot ⬌ Hero Honda Chowk
+Route 111G-UP: Sector 55/56 Metro Station To Sector 55/56 Metro Station
+Route 210: Gurugram Bus Stand ⬌ Karol Bagh
+Route 215B: Mahaveer Chowk ⬌ Sector 14 ⬌ Maruti Gate No.2 ⬌ Candor IT SEZ ⬌ Dundahera
+Route 222: Gurugram Bus Stand ⬌ Ram Mandir Palam Vihar
+Route 222C: Ram Mandir Palam Vihar ⬌ Gurugram Bus Stand
+Route 234: Gurugram Bus Stand ⬌ Dhana Village
+Route 255: Mahaveer Chowk (Gaushala Ground) ⬌ Farukhnagar Bus Station
+Route 905A: Badarpur Border ⬌ Rajpur Kalan
+Route 909A: Ballabhgarh Bus Stand ⬌ Majhawali
+Route 915: Badarpur Border ⬌ Vishwakarma University Dudhola
+Route 915A: Dhatir ⬌ Badarpur Border
+Route D202: Gurugram Bus Stand ⬌ Badarpur Border
+Route 111B-STL: Sector 52/53 Depot ⬌ Huda City Centre Metro Station (B)
+Route 111G-DWN: Sector 55/56 Metro Station To Sector 55/56 Metro Station
+Route 116D: Huda City Centre Metro Station (B) ⬌ Gurugram Railway Station
+Route 116G: Gurugram Railway Station ⬌ C.R.P.F. Camp Kadarpur Gate No.2
+Route 118A: Huda City Centre Metro Station (B) ⬌ Sohna Bus Stand
+Route 120A: Huda City Centre Metro Station (B) ⬌ Sohna Bus Stand
+Route 122A: Mahaveer Chowk (Gaushala Ground) ⬌ Kendriya Vihar
+Route 132B: Hero Honda Chowk ⬌ Dundahera
+Route 111A: Sector 10 Depot ⬌ Hero Honda Chowk
+Route 111C: Sector 55/56 Metro Station To Sector 55/56 Metro Station
+Route 210A: Gurugram Bus Stand ⬌ Karol Bagh
+Route 215A: Mahaveer Chowk ⬌ Sector 14 ⬌ Maruti Gate No.2 ⬌ Candor IT SEZ ⬌ Dundahera
+Route 222A: Gurugram Bus Stand ⬌ Ram Mandir Palam Vihar
+Route 222B: Ram Mandir Palam Vihar ⬌ Gurugram Bus Stand
+Route 234B: Gurugram Bus Stand ⬌ Dhana Village
+Route 255A: Mahaveer Chowk (Gaushala Ground) ⬌ Farukhnagar Bus Station

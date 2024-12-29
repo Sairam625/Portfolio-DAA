@@ -1,0 +1,200 @@
+1. Aarav Sharma | Student | The buses are often late, but the staff is polite.
+2. Kavya Reddy | Working Professional | Clean buses, but more frequency is needed during peak hours.
+3. Nikhil Verma | Tourist | The routes are confusing for visitors.
+4. Meera Iyer | Student | Affordable fares, but seats are limited during rush hours.
+5. Arjun Das | Working Professional | The AC buses are great for long routes.
+6. Priya Gupta | Tourist | Bus stops lack proper signages.
+7. Ananya Mehta | Student | Good service overall, but needs better punctuality.
+8. Rajesh Kumar | Working Professional | Convenient for daily travel, but traffic delays are common.
+9. Sneha Roy | Tourist | The conductors are helpful in guiding routes.
+10. Aditya Singh | Student | Buses are reliable but crowded during school timings.
+11. Ishaan Bose | Working Professional | Mobile app tracking would make it more efficient.
+12. Tara Kapoor | Tourist | The system is decent but needs more night buses.
+13. Vishal Nair | Student | Affordable, but the buses need better maintenance.
+14. Riya Patel | Working Professional | Comfortable seating, but ticket counters need improvement.
+15. Arvind Joshi | Tourist | It’s a cost-effective option for sightseeing.
+16. Shruti Ghosh | Student | Buses are overcrowded during exams.
+17. Ravi Mishra | Working Professional | More direct routes would save time.
+18. Simran Kaur | Tourist | Decent service, but availability in rural areas is limited.
+19. Kunal Jain | Student | The staff is friendly and cooperative.
+20. Aditi Rao | Working Professional | Timely services are a plus point.
+21. Nisha Yadav | Tourist | Needs better facilities for the elderly.
+22. Raghav Pillai | Student | The system is improving but still has delays.
+23. Pooja Sen | Working Professional | Good experience overall, but needs better cleanliness.
+24. Anirudh Malhotra | Tourist | Helpful staff but lacks multilingual signages.
+25. Deepika Chatterjee | Student | The app tracking system is useful but not always accurate.
+26. Akshay Kulkarni | Working Professional | Fares are affordable for daily commuters.
+27. Preeti Naik | Tourist | Safety measures could be improved.
+28. Saurabh Dubey | Student | Free passes for students are a great initiative.
+29. Tanvi Aggarwal | Working Professional | Timings during office hours are unpredictable.
+30. Vikram Goel | Tourist | The routes cover major areas, which is helpful.
+31. Malini Menon | Student | The buses need better air ventilation.
+32. Harsh Tiwari | Working Professional | Reliable service but needs faster ticketing.
+33. Ankita Pandey | Tourist | Guides at bus stops would be a great addition.
+34. Devang Joshi | Student | Helpful conductors make travel easier.
+35. Ramesh Chaudhary | Working Professional | Comfortable rides but often delayed by traffic.
+36. Ishita Dixit | Tourist | The buses are clean and easy to board.
+37. Kartik Sharma | Student | More buses during peak hours would help.
+38. Anjali Rane | Working Professional | Overall good experience but needs smoother rides.
+39. Manoj Gupta | Tourist | Affordable option for city tours.
+40. Neha Kapoor | Student | The system is good but still has scope for improvement.
+41. Suman Verma | Working Professional | Real-time tracking would save a lot of waiting time.
+42. Arushi Singh | Tourist | Good for local travel but lacks luxury options.
+43. Gaurav Mehta | Student | The monthly passes are cost-effective.
+44. Varun Reddy | Working Professional | Timely, but the network needs expansion.
+45. Ruchi Thakur | Tourist | Comfortable but crowded at tourist spots.
+46. Aniket Yadav | Student | The bus stops need more shade.
+47. Kiran Shah | Working Professional | Needs priority seating for women and children.
+48. Snehal Pawar | Tourist | Friendly conductors enhance the experience.
+49. Omkar Patil | Student | The services are consistent, but need more punctuality.
+50. Vaishnavi Desai | Working Professional | The connectivity is good, but could be better.
+51. Sameer Kaul | Tourist | A good option for exploring the city on a budget.
+52. Shravan Iyer | Student | The buses need more maintenance checks.
+53. Alka Jain | Working Professional | Timely service with affordable pricing.
+54. Ritwik Sinha | Tourist | Routes need to be more tourist-friendly.
+55. Kritika Bhatt | Student | Pleased with the service overall.
+56. Amit Choudhary | Working Professional | Better frequency during evenings would be ideal.
+57. Shweta Reddy | Tourist | Language barriers can be a problem.
+58. Adarsh Tiwari | Student | Satisfied with the service provided.
+59. Monica D’Souza | Working Professional | Mobile ticketing is a great convenience.
+60. Harini Nair | Tourist | Decent, but more frequent buses to attractions would help.
+61. Dhruv Shah | Student | Staff behavior is commendable.
+62. Payal Mehta | Working Professional | Regular sanitization should be ensured.
+63. Ravi Sharma | Tourist | Convenient service for a new visitor to the city.
+64. Leela Ghosh | Student | Happy with the overall service.
+65. Suraj Verma | Working Professional | Reliable, but the stops need better infrastructure.
+66. Ayesha Qureshi | Tourist | Better multilingual support is needed.
+67. Rajat Chauhan | Student | More initiatives like student discounts would help.
+68. Swati Kulkarni | Working Professional | The service is timely and professional.
+69. Piyush Mishra | Tourist | Affordable for group travels.
+70. Nikita Malhotra | Student | Monthly passes are very helpful.
+71. Sanjay Nair | Working Professional | Needs better safety features.
+72. Divya Anand | Tourist | Guides at terminals would enhance the experience.
+73. Akarsh Gupta | Student | Buses are consistent but often crowded.
+74. Sarita Yadav | Working Professional | Overall satisfactory experience.
+75. Ishaani Sen | Tourist | Pleasant experience, but routes could be simpler.
+76. Rohan Chatterjee | Student | Pleased with the discounts provided.
+77. Ananya Kapoor | Working Professional | Reliable service for regular commutes.
+78. Vijay Pillai | Tourist | The staff is very cooperative.
+79. Kavita Rane | Student | The buses need faster ticketing systems.
+80. Akanksha Joshi | Working Professional | Satisfied with the current operations.
+81. Rahul Desai | Tourist | A good alternative to taxis.
+82. Ishika Bose | Student | Happy with the eco-friendly initiatives.
+83. Sidharth Kumar | Working Professional | Traffic delays can affect punctuality.
+84. Prachi Mishra | Tourist | Good service but crowded during weekends.
+85. Sahil Kulkarni | Student | More frequency during late hours would help.
+86. Tanisha Patel | Working Professional | Safe and secure for women travelers.
+87. Armaan Singh | Tourist | Needs better maps and guideboards.
+88. Shravan Desai | Student | Affordable and convenient for students.
+89. Priyanka Iyer | Working Professional | Decent service overall.
+90. Aarohi Nair | Tourist | Satisfied with the overall experience.
+91. Sahil Verma | Student | The buses need more cleanliness checks.
+92. Kavita Thakur | Working Professional | Pleased with the punctuality.
+93. Aman Kumar | Tourist | Budget-friendly for travelers.
+94. Neeraj Sharma | Student | Consistent but needs more AC buses.
+95. Anusha Reddy | Working Professional | Good service, but ticket counters need to be modernized.
+96. Rajiv Tiwari | Tourist | The staff is welcoming and helpful.
+97. Shivangi Mehta | Student | Happy with the bus frequency.
+98. Nitin Das | Working Professional | Smooth and hassle-free rides.
+99. Sweta Choudhary | Tourist | A good option for exploring the city.
+100. Aryan Nair | Student | Great initiative for students' convenience.
+101. Sandeep Gupta | Working Professional | Efficient service, but traffic delays affect timing.
+102. Kritika Reddy | Tourist | Bus timings should be better synchronized.
+103. Akshay Sharma | Student | Happy with the affordable fares.
+104. Neha Mehta | Working Professional | Needs better seat availability during office hours.
+105. Arjun Nair | Tourist | Helpful staff, but the signage could be improved.
+106. Pooja Tiwari | Student | The monthly pass system is very convenient.
+107. Rajesh Verma | Working Professional | The buses are clean and comfortable.
+108. Tanya Sen | Tourist | The service is good for budget travelers.
+109. Rohan Mishra | Student | The tracking system is a great feature.
+110. Megha Iyer | Working Professional | The system works fine, but rural connectivity needs attention.
+111. Suresh Reddy | Tourist | Guides at terminals would help tourists navigate better.
+112. Smita Joshi | Student | Satisfied with the overall experience.
+113. Vikas Malhotra | Working Professional | More punctuality during rush hours is needed.
+114. Deepika Nair | Tourist | Comfortable buses, but long waiting times at some stops.
+115. Kartik Sharma | Student | Frequent services during school timings are very helpful.
+116. Alok Jain | Working Professional | The service is decent, but the app needs improvement.
+117. Priyanka Patel | Tourist | Better multilingual guides would enhance the experience.
+118. Anirudh Roy | Student | Overall, the system works well.
+119. Ruchi Kapoor | Working Professional | The buses are reliable but could be more frequent.
+120. Tanvi Pillai | Tourist | A cost-effective way to explore the city.
+121. Kunal Thakur | Student | Happy with the student-friendly initiatives.
+122. Kavita Bose | Working Professional | The AC buses make the commute much easier.
+123. Suraj Yadav | Tourist | Good connectivity but needs more clarity in routes.
+124. Ishika Malhotra | Student | The service is consistent but needs better frequency.
+125. Aniket Gupta | Working Professional | The ticketing system needs to be faster.
+126. Sneha Desai | Tourist | Affordable fares make it a great option.
+127. Aakash Verma | Student | Timings during exams are very reliable.
+128. Monica Reddy | Working Professional | Satisfied with the safety measures on board.
+129. Sameer Das | Tourist | The conductors are very cooperative.
+130. Arushi Nair | Student | Comfortable and cost-effective for students.
+131. Rajiv Pillai | Working Professional | Timely services are a huge plus.
+132. Megha Thakur | Tourist | Routes are convenient but need better markings.
+133. Nisha Patel | Student | Free passes for students are greatly appreciated.
+134. Ravi Malhotra | Working Professional | The system works well, but the app tracking needs updates.
+135. Simran Sen | Tourist | The night buses need better availability.
+136. Saurabh Iyer | Student | The fare system is transparent and fair.
+137. Kavya Rane | Working Professional | The service is consistent but needs more rural routes.
+138. Amit Mishra | Tourist | The system is good for exploring local attractions.
+139. Anjali Das | Student | The buses are reliable, but the seats could be more comfortable.
+140. Omkar Tiwari | Working Professional | Satisfied with the punctuality and coverage.
+141. Alka Gupta | Tourist | Good experience but better signages would help.
+142. Armaan Roy | Student | Happy with the connectivity to major routes.
+143. Priya Malhotra | Working Professional | The service is good, but bus frequency needs to improve.
+144. Kiran Joshi | Tourist | Affordable and easy to navigate for tourists.
+145. Shruti Nair | Student | Conductors are cooperative and polite.
+146. Raghav Kapoor | Working Professional | Timely buses make daily commuting easier.
+147. Ananya Sharma | Tourist | Safety measures on buses are commendable.
+148. Aakash Verma | Student | Reliable service during peak hours.
+149. Pooja Patel | Working Professional | The app needs a feature to book tickets online.
+150. Harsh Tiwari | Tourist | Decent service but lacks luxury options for tourists.
+151. Sneha Iyer | Student | Affordable fares are a big advantage.
+152. Sidharth Reddy | Working Professional | The bus network covers a good area.
+153. Tanya Bose | Tourist | Helpful conductors enhance the travel experience.
+154. Arvind Nair | Student | Happy with the frequency during exam timings.
+155. Megha Kapoor | Working Professional | Overall, the system works well.
+156. Ramesh Rane | Tourist | More tourist-friendly guides at terminals are needed.
+157. Kritika Malhotra | Student | The buses are well-maintained.
+158. Akash Das | Working Professional | Needs more buses during office hours.
+159. Riya Sen | Tourist | Affordable and convenient for sightseeing.
+160. Ishaan Yadav | Student | Pleased with the reliability of services.
+161. Neeraj Roy | Working Professional | Punctuality during peak hours can be better.
+162. Anjali Gupta | Tourist | The system works fine for budget travelers.
+163. Rajat Iyer | Student | The services are consistent and reliable.
+164. Priyanka Verma | Working Professional | Comfortable buses make long routes easier.
+165. Arjun Bose | Tourist | Needs more connectivity to rural attractions.
+166. Snehal Joshi | Student | The free passes for students are very helpful.
+167. Suman Reddy | Working Professional | The system is good, but bus stops need improvements.
+168. Karthik Patel | Tourist | The service is decent but crowded during weekends.
+169. Shruti Tiwari | Student | More frequency during late evenings would help.
+170. Vikas Das | Working Professional | Satisfied with the current operations.
+171. Divya Nair | Tourist | The buses are clean and safe for women travelers.
+172. Sahil Gupta | Student | Better maintenance of buses is required.
+173. Kavita Kapoor | Working Professional | Happy with the fare structure.
+174. Anirudh Sharma | Tourist | A great option for group travelers.
+175. Alok Sen | Student | The eco-friendly buses are a great initiative.
+176. Nisha Verma | Working Professional | Satisfied with the safety measures in place.
+177. Armaan Iyer | Tourist | Needs better facilities for elderly travelers.
+178. Neha Rane | Student | Monthly passes are a great convenience.
+179. Raghav Nair | Working Professional | Satisfied with the punctuality.
+180. Pooja Gupta | Tourist | Decent connectivity for city exploration.
+181. Sahil Malhotra | Student | Happy with the service provided.
+182. Tanya Sharma | Working Professional | Overall, the system is efficient and reliable.
+183. Sandeep Patel | Tourist | Affordable and convenient for sightseeing.
+184. Ishika Bose | Student | The bus staff is cooperative and helpful.
+185. Vikas Nair | Working Professional | Satisfied with the frequency during office hours.
+186. Shravan Tiwari | Tourist | The service is good but can be overcrowded at times.
+187. Ananya Kapoor | Student | Reliable service during school hours.
+188. Kavita Reddy | Working Professional | The AC buses are very comfortable.
+189. Rajesh Das | Tourist | A good option for exploring city attractions.
+190. Sneha Sen | Student | Better frequency during late evenings would help.
+191. Arjun Mehta | Working Professional | Comfortable seating and smooth rides.
+192. Tanya Bose | Tourist | A cost-effective and reliable option for travelers.
+193. Kritika Rane | Student | Satisfied with the bus timings.
+194. Vishal Nair | Working Professional | Smooth operations make daily commutes easy.
+195. Ruchi Verma | Tourist | Better facilities for tourists are needed.
+196. Aditya Das | Student | Monthly passes are very convenient.
+197. Neha Kapoor | Working Professional | Satisfied with the safety and punctuality.
+198. Alok Sharma | Tourist | A budget-friendly way to explore the city.
+199. Simran Nair | Student | Pleased with the bus frequency during school hours.
+200. Akash Patel | Working Professional | Needs better tracking features in the app.
