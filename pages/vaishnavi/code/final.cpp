@@ -2,6 +2,7 @@
 #include <queue>
 #include <vector>
 #include <algorithm>
+#include <fstream>
 #include <ctime>
 #include <iomanip>
 
@@ -110,34 +111,27 @@ public:
 
 // Main Function
 int main() {
+    string inputFile = "trucks.txt";
+
+    ifstream file(inputFile);
+    if (!file) {
+        cerr << "Error: Unable to open file " << inputFile << endl;
+        return 1;
+    }
+
     int numDocks, numTrucks;
-
-    cout << "Enter number of docks: ";
-    cin >> numDocks;
-
-    cout << "Enter number of trucks: ";
-    cin >> numTrucks;
+    file >> numDocks >> numTrucks;
 
     SchedulingSystem system(numDocks);
+    int truckId, hour, minute, loadTimeHours;
 
     for (int i = 0; i < numTrucks; ++i) {
-        int truckId, hour, minute, loadTimeHours;
-
-        cout << "Enter truck " << (i + 1) << " details:" << endl;
-        cout << "Truck ID: ";
-        cin >> truckId;
-
-        cout << "Arrival time (hour minute): ";
-        cin >> hour >> minute;
+        file >> truckId >> hour >> minute >> loadTimeHours;
 
         if (hour < 0 || hour >= 24 || minute < 0 || minute >= 60) {
-            cout << "Invalid time entered. Please enter time in HH MM format." << endl;
-            --i;
+            cerr << "Invalid time format for Truck " << truckId << ". Skipping this entry." << endl;
             continue;
         }
-
-        cout << "Loading time (in hours): ";
-        cin >> loadTimeHours;
 
         time_t currentTime = time(0);
         tm* timeInfo = localtime(&currentTime);
@@ -148,6 +142,8 @@ int main() {
 
         system.addTruck(truckId, arrivalTime, loadTimeHours);
     }
+
+    file.close();
 
     system.efficientSchedule();
     return 0;
